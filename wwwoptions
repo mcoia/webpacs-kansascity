@@ -130,6 +130,7 @@ MARC=yes
 # SIMILAR_ITEMS=
 # TABLEPARAM_BIB_TOC=
 WEBPUDEF=true
+TABLEPARAM_BIB_LINKS=width="99%" border="3" cellspacing="1" id="linkeddocs" onClick="pageTracker._trackEvent('Bib Display Links','Clicks','Linked Documents Table');"
 
 # REQUESTING OPTIONS
 # BIBREQUEST=
