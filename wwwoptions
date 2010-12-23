@@ -47,7 +47,9 @@ CANCEL_BOOKINGS=false
 
 # GENERAL DISPLAY AND BEHAVIOR OPTIONS
 BOTLOGO=@screens/botlogo.html
-BOTLOGO6=@screens/botlogo_s10.html
+BOTLOGO6=@screens/botlogo_s10.html
+
+BOTLOGO7=@screens/botlogo_s7.html
 CLEAR_PRIVATE_INFO=true
 FORM_FOCUS=TRUE
 SSLPORT=80:443:wilo.missouri.edu:wilo.mobius.umsystem.edu|2082:444:wilo.missouri.edu:wilo.mobius.umsystem.edu
@@ -131,7 +133,8 @@ MARC=yes
 # TABLEPARAM_BIB_TOC=
 WEBPUDEF=true
 TABLEPARAM_BIB_LINKS=width="99%" border="3" cellspacing="1" id="linkeddocs" onClick="pageTracker._trackEvent('Bib Display Links','Clicks','Linked Documents Table');"
-
+
+
 # REQUESTING OPTIONS
 # BIBREQUEST=
 REQUEST=Request this title|denyiflocalavail|ask|yes
