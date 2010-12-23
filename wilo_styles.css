@@ -159,6 +159,7 @@ A.pageNavAreaText:ACTIVE, A.pageNavAreaText:HOVER { color:#c2d1c2; text-decorati
 	vertical-align: top; 
 	font-size: 85%; 
 	height:225px}
+#encoreLink img {border-style:none;}
 .metacatalog { 
 	text-align: left; 
 	padding: 20px; 
