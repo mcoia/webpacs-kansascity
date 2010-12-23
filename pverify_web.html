@@ -1,1 +1,112 @@
-<!-- WILO pverify_web.html updated 080418 lee --><!--{toplogo}--><!--{patron}--><!--{logout}--><center><h4 align="center">View Your Library Account</h4><div id="patverify"><form method="post" action="/patroninfo~S"><p style="font-size:90%;"><!--{iferrmsg}--><font color="red"><em><!--{iferrmsgisPIN}--><!--{newpinmsg}--><!--{else}--><!--{errmsg}--><!--{xif}--></em></font><br /><br /><br /><!--{xif}--><!--{enterinfo}--></p><table class="patVerify" style="border:0px; padding:2px;" cellspacing="0" summary="pverify"><tr><td style="vertical-align:top; width:1%;"><table class="patVerify" summary="patronname"><!--{ifneedpatronname}--><tr><td style="width:1%; font-size:90%;"></td><td style="font-size:90%;"><!--{nameexample}--></td></tr><tr><td style="width:1%; font-size:90%; white-space:nowrap;"><!--{nameprompt}--></td><td style="font-size:90%;"><!--{name}--></td></tr><tr><td colspan="3">&nbsp;</td></tr><!--{xif}--><!--{ifneedpatronverify}--><tr><td style="width:1%; font-size:90%;"></td><td style="font-size:90%;"><!--{barcodeexample}--></td></tr><tr><td style="width:1%; font-size:90%; white-space:nowrap;"><!--{barcodeprompt}--></td><td style="font-size:90%;"><!--{barcode}--></td></tr><!--{ifneedspin}--><!--{iferrmsgisPIN}--><tr><td style="font-size:90%;" colspan="2"><!--{newpinmsg}--></td></tr><tr><td style="width:1%; font-size:90%; white-space:nowrap;"><!--{pin1prompt}--></td><td style="font-size:90%;"><!--{pin1}--></td></tr><tr><td style="width:1%; font-size:90%; white-space:nowrap;"><!--{pin2prompt}--></td><td style="font-size:90%;"><!--{pin2}--></td></tr><!--{else}--><tr><td></td><td style="font-size:90%;"><!--{pininstructions}--></td></tr><tr><td style="width:1%; font-size:90%; white-space:nowrap;"><!--{pinprompt}--></td><td style="font-size:90%;"><!--{pin}--></td></tr><!--{xif}--><!--{xif}--><!--{xif}--><tr><td style="font-size:90%;" colspan="2"><br /><input name="submit" type="SUBMIT" value="SUBMIT" /></td></tr></table></td><td style="vertical-align:top; text-align:right;"><table style="width:260px; border:0px; padding:2px; background-color:#9EB69B" cellspacing="0" summary="idhelp"><tr><td><div style="font-family: Arial, Helvetica, sans-serif; font-size: x-small; font-weight: bold;">Campus ID Help</div><br /><div style="font-family: Arial, Helvetica, sans-serif; font-size: xx-small;">&middot; Avila University - <strong>AU</strong><br />&middot; Kansas City Art Institute - <strong>KCAI</strong><br />&middot; Metropolitan Community Colleges - <strong>MCC</strong><br />&middot; Midwestern Baptist Theological Seminary - <strong>MBTS</strong><br />&middot; Rockhurst University - <strong>RG</strong><br />&middot; Saint Paul School of Theology - <strong>SPST</strong><br />&middot; William Jewell College - <strong>WJ</strong></div><br /><div style="font-family: Arial, Helvetica, sans-serif; font-size: xx-small;">&nbsp;&nbsp;&nbsp; Type your ID number (dashes are not necessary)<br />&nbsp; plus your institution code.For example: &nbsp;<tt><font size="-1" color="#CC0000">999999999WJ</font></tt> would be a Campus ID for a student<br />&nbsp; at William Jewell College.<br /><br /></div></td></tr></table></td></tr></table></form><table style="width:700px; text-align:center;" summary="logout"><tr><td style="font-size:90%;"><a href="/search~"><img src="/screens/startover.gif" alt="Start Over" border="0" /></a><center><p><a href="/" target="_parent"><img src="/screens/logout.gif" alt="(LOG OUT)" border="0" /></a></p><p><div style="color:red; font-size:90%;"><strong>Protect your privacy!</strong><br />To prevent others (who use this PC after you) from seeing yourpersonal library information,<br />please return to this page after viewing your record and click "log out."</div></p></center></td></tr></table></div></center><!--{botlogo}--><br /></body></html>
+<!--{toplogo}-->
+<div class="pageContentInner">
+<h1 class="pageHeader">Login</h1>
+<div class="form1Part formLogin" id="accessibleForm">
+<!--{formbegin}-->
+<!--{iferrmsg}-->
+<span class="errormessage">
+<!--{iferrmsgisPIN}-->
+<!--{newpinmsg}-->
+<!--{else}-->
+<!--{errmsg}-->
+<!--{xif}-->
+</span>
+<!--{xif}-->
+
+<fieldset>
+<legend>
+<!--{enterinfo}-->
+</legend>
+
+<!--{ifextpat}-->
+<h2>Students, Staff, and Faculty</h2>
+<div class="formEntryArea">
+<label for="extpatid"><span class="formLabel">
+Username:
+</span></label>
+<!--{extpatid}-->
+<label for="extpatpw"><span class="formLabel">
+Password:
+</span></label>
+<!--{extpatpw}-->
+</div>
+<h2>Visitors</h2>
+<!--{xif}-->
+
+<!--{ifneedpatronname}-->
+<div class="formEntryArea">
+<!--{nameprompt}-->
+<!--{name}-->
+<span class="formLabelExample">
+<!--{nameexample}-->
+</span>
+</div>
+<!--{xif}-->
+
+<!--{ifneedpatronverify}-->
+<div class="formEntryArea">
+<!--{barcodeprompt}-->
+<!--{barcode}-->
+<span class="formLabelExample">
+<!--{barcodeexample}-->
+</span>
+</div>
+
+<!--{ifneedspin}-->
+
+<!--{iferrmsgisPIN}-->
+<p>
+<!--{newpinmsg}-->
+</p>
+<div class="formEntryArea">
+<!-- <label for="pin1"> -->
+<span class="formLabel">
+<!--{pin1prompt}-->
+</span>
+<!--{pin1}-->
+<!-- </label> -->
+</div>
+<div class="formEntryArea">
+<!-- <label for="pin2"> -->
+<span class="formLabel">
+<!--{pin2prompt}-->
+</span>
+<!--{pin2}-->
+<!-- </label> -->
+</div>
+
+<!--{else}-->
+<div class="formEntryArea">
+<!--{pinprompt}-->
+<!--{pin}-->
+<span class="formLabelExample">
+<!--{pininstructions}-->
+</span>
+</div>
+
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+
+    <!--{ifalternate_id}-->
+    <!--{user_name}-->
+    <!--{xif}-->
+
+<div class="formButtonArea">
+<!--{ifneedspin}-->
+<!--{pinresetrequest}-->
+<!--{xif}-->
+<!--{submit}-->
+<input type="submit" class="submitHidden">
+</div>
+</fieldset>
+<!--{formend}-->
+
+</div>
+
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].elements[1].focus(); }
+catch(err) {}
+//--><!]]></script>

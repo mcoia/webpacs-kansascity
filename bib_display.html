@@ -1,90 +1,111 @@
-<!-- WILO bib_display.html updated 090608 ahd -->
-<!--{toplogo}-->
-<!--{patron}-->
-<!--{logout}-->
-<br />
-<!--{ifbibdisplay}-->
-<!--{xif}-->
-<div class="navigationRow" style="text-align: center;">
-<br />
-<!--{navrow}-->
-<!--{innreach}-->
-<!--{searchhistory}-->
-<br />
-<br />
-</div>
-<div class="bibSearchtool" style="text-align: center;">
-<!--{searchtool}-->
-<!--{relsearch}-->
-</div>
-<!--{reslink}-->
-<div class="bibPager" style="text-align: center;">
-<!--{pager}-->
-</div>
-<div style="margin:5px;">
-
-<table width="80%" style="margin-left:20px;">
-<tr>
-	
-	<td width="80%" align="left" valign="bottom">
-<!--{recordinfo:!}-->
-	</td>	
-
-<td width="10%" align="center">
-<!--{bibimage}-->
-	</td>	
-	
-</tr>
-</table>
-</div>
-<!--{ifhaspatrate}-->
-<div class="rateLableWrapper">
-<!--{ratings}-->
-</div>
-<!--{xif}-->
-<div class="bibHolds">
-<!--{holds}-->
-</div>
-<!--{linkeddocs}-->
-<!--{URLS}-->
-<!--{holdingslink}-->
-<!--{bloblinks}-->
-<!--{imagelinks}-->
-<!--{artthumb}-->
-<!--{booking}-->
-<!--{holdings}-->
-<div style="margin:5px;">
-<!--{items}-->
-</div>
-<!--{orders}-->
-<div>
-<!--{recordlink}-->
-</div>
-<div style="margin:5px;">
-<table width="80%" style="margin-left:20px;">
-<tr><td>
-<!--{ifTOC}-->
-<!--{TOC}-->
-<!--{xif}-->
-<!--{recordinfo:frcsndmjbuxzwio}-->
-<!--{ifhasresourcetable}-->
-<!--{resourcetable}-->
-<!--{xif}-->
-<!--{patronreviews}-->
-<!--{patronreviewsfull}-->
-<!--{xmlframe}-->
-<!--{catedit}-->
-</td></tr>
-</table>
-</div>
-<br />
-<div class="bibPager" style="text-align: center;">
-<!--{pager}-->
-</div>
-<br />
-<div class="navigationRow" style="text-align: center;">
-<!--{navrow}-->
-<!--{innreach}-->
-<!--{searchhistory}-->
-</div>
-<!--{botlogo}-->
+<!--{toplogo}-->
+<!--{ifbibdisplay}-->
+<!--{xif}-->
+<!--{catedit}-->
+
+<div id="bibDisplayBody">
+<div class="navigationRowRecord">
+<!--{navrow}-->
+</div>
+<div id="bibDisplayContent">
+<div class="bibSearch">
+<!--{searchtool}-->
+<div class="bibSearchHistory">
+<!--{searchhistory}-->
+</div>
+</div><!-- bibSearch -->
+
+<div class="bibPager">
+<!--{pager}-->
+</div>
+
+<div class="bibClear"></div>
+
+<div class="bibResourceSidebar">
+<!--{ifhasresourcetable}-->
+<!--{resourcetable}-->
+<!--{xif}-->
+<!--Optional INNReach resources.-->
+<!--{innreach}-->
+<!--{relsearch}-->
+</div>
+
+<div class="bibDisplayJacket">
+<!--{bibimage}-->
+<div class="bibMedia">
+<!--{media}-->
+</div>
+</div>
+
+<div class="bibDisplayContentMain">
+
+<!--{recordinfo:a}-->
+
+<h1 class="bibDisplayTitle">
+<!--{recordinfo:t}-->
+</h1>
+
+<!--{recordinfo:pR}-->
+
+<!--{ifhaspatrate}-->
+<div class="bibDisplayRatings">
+<!--{ratings}-->
+</div>
+<!--{xif}-->
+
+<!--{booking}-->
+<!--{holdingslink}-->
+<div class="testlinkeddocs">
+<!--{linkeddocs}-->
+</div>
+<div class="bibDisplayUrls">
+<!--{URLS}-->
+</div>
+
+<!--{bloblinks}-->
+<!--{imagelinks}-->
+<!--{artthumb}-->
+<!--{xmlframe}-->
+<!--{ifTOC}-->
+<!--{TOC}-->
+<!--{xif}-->
+<!--{holds}-->
+<!--{holdings}-->
+
+<div class="bibDisplayItems">
+<div class="bibDisplayItemsHeader"><h2>Copies</h2></div>
+<div class="bibDisplayItemsMain">
+<!--{items}-->
+</div>
+</div>
+
+<!--{orders}-->
+
+<div class="bibDisplayContentMore">
+<!--{recordinfo:#}-->
+</div>
+
+<!--{IFELCONTENT:365}-->
+<!-- Replace the number for your enhanced content in Pathfinder Pro -->
+<div class="bibDisplayContentMore">
+<ul id="elContent">
+<!--{ELCONTENT:365}-->
+</ul>
+</div>
+<!--{xif}-->
+
+<div class="bibDisplayContentMore bibDisplayReviews">
+<div class="bibDisplayPermLink actionButtonArea">
+<!--{recordlink}-->
+</div>
+<!--{patronreviewsfull}-->
+
+</div>
+
+</div>
+
+
+</div><!-- close bibDisplayContent -->
+<div class="clear"></div>
+</div><!-- close bibDisplayBody -->
+<!--{botlogo}-->
