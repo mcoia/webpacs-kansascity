@@ -51,7 +51,7 @@ body > div { background:#FFFFFF; padding-bottom:10px; padding-top:10px; }
 
 body > div.mylistsSavePage { background:none; padding-bottom:0px; padding-top:0px; }
 
-body > span { margin-top:-20px; }
+/* body > span { margin-top:-20px; } */
 
 body > a, body > p, body > h1, body > h2, body > h3, body > h4 { margin-left:3px; }
 
@@ -132,9 +132,13 @@ a:hover  { color: #7C14B8; }
 
 .additionalCopies { margin: 20px 6px; }
 
-#advancedMenu {background-color: #f2f2f2; border: 1px solid #d3d3d3; float: left; margin:50px 0 0; padding: 1em; width: 15%;}
+#advancedMenu {background-color: #f2f2f2; border: 1px solid #d3d3d3; float: left; margin:50px 0 0; padding: .5em 2em; width: 15%;}
 
-#advancedMenu h2 {font-size: 1.1667em;}
+#advancedMenu h2 {border-bottom: 1px dashed; font-size: 1.1667em;}
+
+#advancedMenu li {list-style-type:none; text-indent:-2em; padding:4px 0}
+
+#advancedMenu a {text-decoration:none; color:#444444;}
 
 .advancedSearch td { padding-right:5px; text-align:right; vertical-align:top; width:5em; }
 
@@ -296,6 +300,14 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 .bookingsVerify a { text-decoration:none; }
 
 .bookingsVerify a .buttonText  { text-decoration:underline; }
+
+#botlogo {text-align:center;}
+
+#botlogo li {display: inline; list-style-type:circle; border-left: 1px solid #D3D3D3; padding: 0 5px;}
+
+#botlogo ul {margin-top:.5em;}
+
+#botlogo .first {border:none;}
 
 /* Brief Citation display styles */
 
@@ -640,6 +652,12 @@ div .bibResourceSidebar { display:none; }
 .illform label { float:right; }
 
 .illform fieldset label { float:none; }
+
+.indexList a {text-decoration:none; font-size:1.1em;}
+
+.indexList dt, .indexList li {margin-top:1em;}
+
+.indexList li {list-style-type:none;}
 
 .itemSelect { width:50em; }
 
