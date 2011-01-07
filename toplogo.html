@@ -4,7 +4,16 @@
 
 <!--[if IE 7]><link rel="stylesheet" type="text/css" href="/screens/ie.css" ><![endif]-->
 
-<script type="text/javascript" src="/screens/jquery.js"></script>
+<script type="text/javascript" src="/screens/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
+
+	$('#searchtype').change(function(){
+    	$("#exampleText").load("screens/" + this.value + ".inc");
+	});
+});
+</script>
 
 <script type="text/javascript">
 
