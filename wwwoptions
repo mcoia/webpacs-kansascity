@@ -313,7 +313,9 @@ IMAGE_MATTYPEi=/screens/i_cassette.gif
 IMAGE_MATTYPEj=/screens/i_audiodisc.gif
 IMAGE_MATTYPEk=/screens/i_art.gif
 IMAGE_MATTYPEm=/screens/i_computerfile.gif
-IMAGE_MATTYPEr=/screens/i_chess.gif
+IMAGE_MATTYPEr=/screens/i_chess.gif
+
+IMAGE_MATTYPEs=/screens/i_ebook.gif
 IMAGE_MATTYPE2=/screens/i_ebook.gif
 
 # CONTENT LINKING AND OTHER RESOURCES OPTIONS
