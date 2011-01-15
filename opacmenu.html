@@ -1,192 +1,144 @@
-<!-- WILO opacmenu.html updated 090219 ahd -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-
-<title>WILO /WILO Catalog</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="wilo_styles.css" />
-<script language="JavaScript">
-<!--
-
-function SymError()
-{
-  return true;
-}
-
-window.onerror = SymError;
-
-//-->
-</script>
-
-<script type="text/javascript">
-
-var numGraphics = 4;	// <=== Adjust the number of image files here
-var theGraphics = null;
-
-function getRandomNumber(n) {
-  //Returns a pseudorandom number between 1 and n
-  today = new Date();
-  var bigNum = today.getSeconds() * today.getTime() * Math.sqrt(today.getMinutes());
-  var randNum = (bigNum % n) + 1;
-  return Math.floor(randNum);
-}
-
-function initArray(n) {
-  this.length = n;
-  for(var i = 1; i <= n; i++) {
-  this[i] = "";
-  }
-  return this;
-}
-
-function initGraphics() {
-  theGraphics = new initArray(numGraphics);
-  for(i = 1; i <= numGraphics; i++) {
-  if (i < 10) {
-    theGraphics[i] = "rotate0" + i + ".gif" }
-  else {
-    theGraphics[i] = "rotate0" + i + ".gif"}
-  }
-}
-
-function getRandomGraphic() {
-  var theIndex = getRandomNumber(numGraphics);
-  return theGraphics[theIndex];
-}
-
-function getGraphic() {
-  var theGraphicName = getRandomGraphic();
-  theGraphic = "/screens/" + theGraphicName
-  return theGraphic
-}
-
-function loadGraphic() {
-  theGraphic = getGraphic();
-  var theTag = '<img src="' + theGraphic + '"';
-  theTag += ' border="0"';
-  theTag += ' alt="CLICnet: Did you know?">';
-  document.write(theTag);
-}
-initGraphics();
-
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-
-function MM_findObj(n, d) { //v4.0
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && document.getElementById) x=document.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-
-
-function getHelp(ref)
-{
-	var id = document.clicSearch.searchtype.options[ref].value;
-	var source = "/screens/" + id + "help.html";
-	document.getElementById('Help').src = source;
-}
-
-function preloadImages() {
-  var d=document; if(d.images){ if(!d.p) d.p=new Array();
-    var i,j=d.p.length,a=preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.p[j]=new Image; d.p[j++].src=a[i];}}
-}
-</script>
-
-</head>
-<body onLoad="document.clicSearch.searcharg.focus()" "preloadImages('rotate01.jpg','rotate02.jpg','rotate03.jpg',,'rotate04.jpg''')">
-
-<!--{toplogo}-->
-<!--{patron}-->
-<!--{logout}-->
-<br />
-<br />
-<center>
-<!-- Begin Tabs-->
-<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
-<tr valign="bottom"> 
-<td height="30" colspan="13" noWrap valign="bottom">
-<img src="/screens/tabs_search_on.png" width="124" height="30" border="0" style="margin-bottom:-3px;">
-<a href="/search~S0/X"><img src="/screens/tabs_advanced.png" width="124" height="30" border="0" style="margin-bottom:-3px;"></a>
-<a href="/search~S0/b"><img src="/screens/tabs_reserves.png" width="124" height="30" border="0" style="margin-bottom:-3px;"></a>
-<a href="/screens/other_catalogs.html"><img src="/screens/tabs_otherlibraries.png" width="124" height="30" border="0" style="margin-bottom:-3px;"></a>
-<a href="http://mobius.umsystem.edu/search"><img src="/screens/tabs_mobius.png" width="124" height="30" border="0" style="margin-bottom:-3px;"></a>
-</td>
-</tr>
-<tr width="90%" height="30px" align="center" border="0" bgcolor="#336633">
-<td style="width:10%; border:0px; font-size:80%; font-weight:bold; text-align:center;">
-<span class="pageSubmenuText">Keyword</span></td><td style=" width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:8%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/t" style="color:#FFFFCC">Title</a></td><td style=" width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:8%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/a" style="color:#FFFFCC">Author</a></td><td style=" width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:8%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/d" style="color:#FFFFCC">Subject</a></td><td style=" width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:10%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/s" style="color:#FFFFCC">Journal Title</a></td><td style="width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:15%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/m" style="color:#FFFFCC">Children's Subject</a></td><td style=" width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:10%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/n" style="color:#FFFFCC">Numbers</a></td>
-</tr>
-</table>
-<!--Beginning main page content-->
-<table width="90%" border="1" bordercolor="#336633" align="center" cellpadding="10">
-<tr><td>
-<form name="clicSearch" target="_parent" action="/search/X" method="GET">
-<form class="unpadded" action="/search/a?a" name="search" id="search">
-Enter the <b>WORD(S) or PHRASE(S)</b> you want to search:<br /><br />
-<select name="searchtype" id="searchtype" onChange="getHelp(this.selectedIndex)">
-<option value="X" selected="selected"> Keyword</option>
-<option value="t"> Title</option>
-<option value="a"> Author</option>
-<option value="d"> Subject</option>
-<option value="s"> Journal Title</option>
-<option value="c"> LC Call #</option>
-<option value="g"> Govt Doc #</option>
-<option value="i"> ISBN/ISSN</option>
-<!--<option value="y"> Resource Name</option> -->
-<!--<option value="m"> Resource Subject</option> -->
-
-</select>
-<!--{nosort}-->
-<input name="searcharg" size="60" />
-<!--{scope}-->
-
-<input name="cmdSubmit" type="Submit" value="Search" align="right" />
-</form>
-<br />
-<table width="90%" border="0" align="left">
-                      <tr> 
-                        <td colspan="2" rowspan="2" class="pageHelpTextArea">
-						<iframe src="/screens/Yhelp.html" width="75%" height="125" name="Help" id="Help" frameborder="0" scrolling="no">                        
-						</iframe>
-						</td></tr>
-						</table>
-					
-
-<div style="text-align: right; vertical-align: bottom; margin-right: 10px; right: 4px;">
-<img src="/screens/WILO_research_label.png" height="49" width="129" alt="Ask a Reference Librarian" border="0" /></div>
-<!--End of main page content-->
-</td>
-</tr>
-</table>
-
-<!--End the main content table-->
-<br />
-<br />
-<!--{botlogo}-->
-<br />
-</center>
-</body>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 09 June 2010 -->
+<head>
+<title>WILO Catalog</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
+<script type="text/javascript">/* <![CDATA[ */
+function iiiSearchValidate() {
+	try{
+	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
+		return false;
+		}
+	}
+	catch(err) {
+	}
+  return true;
+}
+
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+if(iiiSearchValidate()){
+obj.submit();
+}
+}
+/* ]]> */
+</script>
+</head>
+<body>
+<!--{toplogo}-->
+
+<div class="pageContentInner mainSearch">
+
+<h1 class="accessibleAddInfo">Search</h1>
+
+<div id="accessibleForm" class="form1Part">
+<div class="browseSearchtool">
+
+<h2>Search the Library Catalog</h2>
+
+<form action="/search/" method="get" name="search" id="search">
+
+
+<input type="hidden" id="iiiFormHandle_1">
+<input type="hidden" name="searchtype" value="X" />
+
+
+<div class="formEntryArea">
+
+<input type="hidden" name="SORT" id="SORT" value="D" />
+<label for="searcharg" class="accessibleAddInfo">Search term</label>
+<input maxlength="75" name="searcharg" size="55" value="Enter keyword or phrase here..." onkeydown="if(this.value == 'Enter keyword or phrase here...') this.value='';" onclick="if(this.value == 'Enter keyword or phrase here...') this.value=''" onblur="if(this.value == '') this.value='Enter keyword or phrase here...'">
+<label for="scope" class="accessibleAddInfo">Location</label>
+<span class="nowrap formButtonArea">
+
+<script language="javascript">
+
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+obj.submit();
+}
+</script>
+<input type="hidden" id="iiiFormHandle_1"/>
+
+<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
+
+</span>
+</div><!-- formEntryArea -->
+<!--</fieldset> optional-->
+</form>
+</div><!-- browseSearchtool -->
+</div><!-- form1Part -->
+
+<div class="mainMenuContent">
+
+<!--<div class="mainMenuContentLeft">
+<img src="/screens/main.jpg" height=249 width=355>
+</div>-->
+<!--
+<div class="mainMenuContentRight">
+<ul>
+<li><a href="/patroninfo"><img border="0" src="/screens/mylibraryaccount.jpg" /></a></li>
+<li style="margin: 0 10px;"><a class="floorPlan" href="#roomMap"><img border="0" src="/screens/lrcfloorplan.jpg" /></a></li>
+<li style="margin-right: 10px;"><a href="http://erc.qmu.ac.uk/db"><img border="0" src="/screens/edatabases.jpg" /></a></li>
+<li><a href="http://atoz.ebsco.com/titles.asp?Id=queen&sid=240949474&TabID=2"><img border="0" src="/screens/ejournals.jpg" /></a></li>
+</ul>
+</div>
+-->
+</div>
+
+</div><!--pageContentInner -->
+
+<div id="advancedMenu">
+	<h2>Search Options</h2>
+
+	<ul>
+		<li><a href="/search/X">Advanced Search</a></li>
+		<li><a href="/search/q">Author and Title</a></li>
+		<li><a href="/search/d">Subject</a></li>
+		<li><a href="/search/a">Author</a></li>
+		<li><a href="/search/t">Title</a></li>
+		<li><a href="/search/s">Journal Title</a></li>
+		<li><a href="/search/m">Children's Subject</a></li>
+		<li><a href="/search/n">Numbers</a></li>
+		<li><a href="/search/b">Course Reserves</a></li>
+		
+	</ul>
+</div>
+
+<div style="clear:both"></div>
+</div><!-- fullPage -->
+</div><!-- min-height -->
+<span id="botlogo" style="display: block; margin-top:12em; margin-bottom:4em; padding:0;>
+<ul>
+    <li class="first"><a href="/search~S1">Avila University</a></li>
+    <li><a href="/search~S10">Kansas City Art Institute</a></li>
+    <li><a href="/search~S2">MCC Blue River</a></li>
+    <li><a href="/search~S3">MCC Longview</a></li>
+    <li><a href="/search~S5">MCC Maple Woods</a></li>
+</ul>
+<ul>
+    <li class="first"><a href="/search~S4">MCC Penn Valley</a></li>
+    <li><a href="/search~S7">Midwestern Baptist Theological Seminary</a></li>
+    <li><a href="/search~S8">Rockhurst University</a></li>
+    <li><a href="/search~S9">Saint Paul School of Theology</a></li>
+    <li><a href="/search~S6">William Jewell College</a></li>
+</ul>
+</span>
+
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].searcharg.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
 </html>
+<!--this is customized <screens/mainmenu.html>-->
+

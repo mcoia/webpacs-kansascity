@@ -1,204 +1,131 @@
-<!-- WILO redesign srchhelp_a.html updated 080707 lee -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>WILO /WILO Catalog</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="wilo_styles.css" />
-</head>
-<!--{advancedsearchbody}-->
-<!--{toplogo}-->
-<!--{patron}-->
-<!--{logout}-->
-<br />
-<br />
-<center>
-<!-- Begin Tabs-->
-<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
-<tr valign="bottom"> 
-<td height="30" colspan="13" noWrap valign="bottom">
-<a href="/search~S0/Y"><img src="/screens/tabs_search.png" width="124" height="30" border="0" style="margin-bottom:-3px;"></a>
-<img src="/screens/tabs_advanced_on.png" width="124" height="30" border="0" style="margin-bottom:-3px;">
-<a href="/search~S0/b"><img src="/screens/tabs_reserves.png" width="124" height="30" border="0" style="margin-bottom:-3px;"></a>
-<a href="/screens/other_catalogs.html"><img src="/screens/tabs_otherlibraries.png" width="124" height="30" border="0" style="margin-bottom:-3px;"></a>
-<a href="http://mobius.umsystem.edu/search"><img src="/screens/tabs_mobius.png" width="124" height="30" border="0" style="margin-bottom:-3px;"></a></td>
-</tr>
-<tr width="90%" height="30px" align="center" border="0" bgcolor="#336633">
-<td style="width:10%; border:0px; font-size:80%; font-weight:bold; text-align:center;">
-<span class="pageSubmenuText">Keyword</span></td><td style=" width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:8%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/t" style="color:#FFFFCC">Title</a></td><td style=" width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:8%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/a" style="color:#FFFFCC">Author</a></td><td style=" width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:8%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/d" style="color:#FFFFCC">Subject</a></td><td style=" width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:10%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/s" style="color:#FFFFCC">Journal Title</a></td><td style="width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:15%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/m" style="color:#FFFFCC">Children's Subject</a></td><td style=" width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:10%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/n" style="color:#ffffcc;">Numbers</span></td>
-</tr>
-</table>
-<!--Beginning main page content-->
-<!--{msg}-->
-<!--{spellcheck}-->
-<table width="90%" border="1" bordercolor="#336633" align="center" cellpadding="10">
-<tr><td>
-<!-- begin advanced keyword search form -->
-<form action="#" enctype="multipart/form-data: charset=UTF-8" name="search" id="search" onsubmit="return submitSearch(this, location.pathname, false);">
-<b>ADVANCED KEYWORD SEARCH</b>
-
-<table style="border:0px; width:90%; font-size:10px; text-align:left; padding:2px;
-font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;" cellspacing="2" summary="srchhelp_X">
-<tr> 
-<td colspan="3" class="pageMainArea">
-<!-- Note: if you use a character set other than utf-8, change the charset declaration in the enctype attribute below accordingly. -->
-<!--{advancedsearchformbegin}-->
-Please fill in the form, select limits, and click Search, or try a 
-<a href="/search~S0/Y" style="text-decoration:none; font-size:10px; font-weight:bold;">Keyword Search</a>. &nbsp; &nbsp;<br /><br />
-<!--{advancedsearch}-->
-<input type="submit" value="Search" name="submit" /
-</td>
-</tr>
-</table>
-<br />
-
-<input type="hidden" name="startLimit" />
-<div class="avs">
-
-<b>Limit to:</b>
-<table cellpadding="5">
-<tr><td>
-<table border="0" style="font-size:11px;">
-<tr><td style="width:100px;">Other Format:</td><td align="right"><select name="m" style="width:300px;">
-<option value="">ANY</option>
-<option value="a">BOOK/JOURNAL</option>
-<option value="2">EBOOK</option>
-<option value="g">VIDEO/FILM</option>
-<option value="i">SPOKEN AUDIO</option>
-<option value="j">MUSIC AUDIO</option>
-<option value="m">SOFTWARE</option>
-<option value="c">MUSIC SCORE</option>
-<option value="e">MAP/ATLAS</option>
-<option value="b">ARCHIVAL MATL</option>
-<option value="k">PICTURE</option>
-<option value="o">KIT</option>
-<option value="p">MIXED MATERIAL</option>
-<option value="r">3-D OBJECT</option>
-<option value="d">MS MUSIC</option>
-<option value="f">MS MAP</option>
-<option value="t">MS PRINT</option>
-<option value="h">MICROFORM</option>
-</select>
-</td>
-</tr></table>
-
-<table border="0" style="font-size:11px;">
-<tr><td style="width:100px;">Language of Work:</td><td align="right"><select name="l" style="width:300px;">
-<option value="">ANY</option>
-<option value="arc">Aramaic</option>
-<option value="eng">English</option>
-<option value="fre">French</option>
-<option value="ger">German</option>
-<option value="gre">Greek</option>
-<option value="heb">Hebrew</option>
-<option value="ita">Italian</option>
-<option value="jpn">Japanese</option>
-<option value="kor">Korean</option>
-<option value="lat">Latin</option>
-<option value="pol">Polish</option>
-<option value="por">Portuguese</option>
-<option value="rus">Russian</option>
-<option value="spa">Spanish</option>
-<option value="vie">Vietnamese</option>
-<option value="wel">Welsh</option>
-</select>
-</td>
-</tr></table>
-
-<table border="0" style="font-size:11px;">
-<tr><td style="width:100px;">Publisher Name Keywords:</td><td align="right"><input style="width:300px;" type="text" name="p" value="">
-</td>
-</tr></table>
-
-<table border="0" style="font-size:11px;">
-<tr><td style="width:100px;">Year of Publication:</td><td align="right">After <input style="width:80px;" type="text" name="Da" value=""> and Before <input style="width:80px;" type="text" name="Db" value="">
-</td></tr></table>
-
-</td>
-<td valign="top">
-<table border="0" style="font-size:11px;">
-<tr><td style="width:100px;">Specific Library Location:</td><td align="right"><select name="b" style="width:300px;">
-<option value="">ANY</option>
-<option value="avb  "> Avila College Library</option>
-<option value="7jc  "> KCAI Circulating Collection</option>
-<option value="7jr  "> KCAI Reference Collection</option>
-<option value="7jm  "> KCAI Media Collection</option>
-<option value="mbb  "> MCC-Blue River, Blsp</option>
-<option value="mib  "> MCC-Blue River, Indep.</option>
-<option value="mlb  "> MCC-Longview</option>
-<option value="mpb  "> MCC-Penn Valley</option>
-<option value="mob  "> MCC-PV Pioneer Campus</option>
-<option value="mtb  "> MCC-Business & Tech Coll.</option>
-<option value="mwb  "> MCC-Maple Woods</option>
-<option value="bta  "> MBTS General Collection</option>
-<option value="btr  "> MBTS Reference Collection</option>
-<option value="btj  "> MBTS Periodical Collection</option>
-<option value="bta  "> MBTS A/V & Mixed Media</option>
-<option value="bts  "> MBTS Baptist Archive</option>
-<option value="btw  "> MBTS Low Vision Materials</option>
-<option value="bte  "> MBTS Electronic Resource</option>
-<option value="btz  "> MBTS Music Dept.</option>
-<option value="btf  "> MBTS Rawlings Collection</option>
-<option value="btp  "> MBTS Unpublished Material</option>
-<option value="btt  "> MBTS Special Collections</option>
-<option value="btc  "> MBTS Spurgeon Collection</option>
-<option value="rgb  "> RU Main Collection</option>
-<option value="rgr  "> RU Reference Collection</option>
-<option value="rgd  "> RU Government Documents</option>
-<option value="rgj  "> RU Journal Collection</option>
-<option value="rga  "> RU Archives</option>
-<option value="rgs  "> RU Storage</option>
-<option value="sdb  "> St. Paul</option>
-<option value="wjc  "> WJ Curriculum Lab</option>
-<option value="wjp  "> WJ Partee Center</option>
-<option value="wjy  "> WJ Juvenile Collection</option>
-<option value="wjd  "> WJ Government Documents</option>
-<option value="wjr  "> WJ Reference Collection</option>
-<option value="wjb  "> WJ General Collection</option>
-<option value="wjs  "> WJ Special Collections</option>
-<option value="wjj  "> WJ Journal Collection</option>
-</select>
-</td>
-</tr></table>
-
-<table style="font-size:11px;">
-<tr><td style="width:100px;">Library:</td>
-<td align="right"><select name="searchscope" style="width:300px;">
-<option value="1"> Avila University</option> <option value="10"> KC Art Institute</option> <option value="2"> MCC-Blue River</option> <option value="3"> MCC-Longview</option> <option value="5"> MCC-Maple Woods</option> <option value="4"> MCC-Penn Valley</option> <option value="7"> Midwestern Baptist</option> <option value="8"> Rockhurst University</option> <option value="9"> Saint Paul</option> <option value="6"> William Jewell</option> <option value="11" selected="selected"> WILO Catalog</option> </select>
-</td></tr>
-</table>
-
-<table style="font-size:11px;">
-<tr><td style="width:100px;">Search and Sort:</td>
-<td align="right"><select name="SORT" style="width:300px;">
-<option value="D" selected="selected">sorted by relevance</option>
-<option value="DX">sorted by date</option>
-<option value="AX">sorted by title</option></select>
-</td></tr>
-</table>
-
-</td></tr>
-</table>
-
-</div>
-</form>
-<!-- end advanced keyword search form -->
-
-</td>
-</tr>
-</table>
-
-</center>
-<br />
-<br/>
-<!--{botlogo}-->
-<br />
-</body>
-</html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 29 Apr 2010 -->
+<head>
+<title>WILO Catalog - Advanced Keyword Search</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+<!--{advancedsearchbody}-->
+<!--{toplogo}-->
+<div class="pageContentInner">
+<h1 class="pageHeader">Advanced Keyword Search</h1>
+<!--{msg}-->
+<!--{spellcheck}-->
+
+<div class="form3Part" id="accessibleForm">
+
+<!--{advancedsearchformbegin}-->
+<div class="form3PartAbove">
+<fieldset>
+<legend>Enter Search Terms</legend>
+<div class="formEntryArea">
+<!--{advancedsearch}-->
+</div>
+<input type="hidden" name="startLimit" >
+<div class="formEntryArea">
+<!--{availlim}-->
+</div>
+<div class="formButtonArea">
+<span>
+<!--{advancedsubmit}-->
+</span>
+<span>
+<!--{clearform}-->
+</span>
+</div>
+</fieldset>
+</div> <!-- form3PartAbove -->
+
+<div class="form3PartBelow">
+
+<div class="formLeft advancedSearch">
+<fieldset>
+<legend>Add Limits (Optional)</legend>
+
+<!-- Optional Scopes section
+<div class="formEntryArea">
+<table><tr>
+<td><label for="searchscope">Location:</label></td>
+<td> -->
+ <!--{scope}-->
+<!--</td></tr></table>
+</div> -->
+
+<div class="formEntryArea">
+<!--{branch}-->
+</div>
+<div class="formEntryArea">
+<!--{mattype}-->
+</div>
+<div class="formEntryArea">
+<!--{lang}-->
+</div>
+<div class="formEntryArea">
+<!--{DOCDATE}-->
+</div>
+<div class="formEntryArea">
+<!--{publish}-->
+</div>
+<div class="formEntryArea" id="form3PartAdvLimitSort">
+<!--{sort}-->
+</div>
+</fieldset>
+<input type="hidden" name="endLimit" >
+</div> <!-- formLeft -->
+
+<div class="formRight">
+<table class="tipsTable">
+<caption>Search Tips</caption>
+<!-- <tr valign="top"><th align="left">Adjacency</th>
+<td>Multiple words are searched together as one phrase.<br>
+<span style="text-decoration:underline">Example</span> : world health organization</td>
+</tr> -->
+<tr><th>Wildcards</th>
+<td>
+Words may be right-hand truncated using an asterisk ('*') in place of other characters. <!-- Use '**' for open-ended truncation of over five characters.--> The '*' wildcard may also be embedded in a search string. You may use '?' to replace a single character anywhere within a word.<br>
+<span style="text-decoration:underline">Examples</span> : environment* polic*, wom?n</td>
+</tr>
+<tr><th>Boolean Operators</th>
+<td>
+Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br>
+<span style="text-decoration:underline">Example</span> : stocks and bonds<br>
+<span style="text-decoration:underline">Example</span> : (alaska or canada) and (adventure and not vacation)</td>
+</tr>
+<tr><th>Field limits</th>
+<td>
+A field limit causes the system to search only the specified field for the specified word(s).</td>
+</tr>
+<tr>
+<th>Grouping</th>
+<td>
+Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
+</td>
+</tr>
+<!-- <tr valign="top"><th align="left">Proximity Operators</th>
+<td>
+Use "near" to specify words close to each other, in any order.<br>
+<span style="text-decoration:underline">Example</span> : california near university</td>
+</tr> -->
+</table>
+</div> <!-- formRight -->
+<div class="clear"></div>
+</div> <!-- form3PartBelow -->
+
+<!--{advancedsearchformend}-->
+</div> <!-- form3Part -->
+
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
+</body>
+</html>
