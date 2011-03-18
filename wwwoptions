@@ -321,3 +321,7 @@ IMAGE_MATTYPE2=/screens/i_ebook.gif
 # CONTENT LINKING AND OTHER RESOURCES OPTIONS
 BIBIMAGE=http://www.librarything.com/devkey/4f5b96d61b456f6672be9d60b184dad9/small/isbn/%s|I|http://www.librarything.com/devkey/4f5b96d61b456f6672be9d60b184dad9/large/isbn/%s
 BIBIMAGE_TEXT=Book Jacket
+
+# ENCORE
+
+PATFEEDS_MT=205.227.91.124
