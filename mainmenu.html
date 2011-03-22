@@ -50,12 +50,14 @@ obj.submit();
 
 
 <div class="formEntryArea">
-
+<div class="inlineBlock">
 <input type="hidden" name="SORT" id="SORT" value="D" />
 <label for="searcharg" class="accessibleAddInfo">Search term</label>
 <input maxlength="75" name="searcharg" size="55" value="Enter keyword or phrase here..." onkeydown="if(this.value == 'Enter keyword or phrase here...') this.value='';" onclick="if(this.value == 'Enter keyword or phrase here...') this.value=''" onblur="if(this.value == '') this.value='Enter keyword or phrase here...'">
+</div>
+<div class="inlineBlock">
 <label for="scope" class="accessibleAddInfo">Location</label>
-<span class="nowrap formButtonArea">
+<span class="formButtonArea">
 
 <script language="javascript">
 
@@ -71,6 +73,7 @@ obj.submit();
 <a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
 
 </span>
+</div>
 </div><!-- formEntryArea -->
 <!--</fieldset> optional-->
 </form>
