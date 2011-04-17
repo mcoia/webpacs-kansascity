@@ -134,6 +134,10 @@ MARC=yes
 WEBPUDEF=true
 TABLEPARAM_BIB_LINKS=width="99%" border="3" cellspacing="1" id="linkeddocs" onClick="pageTracker._trackEvent('Bib Display Links','Clicks','Linked Documents Table');"
 
+TABLEPARAM_BIB_DETAIL=id="bib_detail" width="100%" border="0" cellspacing="0" cellpadding="0"
+
+TABLEPARAM_BIB_ITEMS=id="bib_items" width="100%" border="0" cellspacing="0" cellpadding="0"
+
 
 # REQUESTING OPTIONS
 # BIBREQUEST=
