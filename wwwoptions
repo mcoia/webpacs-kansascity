@@ -343,3 +343,8 @@ ICON_MYLISTS_SAVE_TO_LIST=<img src="/screens/b_savelist.gif" alt="Save to My Lis
 ICON_MYLISTS_BRIEF=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
 ICON_BACK_TO_MYLISTS=<img src="/screens/b_backmylists.gif" alt="Back to My Lists" border="0" />
 ICON_MYLISTS_RECORD=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
+ICON_PAT_DELETE_ALL=<img src="/screens/b_deleteall.gif" alt="Delete All" border="0" />
+ICON_PAT_DELETE_MARKED=<img src="/screens/b_deletemarked.gif" alt="Delete Marked" border="0" />
+ICON_SAVEALLPAGE=<img src="/screens/b_saveall.gif" alt="Save All" border="0" />
+ICON_SAVEMARKED=<img src="/screens/b_savemarked.gif" alt="Save Marked" border="0" />
+

@@ -381,7 +381,7 @@ div#instructions { font-size: 90%; font-style: italic; }
 .patDisplay { }
 .patDisplayFunc {}
 .patDisplayInfo { }
-.patFunc { border-top: 2px solid #668466; border-spacing: 0; width: 100%; }
+.patFunc { border-top: 0; border-spacing: 0; width: 100%; }
 .patFunc td { padding: 5px; font-size: 90%; border-bottom: 1px solid #EBF5FC; }
 .patFuncArea { border: 2px solid #668466; margin: 3px; }
 .patFuncArea form { display: inline; }
@@ -539,5 +539,7 @@ Contents of  resourcelist token in webbridge forms
 #info {top:500}
 
 #sms {font-size:70%}
+
+#smsfeatures {text-align:center; margin-top:1em;}
 
 
