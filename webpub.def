@@ -84,16 +84,23 @@ b|z||-6|Cont'd By||b|
 b|q||-6|Related To||b|
 b|d||-26|LC SUBJECT||b|
 b|j|600.7||||b|
-b|j|600.[2-8]|-26|Keyword||b|
+b|j|600.[2-6]|-26|Keyword||b|
+b|j|600.8|-26|Keyword||b|
 b|j|610.7||||b|
-b|j|610.[2-8]|-26|Keyword||b|
+b|j|610.[2-6]|-26|Keyword||b|
+b|j|610.8|-26|Keyword||b|
 b|j|611.[2-8]|-26|Keyword||b|
 b|j|630.7||||b|
-b|j|630.[2-8]|-26|Keyword||b|
+b|j|630.[2-6]|-26|Keyword||b|
+b|j|630.8|-26|Keyword||b|
 b|j|650 7||||b|
-b|j|650.[2-8]|-26|Keyword||b|
+b|j|650.[2-6]|-26|Keyword||b|
+b|j|650[1-9]7|-26|Keyword||b|
+b|j|650.8|-26|Keyword||b|
 b|j|651 7||||b|
-b|j|651.[2-8]|-26|Keyword||b|
+b|j|651.[2-6]|-26|Keyword||b|
+b|j|651[1-9]7|-26|Keyword||b|
+b|j|651.8|-26|Keyword||b|
 b|j|655.7|-26|Genre/Form||b|
 b|j|65[3-8]|-26|Keyword||b|
 b|j|69[0-9]|-26|Keyword||b|
