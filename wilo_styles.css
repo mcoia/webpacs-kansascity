@@ -381,7 +381,7 @@ div#instructions { font-size: 90%; font-style: italic; }
 .patDisplay { }
 .patDisplayFunc {}
 .patDisplayInfo { }
-.patFunc { border-top: 2px solid #668466; border-spacing: 0; width: 100%; }
+.patFunc { border-top: 0; border-spacing: 0; width: 100%; }
 .patFunc td { padding: 5px; font-size: 90%; border-bottom: 1px solid #EBF5FC; }
 .patFuncArea { border: 2px solid #668466; margin: 3px; }
 .patFuncArea form { display: inline; }
@@ -510,5 +510,36 @@ Contents of  resourcelist token in webbridge forms
 .wbresourcelist { }
 #HEADER# token in WBHEADERTEXT wwwoption
 .wbsubheading { } */
+
+.libraryh3lp {margin:1em; width:320px; float:left; clear:none;}
+#logoAndChat{width:570px; height:234px; margin-left:auto; margin-right:auto;}
+#logo {float:left; width:190px; margin: 74px 10px;}
+
+/* Texting Feature */
+
+
+#info, #sms {
+       border:1px solid #36647b;
+       position:absolute;
+       top:455;
+       left:455; 
+       z-index:1000;
+       background:#fff;
+       padding:10px;
+       margin:10px;
+       background:#efefcf;
+       width:45em;
+}
+
+#sms .eg {
+       font-style:italic;
+       font-size:80%;
+}
+
+#info {top:500}
+
+#sms {font-size:70%}
+
+#smsfeatures {text-align:center; margin-top:1em;}
 
 
