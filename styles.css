@@ -685,6 +685,13 @@ div .bibResourceSidebar { display:none; }
 
 .loginForm fieldset { border: 3px solid #E7E7E7; color:#444444; margin:0 6px 0 6px; }
 
+.mainColumn {
+    float: right;
+    margin-left: 1%;
+    padding: 1%;
+    width: 71%;
+}
+
 .mainMenuContent { margin-top:45px; text-align:left; }
 
 .mainMenuContentLeft { float:left; margin-right:15px; margin-left:30px; }
@@ -921,6 +928,29 @@ table.reserveBibs { margin:25px 0 20px 15%; width:65%; }
 .reviewDate { color:#767C70; }
 
 .reviewLinks { font-size:1em; margin:0 0 4px 8px; }
+
+.rightColumn {   
+    float: right;
+    margin: 2% 1.75%;
+    padding: 0.5%;
+    width: 19%;}
+    
+.searchOptions {   
+    float: right;
+    margin: 2% 1.75%;
+    padding: 0.5%;
+    width: 19%;
+    background-color: #f2f2f2;
+    border: 1px solid #d3d3d3;
+    margin:50px 0 0;
+    padding: .5em 2em;
+    width: 15%}
+    
+.searchOptions h2 {border-bottom: 1px dashed; font-size: 1.1667em;}
+
+.searchOptions li {list-style-type:none; text-indent:-2em; padding:4px 0}
+
+.searchOptions a {text-decoration:none; color:#444444;}
 
 #bibDisplayBody .reviewLinks a:link, #bibDisplayBody .reviewLinks a:active, #bibDisplayBody .reviewLinks a:visited  { color:#369699; }
 

@@ -6,6 +6,7 @@
 <title>WILO Catalog</title>
 <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<link rel="stylesheet" type="text/css" href="/screens/styles_nocolumn.css">
 <!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
 <script type="text/javascript">/* <![CDATA[ */
 function iiiSearchValidate() {
@@ -32,77 +33,7 @@ obj.submit();
 </head>
 <body>
 <!--{toplogo}-->
-<div class="miscButtons">
-<!--{logout}-->
-</div>
-
-<div class="pageContentInner mainSearch">
-
-<h1 class="accessibleAddInfo">Search</h1>
-
-<div id="accessibleForm" class="form1Part">
-<div class="browseSearchtool">
-
-<h2>Search the Library Catalog</h2>
-
-<form action="/search/" method="get" name="search" id="search">
-
-
-<input type="hidden" id="iiiFormHandle_1">
-<input type="hidden" name="searchtype" value="X" />
-
-
-<div class="formEntryArea">
-<div class="inlineBlock">
-<input type="hidden" name="SORT" id="SORT" value="D" />
-<label for="searcharg" class="accessibleAddInfo">Search term</label>
-<input maxlength="75" name="searcharg" size="55" value="Enter keyword or phrase here..." onkeydown="if(this.value == 'Enter keyword or phrase here...') this.value='';" onclick="if(this.value == 'Enter keyword or phrase here...') this.value=''" onblur="if(this.value == '') this.value='Enter keyword or phrase here...'">
-</div>
-<div class="inlineBlock">
-<label for="scope" class="accessibleAddInfo">Location</label>
-<span class="nowrap formButtonArea">
-
-<script language="javascript">
-
-function iiiDoSubmit_1()
-{
-//getFormHandleForm() is in common.js
-var obj = getFormHandleForm(1);
-obj.submit();
-}
-</script>
-<input type="hidden" id="iiiFormHandle_1"/>
-
-<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
-
-</span>
-</div>
-</div><!-- formEntryArea -->
-<!--</fieldset> optional-->
-</form>
-</div><!-- browseSearchtool -->
-</div><!-- form1Part -->
-
-<div class="mainMenuContent">
-
-<!--<div class="mainMenuContentLeft">
-<img src="/screens/main.jpg" height=249 width=355>
-</div>-->
-<!--
-<div class="mainMenuContentRight">
-<ul>
-<li><a href="/patroninfo"><img border="0" src="/screens/mylibraryaccount.jpg" /></a></li>
-<li style="margin: 0 10px;"><a class="floorPlan" href="#roomMap"><img border="0" src="/screens/lrcfloorplan.jpg" /></a></li>
-<li style="margin-right: 10px;"><a href="http://erc.qmu.ac.uk/db"><img border="0" src="/screens/edatabases.jpg" /></a></li>
-<li><a href="http://atoz.ebsco.com/titles.asp?Id=queen&sid=240949474&TabID=2"><img border="0" src="/screens/ejournals.jpg" /></a></li>
-</ul>
-</div>
--->
-</div>
-
-</div><!--pageContentInner -->
-
-<div id="advancedMenu">
+<div class="searchOptions">
 	<h2>Search Options</h2>
 
 	<ul>
@@ -118,33 +49,70 @@ obj.submit();
 		
 	</ul>
 </div>
+<div class="miscButtons">
+<!--{logout}-->
+</div>
+
+<div class="pageContentInner mainSearch">
+
+<h1 class="accessibleAddInfo">Search</h1>
+
+<div id="accessibleForm" class="form1Part">
+<div class="browseSearchtool">
+<form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
+
+
+<input type="hidden" id="iiiFormHandle_1">
+
+<!-- Optional legend:
+<fieldset>
+<legend>Type the search term you want to find.</legend>-->
+<div class="formEntryArea">
+<div class="inlineBlock">
+<label for="searchtype" class="accessibleAddInfo">Search type</label>
+<select name="searchtype" id="searchtype">
+<option value="X" selected="selected">Keyword</option>
+<option value="t">Title</option>
+<option value="a">Author</option>
+<option value="d">Subject (LC)</option>
+<option value="m">Subject (Children's)</option>
+<option value="s">Journals, Magazines, Newspapers</option>
+</select>
+<!--{nosort}-->
+<label for="searcharg" class="accessibleAddInfo">Search term</label>
+<input maxlength="75" name="searcharg" size="20" >
+</div>
+<div class="inlineBlock">
+<label for="scope" class="accessibleAddInfo">Location</label>
+<!--{scope}-->
+<span class="formButtonArea">
+
+  <!--{submit}-->
+
+<input type="hidden" id="iiiFormHandle_1"/>
+<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
+
+<input type="submit" class="submitHidden">
+
+</span>
+</div>
+</div><!-- formEntryArea -->
+<!--</fieldset> optional-->
+</form>
+</div><!-- browseSearchtool -->
+</div><!-- form1Part -->
+
+
+
+</div><!--pageContentInner -->
 
 <div style="clear:both"></div>
-</div><!-- fullPage -->
-</div><!-- min-height -->
-<span id="botlogo" style="display: block; margin-top:12em; margin-bottom:4em; padding:0;>
-<ul>
-    <li class="first"><a href="/search~S1">Avila University</a></li>
-    <li><a href="/search~S10">Kansas City Art Institute</a></li>
-    <li><a href="/search~S2">MCC Blue River</a></li>
-    <li><a href="/search~S3">MCC Longview</a></li>
-    <li><a href="/search~S5">MCC Maple Woods</a></li>
-</ul>
-<ul>
-    <li class="first"><a href="/search~S4">MCC Penn Valley</a></li>
-    <li><a href="/search~S7">Midwestern Baptist Theological Seminary</a></li>
-    <li><a href="/search~S8">Rockhurst University</a></li>
-    <li><a href="/search~S9">Saint Paul School of Theology</a></li>
-    <li><a href="/search~S6">William Jewell College</a></li>
-</ul>
-</span>
 
-
+<!--{botlogo}-->
 <script type="text/javascript"><!--//--><![CDATA[//><!--
 try { document.forms[0].searcharg.focus(); }
 catch(err) {}
 //--><!]]></script>
 </body>
 </html>
-<!--this is customized <screens/mainmenu.html>-->
 
