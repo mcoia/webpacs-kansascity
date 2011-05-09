@@ -109,7 +109,7 @@ a:hover  { color: #7C14B8; }
 
 /* Section 2 */
 /* named styles listed in alphabetical order */
-#accessibleForm { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; }
+#accessibleForm { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;}
 #accessibleForm fieldset { border: 1px solid #CCCCCC; }
 #accessibleForm form legend { font-weight:bold; }
 #accessibleForm h2 { margin-left:15px; margin-bottom:0; margin-top:12px }
@@ -703,6 +703,8 @@ div .bibResourceSidebar { display:none; }
 .mainMenuContentRight li { margin:0px 0px 15px 0px; }
 
 .mainSearch { text-align:center; padding-top: 36px;}
+
+.mainSearch #accessibleForm {margin-bottom:18em;}
 
 .mainSearch .form1Part { float:none; margin-top:36px; text-align:center; }
 
