@@ -689,7 +689,7 @@ div .bibResourceSidebar { display:none; }
     float: right;
     margin-left: 1%;
     padding: 1%;
-    width: 71%;
+    width: 69%;
 }
 
 .mainMenuContent { margin-top:45px; text-align:left; }
@@ -935,7 +935,7 @@ table.reserveBibs { margin:25px 0 20px 15%; width:65%; }
     float: right;
     margin: 2% 1.75%;
     padding: 0.5%;
-    width: 19%;}
+    width: 21%;}
     
 .searchOptions {   
     float: right;
