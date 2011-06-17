@@ -540,6 +540,10 @@ Contents of  resourcelist token in webbridge forms
 
 #sms {font-size:70%}
 
-#smsfeatures {text-align:center; margin-top:1em;}
+#smsfeatures {float:left; width:123px; clear:none; margin-top:55px;}
+
+#funStuff {width:350px; margin-left:auto;margin-right:auto;}
+
+#qr {float:left; width:150px; clear:none;}
 
 
