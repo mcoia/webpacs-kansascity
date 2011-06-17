@@ -17,7 +17,7 @@ function getInfo(){
     }
     
     if(title.length > 40){
-      qrtitle = title.substring(0,24) + "...";
+      qrtitle = title.substring(0,39) + "...";
     }else{
       qrtitle = title;
     }
