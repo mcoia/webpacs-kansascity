@@ -546,4 +546,23 @@ Contents of  resourcelist token in webbridge forms
 
 #qr {float:left; width:150px; clear:none;}
 
+.rightColumn {   
+    float: right;
+    margin: 2% 1.75%;
+    padding: 0.5%;
+    width: 21%;
+}
+
+.mainColumn {
+    float: right;
+    margin-left: 1%;
+    padding: 1%;
+    width: 69%;
+    clear:none;
+}
+
+#opacmenu .rightColumn {display:none;}
+#opacmenu .mainColumn {float:none;margin-left:inherit;padding:inherit;width:100%;}
+
+
 
