@@ -293,7 +293,7 @@ BUT_SHOWSIM=/screens/showsimilar.gif
 # ICON_READING_HISTORY=<img src="/screens/b_read_history.gif" alt="Reading History" border="0" />
 # ICON_READING_HISTORY_OPTIN=<img src="/screens/b_read_history_optin.gif" alt="Opt In" border="0" />
 # ICON_READING_HISTORY_OPTOUT=<img src="/screens/b_read_history_optout.gif" alt="Opt Out" border="0" />
-ICON_RECORDLINK=<div class="bibRecordLink" id="recordnum">&nbsp; Persistent record link: http://wilo.mobius.umsystem.edu%s</div>
+ICON_RECORDLINK=<div class="bibRecordLink"><img src="/screens/permlink.gif" alt=""/>&nbsp;<a id="recordnum" href="%s">Persistent link for bookmarking</a></div>
 
 ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="">&nbsp;Most relevant titles&nbsp;
 ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="">&nbsp;Highly relevant titles&nbsp;
