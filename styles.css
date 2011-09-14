@@ -754,7 +754,7 @@ div .bibResourceSidebar { display:none; }
 
 .pageContentInner > br { display:none; }
 
-.pageContentInner {float: left; margin:15px 20px 0; width: 75%; }
+.pageContentInner {float: left; width:100%;}
 
 .pageContentInner h1{ font-size:1.3333em; }
 
@@ -997,7 +997,9 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .searchNav .navLeft {float: left;}
 
-.searchNav. .navRight {float: right;}
+.searchNav .navLeft ul {margin-top:0.4em;}
+
+.searchNav .navRight {float: right;}
 
 .searchNav .navLeft ul li {margin-left: 0; margin-right:2em;}
 
@@ -1005,7 +1007,7 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .searchNav ul li {display: inline; margin-left:2em;}
 
-#searchNavMenu { margin:0; text-align:right; padding:.5em 0;}
+#searchNavMenu { margin-bottom:1px; text-align:right;}
 
 .searchNavBut { vertical-align:bottom; margin:3px 10px 3px 5px; }
 
