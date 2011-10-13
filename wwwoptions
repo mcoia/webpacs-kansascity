@@ -1,327 +1,671 @@
-##############################################################################
-#
-# 		WWWOptions file for: WILO / MOBWE
-#             		Updated: 090608 ahd    LIVE
-#
-##############################################################################
-#
-# WARNING! Please ensure that you are the *only* user modifying this file.
-# If more than one user simultaneously edits this file...
-# YOUR CHANGES MAY NOT BE SAVED!
-#
-##############################################################################
-
-##############################################################################
-
-# ADVANCED SERVER OPTIONS
-ASSEARCH=3
-# AVS_RELEVANCE_FORMAT=
-AVS_TAG=XYZ
-
-# BOOKINGS OPTIONS
-BOOK_CAL_AVAIL=black
-BOOK_CAL_BKGRD=white
-BOOK_CAL_CLOSE=red
-BOOK_CAL_UNAVAIL=blue
-BOOKINGS=no|false|true
-#BOOKINGS_DAY_LEGEND[scope][_lang]
-#BOOKINGS_MONTH_LEGEND[scope][_lang]
-#BOOKINGS_REPEAT[_P#]
-CANCEL_BOOKINGS=false
-
-# CONTENT LINKING AND OTHER RESOURCES OPTIONS
-#BIBIMAGE
-# BIBIMAGE=http://
-# EBADDRESS=http://
-# WEBADDRESS=http://www.amazon.com/exec/obidos/search-handle-url/index=books&field-keywords=%s&bq=1/|l|http://www.amazon.com/exec/obidos/ASIN/%s|<IMG SRC="/screens/amazon.gif">|REVIEW|20
-
-# EBOOKS OPTONS
-# NETLI_ASK=
-# NETLI_LINK=
-# NETLI856TEXT=
-
-# ELECTRONIC RESOURCES MANAGEMENT OPTIONS
-
-# FEATURED LISTS
-# FEATURED_LIST=
-
-# GENERAL DISPLAY AND BEHAVIOR OPTIONS
-BOTLOGO=@screens/botlogo.html
+##############################################################################
+
+#
+
+# 		WWWOptions file for: WILO / MOBWE
+
+#             		Updated: 090608 ahd    LIVE
+
+#
+
+##############################################################################
+
+#
+
+# WARNING! Please ensure that you are the *only* user modifying this file.
+
+# If more than one user simultaneously edits this file...
+
+# YOUR CHANGES MAY NOT BE SAVED!
+
+#
+
+##############################################################################
+
+
+
+##############################################################################
+
+
+INSERTTAG_HTML=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en">
+
+
+
+# ADVANCED SERVER OPTIONS
+
+ASSEARCH=3
+
+# AVS_RELEVANCE_FORMAT=
+
+AVS_TAG=XYZ
+
+
+
+# BOOKINGS OPTIONS
+
+BOOK_CAL_AVAIL=black
+
+BOOK_CAL_BKGRD=white
+
+BOOK_CAL_CLOSE=red
+
+BOOK_CAL_UNAVAIL=blue
+
+BOOKINGS=no|false|true
+
+#BOOKINGS_DAY_LEGEND[scope][_lang]
+
+#BOOKINGS_MONTH_LEGEND[scope][_lang]
+
+#BOOKINGS_REPEAT[_P#]
+
+CANCEL_BOOKINGS=false
+
+
+
+# CONTENT LINKING AND OTHER RESOURCES OPTIONS
+
+#BIBIMAGE
+
+# BIBIMAGE=http://
+
+# EBADDRESS=http://
+
+# WEBADDRESS=http://www.amazon.com/exec/obidos/search-handle-url/index=books&field-keywords=%s&bq=1/|l|http://www.amazon.com/exec/obidos/ASIN/%s|<IMG SRC="/screens/amazon.gif">|REVIEW|20
+
+
+
+# EBOOKS OPTONS
+
+# NETLI_ASK=
+
+# NETLI_LINK=
+
+# NETLI856TEXT=
+
+
+
+# ELECTRONIC RESOURCES MANAGEMENT OPTIONS
+
+
+
+# FEATURED LISTS
+
+# FEATURED_LIST=
+
+
+
+# GENERAL DISPLAY AND BEHAVIOR OPTIONS
+
+BOTLOGO=@screens/botlogo.html
+
 BOTLOGO6=@screens/botlogo_s10.html
 
-BOTLOGO7=@screens/botlogo_s7.html
-CLEAR_PRIVATE_INFO=true
-FORM_FOCUS=TRUE
-SSLPORT=80:443:wilo.missouri.edu:wilo.mobius.umsystem.edu|2082:444:wilo.missouri.edu:wilo.mobius.umsystem.edu
-#SSLPORT=80:443|2082:7878
-STARTOVER=/search
-STATGROUP=login
-STYLESHEET=/screens/wilo_styles.css
-TIMEOUT=300;URL=/search/
-TOPLOGO=@screens/toplogo.html
-TOPLOGO1=@screens/toplogo_s1.html
-TOPLOGO2=@screens/toplogo_s2.html
-TOPLOGO3=@screens/toplogo_s3.html
-TOPLOGO4=@screens/toplogo_s4.html
-TOPLOGO5=@screens/toplogo_s5.html
-TOPLOGO6=@screens/toplogo_s6.html
-TOPLOGO7=@screens/toplogo_s7.html
-TOPLOGO8=@screens/toplogo_s8.html
-TOPLOGO9=@screens/toplogo_s9.html
-TOPLOGO10=@screens/toplogo_s10.html
-XSTARTOVER=/search
-
-# GENERAL AND PHRASE SEARCHING OPTIONS
-DROP_DOWN=Ytadmsecgfi
-#Original FRAMEURL was set to 35;10
-FRAMEURL=20
-KEYWORD_COLOR=Y|all|green
-NOSEARCH=nubz
-OFFER_HISTORY=yes
-SUPPRESS_OPTION=email,ILL_home
-# SUPPRESS_YEAR=
-
-# HOLDINGS OPTIONS
-SHOWOREC=no_cdate
-SORT_ITEMS=true
-# SUPPRESS_CARD=F
-
-# INN-REACH OPTIONS
-INNREACH=<br><img src="/screens/b_mobius.gif"border=0 alt="Search MOBIUS Union Catalog">@mobius.umsystem.edu(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;m=h;o=o;s=s;t=t)
-
-# LANGUAGE HANDLING OPTIONS
-
-# MEDIA MANAGEMENT OPTIONS
-ERESERVE=[0123456789]
-ERESERVE_PRINT_MESSAGE=Article has been sent to the system printer.
-
-# MY MILLENNIUM OPTIONS
-# FORCE_COOKIE=
-LOGGEDIN_MSG=You are logged in %s as %s
-MY_WEBPAC=F,T
-NO_REVERIFY=acq,book,ecr,req,ill
-PREF_SEARCHES=10|Y
-PREFTEXT=Save Search?
-# READING_HISTORY_DELETE=T
-
-# PATRON RECORD OPTIONS
-FRAMEURL_PAT=50
-# NEWPIN_MSG=
-PATRON_FIELDS=n/a|a/a|t/t
-PATRON_MSG=y|Message from the library:
-# PATRON_NOTICES=a,z
-PSTARTOVER=/search
-# TABLEPARAM_PATDISP=<main>|<info>|<buttons>
-# TABLEPARAM_PATDISP=WIDTH=100% BORDER= 1px solid #000000 BGCOLOR=#DBE4C5|BGCOLOR=#DBE4C5|BGCOLOR=#DBE4C5
-# TABLEPARAM_PATFUNC=WIDTH=100% BORDER= 1px solid #000000 BGCOLOR=#DBE4C5|BGCOLOR=#DBE4C5|BGCOLOR=#DBE4C5
-# TIME_POPUP=
-
-# RECORD DISPLAY OPTIONS
-# BIBLOC=
-# DISPLAY_856=
-# FIELD_LABEL_VERBATIM=
-HOLDINGS_POS=atpe
-HOTLINK=o^001,i^020
-#HYPERTEXT_980
-ITEM_NOTE=true
-# ITEMOUT_MSG=Due
-LINK856TEXT=Link to:
-# LOC=
-MARC=yes
-#RECORDFRAME <do not use>
-# SIMILAR_ITEMS=
-# TABLEPARAM_BIB_TOC=
-WEBPUDEF=true
+BOTLOGO7=@screens/botlogo_s7.html
+
+CLEAR_PRIVATE_INFO=true
+
+FORM_FOCUS=TRUE
+
+SSLPORT=80:443:wilo.missouri.edu:wilo.mobius.umsystem.edu|2082:444:wilo.missouri.edu:wilo.mobius.umsystem.edu
+
+#SSLPORT=80:443|2082:7878
+
+STARTOVER=/search
+
+STATGROUP=login
+
+STYLESHEET=/screens/wilo_styles.css
+
+TIMEOUT=300;URL=/search/
+
+TOPLOGO=@screens/toplogo.html
+
+TOPLOGO1=@screens/toplogo_s1.html
+
+TOPLOGO2=@screens/toplogo_s2.html
+
+TOPLOGO3=@screens/toplogo_s3.html
+
+TOPLOGO4=@screens/toplogo_s4.html
+
+TOPLOGO5=@screens/toplogo_s5.html
+
+TOPLOGO6=@screens/toplogo_s6.html
+
+TOPLOGO7=@screens/toplogo_s7.html
+
+TOPLOGO8=@screens/toplogo_s8.html
+
+TOPLOGO9=@screens/toplogo_s9.html
+
+TOPLOGO10=@screens/toplogo_s10.html
+
+XSTARTOVER=/search
+
+
+
+# GENERAL AND PHRASE SEARCHING OPTIONS
+
+DROP_DOWN=Ytadmsecgfi
+
+#Original FRAMEURL was set to 35;10
+
+FRAMEURL=0
+
+KEYWORD_COLOR=Y|all|green
+
+NOSEARCH=nubz
+
+OFFER_HISTORY=yes
+
+SUPPRESS_OPTION=email,ILL_home
+
+# SUPPRESS_YEAR=
+
+
+
+# HOLDINGS OPTIONS
+
+SHOWOREC=no_cdate
+
+SORT_ITEMS=true
+
+# SUPPRESS_CARD=F
+
+
+
+# INN-REACH OPTIONS
+
+INNREACH=<br><img src="/screens/b_mobius.gif"border=0 alt="Search MOBIUS Union Catalog">@mobius.umsystem.edu(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;m=h;o=o;s=s;t=t)
+
+
+
+# LANGUAGE HANDLING OPTIONS
+
+
+
+# MEDIA MANAGEMENT OPTIONS
+
+ERESERVE=[0123456789]
+
+ERESERVE_PRINT_MESSAGE=Article has been sent to the system printer.
+
+
+
+# MY MILLENNIUM OPTIONS
+
+# FORCE_COOKIE=
+
+LOGGEDIN_MSG=You are logged in %s as %s
+
+MY_WEBPAC=F,T
+
+NO_REVERIFY=acq,book,ecr,req,ill
+
+PREF_SEARCHES=10|Y
+
+PREFTEXT=Save Search?
+
+# READING_HISTORY_DELETE=T
+
+
+
+# PATRON RECORD OPTIONS
+
+FRAMEURL_PAT=50
+
+# NEWPIN_MSG=
+
+PATRON_FIELDS=n/a|a/a|t/t
+
+PATRON_MSG=y|Message from the library:
+
+# PATRON_NOTICES=a,z
+
+PSTARTOVER=/search
+
+# TABLEPARAM_PATDISP=<main>|<info>|<buttons>
+
+# TABLEPARAM_PATDISP=WIDTH=100% BORDER= 1px solid #000000 BGCOLOR=#DBE4C5|BGCOLOR=#DBE4C5|BGCOLOR=#DBE4C5
+
+# TABLEPARAM_PATFUNC=WIDTH=100% BORDER= 1px solid #000000 BGCOLOR=#DBE4C5|BGCOLOR=#DBE4C5|BGCOLOR=#DBE4C5
+
+# TIME_POPUP=
+
+
+
+# RECORD DISPLAY OPTIONS
+
+# BIBLOC=
+
+# DISPLAY_856=
+
+# FIELD_LABEL_VERBATIM=
+
+HOLDINGS_POS=atpe
+
+HOTLINK=o^001,i^020
+
+#HYPERTEXT_980
+
+ITEM_NOTE=true
+
+# ITEMOUT_MSG=Due
+
+LINK856TEXT=Link to:
+
+# LOC=
+
+MARC=yes
+
+#RECORDFRAME <do not use>
+
+# SIMILAR_ITEMS=
+
+# TABLEPARAM_BIB_TOC=
+
+WEBPUDEF=true
+
 TABLEPARAM_BIB_LINKS=width="99%" border="3" cellspacing="1" id="linkeddocs" onClick="pageTracker._trackEvent('Bib Display Links','Clicks','Linked Documents Table');"
 
+TABLEPARAM_BIB_DETAIL=id="bib_detail" width="100%" border="0" cellspacing="0" cellpadding="0"
 
-# REQUESTING OPTIONS
-# BIBREQUEST=
-REQUEST=Request this title|denyiflocalavail|ask|yes
-# REQUEST_ARTICLE_IFCHKIN=
-REQUEST_INSTRUCTION=Any special instructions? 
-# REQUEST_MULTI=
-
-# RESERVES OPTIONS
-# RSRV_FORMAT=
-# RSRV_HEADER=
-# TABLEPARAM_RSRV_BIBS=
-
-# SAVING AND EXPORTING OPTIONS
-BRIEF_EXPORT=a|t:245|p|e
-BRIEF_EXPORT_CHKIN=h|n
-EMAILOP=WILO Exported Records|exporter|
-EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,endnote,procite
-# XRECTYPE=boireRECTYPE=boi
-
-# SCOPING OPTIONS
-#Do NOT use LOCKSCOPE
-LOCKSCOPE=no
-#RESET_SCOPE controls whether a scope is reset when the user
-#clicks 'New Search'
-RESET_SCOPE=no
-
-# SEARCH RESULTS OPTIONS
-# AUTHMSG=
-#AUTHMSG_SR
-BODYPARAM=BGCOLOR=#ffffff LINK=#0000FF VLINK=#0000FF
-BRIEF_a=TU
-# BRIEF_t=P
-BROWSE_a=111/andce|100/aqbcd
-BROWSE_d=611/andcvxyz
-BROWSE_t=130/adfghklmnoprs
-# DISPLAY_245=
-DISPLAY_856=z3
-DISPLAY_SRCH=t
-#EXTENDED
-# HEADING_LENGTH=
-# IMAGE_MATTYPEx=
-# INDEX_EXT=atsdmwoicegfh
-MEDIA=2
-# REDIRECT_7XX=
-# SORT_BROWSE=
-# SORT_MEDIA=
-#SUPPRESS_YEAR
-TABLEPARAM_BRIEFCIT=true|border="0" cellpadding="3" width="100%"
-TABLEPARAM_BROWSE=WIDTH=100%|BORDER=0
-
-# STAFF OPTIONS
-# RECORDFRAME=
-STAFF=22,54,65,83,144
-STAFF_LOGGEDIN_MESSAGE=You are STAFF logged into %s s %s
-
-# WEB ACCESS MANAGEMENT OPTIONS
-
-# WEBBRIDGE OPTIONS
-
-# WEBPAC PRO
-BROWSE50=true
-INNOVATIVE_FOOTER=center|b
-SPELLCHECK=<span class="spellcheckTool">Did you mean %a?</span> %s
-SPELLCHECK1=<span class="spellcheckTool">Did you mean %a?</span> %s
-SPELLCHECK2=<span class="spellcheckTool">Did you mean %a?</span> %s
-SPELLCHECK3=<span class="spellcheckTool">Did you mean %a?</span> %s
-SPELLCHECK4=<span class="spellcheckTool">Did you mean %a?</span> %s
-SPELLCHECK5=<span class="spellcheckTool">Did you mean %a?</span> %s
-SPELLCHECK6=<span class="spellcheckTool">Did you mean %a?</span> %s
-SPELLCHECK7=<span class="spellcheckTool">Did you mean %a?</span> %s
-SPELLCHECK8=<span class="spellcheckTool">Did you mean %a?</span> %s
-SPELLCHECK9=<span class="spellcheckTool">Did you mean %a?</span> %s
-SPELLCHECK10=<span class="spellcheckTool">Did you mean %a?</span> %s
-
-# Z39.50 OPTIONS
-Z39BROADCAST=Z39.50 Broadcast Search:Please select the Z39.50 servers to which you want to send your search
-# Z39IPOK=
-# Z39MULTI=500:100
-Z39PORT=2082:211
-# Z39RESTRICT=
-# Z39SEARCH=
-
-# OPTION BUTTONS
-BUT_ANOTHER=/screens/b_another.gif 
-BUT_BIBEXPORT=/screens/bibexport.gif
-BUT_BOOKING=/screens/bookitem.gif
-BUT_BRIEF=/screens/b_brief.gif
-BUT_CARDFORM_BOX=/screens/boxdisp.gif
-BUT_CARDFORM_LIN=/screens/linedisp.gif 
-BUT_CLEAR_MARKED=/screens/b_clrsaves.gif
-BUT_CLOSEWN=/screens/ret2cat.gif
-BUT_EMAIL=/screens/email.gif
-# BUT_ENCYCPD=/screens/b_encycpd.gif
-BUT_EXPORT_VIEW_SAVES=/screens/b_exportlist.gif
-BUT_EXTENDED=/screens/b_extended.gif
-BUT_FULL_TEXT=/sceens/b_fulltxt.gif
-BUT_ILL_CANCEL=/screens/illcan.gif
-BUT_ILL_FORM=/screens/illform.gif
-BUT_ILL_HOME=/screens/illano.gif
-BUT_LIMAVAIL=/screens/limavail.gif 
-BUT_LIMIT=/screens/b_limit.gif
-BUT_LOGOUT=/screens/logout.gif
-BUT_MARC_DISPLAY=/screens/b_marcdisp.gif
-BUT_MODIFY=/screens/modify.gif
-BUT_NEWSRCH=/screens/b_newsrch.gif
-BUT_NEXTPAGE=/screens/b_nextpage.gif
-BUT_NEXTREC=/screens/b_nextrec.gif
-BUT_PLOGOUT=/screens/ret2pat.gif
-BUT_PREVPAGE=/screens/b_prevpage.gif
-BUT_PREVREC=/screens/b_prevrec.gif
-BUT_PREVSCRN=/screens/prevscrn.gif
-BUT_PUBLIC=/screens/public.gif
-BUT_REGULAR_DISPLAY=/screens/b_regdisp.gif
-BUT_REQUEST=/screens/b_request.gif
-BUT_RET2CAT=/screens/ret2cat.gif
-BUT_RET2CRS=/screens/ret2crs.gif
-BUT_RET2FEAT=/screens/b_ret2feat.gif
-BUT_RET2PREC=/screens/ret2pat.gif
-BUT_RETHOME=/screens/b_rethome.gif
-BUT_RTRNTB=/screens/b_rtrntb.gif
-BUT_SHOWSIM=/screens/showsimilar.gif
-BUT_STAFF=/screens/staff.gif
-BUT_STARTOVER=/screens/startover.gif
-BUT_UNLIMAVAIL=/screens/unlimavail.gif
-BUT_WORDSRCH=/screens/b_wordsrch.gif
-BUT_Z39_ANOTHER=/screens/z39ano.gif
-BUT_Z39_REQUEST=/screens/request.gif
-BUT_Z39SEARCH=/screens/z39srch.gif
-BUT_VIEW_SAVES=/screens/b_bookcart.gif
-BUT_MODIFY=/screens/modify.gif
-BUT_SHOWSIM=/screens/showsimilar.gif
-
-# ICONS
-#ICON_856LINK	Search Results Options
-#ICON_962LINK 	Search Results Options
-#ICON_BIB_PAGING_CAPTION 	Record Display Options
-#ICON_BIB_PAGING_NEXT 	Record Display Options
-#ICON_BIB_PAGING_PREV 	Record Display Options
-#ICON_BIB_RESOURCE_DETAILS  	Electronic Resource Management Options
-#ICON_BOOKCART
-# ICON_CANCEL=<img src="/screens/b_cancel.gif" alt="Cancel" border="0" />
-# ICON_FULLRECORD<img src="/screens/b_viewfull.gif" alt="View Full Record" border="0" />
-# ICON_LOCATEINRESULTS=<INPUT TYPE="image" NAME="jumpto" SRC="screens/locateinresults.gif" alt="Locate in reults" border="0" />
-#ICON_OK 	Ecommerce Options
-#ICON_PAGING_CAPTION 	Search Results Options 
-# ICON_PAT_DELETE_ALL=<img src="/screens/b_removeall.gif" alt="Delete All" border="0" />
-# ICON_PAT_DELETE_MARKED=<img src="/screens/b_patdeleteselect.gif" alt="Delete Selected" border="0" />
-#ICON_PAY 	Ecommerce Options
-#ICON_PAY_CLEAR_ALL 	Ecommerce Options
-#ICON_PAY_SELECT_ALL 	Ecommerce Options
-#ICON_PRINT 	Ecommerce Options
-# ICON_READING_HISTORY=<img src="/screens/b_read_history.gif" alt="Reading History" border="0" />
-# ICON_READING_HISTORY_OPTIN=<img src="/screens/b_read_history_optin.gif" alt="Opt In" border="0" />
-# ICON_READING_HISTORY_OPTOUT=<img src="/screens/b_read_history_optout.gif" alt="Opt Out" border="0" />
-ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="">&nbsp;Most relevant titles&nbsp;
-ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="">&nbsp;Highly relevant titles&nbsp;
-ICON_REL_GROUP_3=<img src="/screens/relevance3.gif" alt="">&nbsp;Very relevant titles&nbsp;
-ICON_REL_GROUP_4=<img src="/screens/relevance2.gif" alt="">&nbsp;Relevant titles&nbsp;
-ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="">&nbsp;Other relevant titles&nbsp;
-ICON_REQUEST=/screens/<img src="/screens/b_request.gif" alt="Request" border="0" />
-#ICON_RESOURCE_RECORD 	Electronic Resource Management Options
-ICON_SAVEALLPAGE=<input type="image" src="/screens/save_all_page.gif" alt="Save all on page" border="0" />
-ICON_SAVEMARKED=<input type="image" src="/screens/savemarked.gif" alt="Save record" border="0" />
-ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore">more ;</span>
-ICON_SPELLCHECK_SEARCH=<input type="button" value="Search" onClick="spell_submit(this);">
-ICON_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit" border="0" />
-# ICON_VIEW_ADDITIONAL_ITEMS=<img src="/screens/b_viewadditional.gif" alt="View Additional Items" border="0" />
-
-# MATTYPE IMAGES
-IMAGE_MATTYPE-=/screens/i_book.gif
-IMAGE_MATTYPEa=/screens/i_book.gif
-IMAGE_MATTYPEc=/screens/i_musicscore.gif
-IMAGE_MATTYPEe=/screens/i_globe.gif
-IMAGE_MATTYPEg=/screens/i_movie.gif
-IMAGE_MATTYPEi=/screens/i_cassette.gif
-IMAGE_MATTYPEj=/screens/i_audiodisc.gif
-IMAGE_MATTYPEk=/screens/i_art.gif
-IMAGE_MATTYPEm=/screens/i_computerfile.gif
+TABLEPARAM_BIB_ITEMS=id="bib_items" width="100%" border="0" cellspacing="0" cellpadding="0"
+
+
+# REQUESTING OPTIONS
+
+# BIBREQUEST=
+
+REQUEST=Request this title|denyiflocalavail|ask|yes
+
+# REQUEST_ARTICLE_IFCHKIN=
+
+REQUEST_INSTRUCTION=Any special instructions? 
+
+# REQUEST_MULTI=
+
+
+
+# RESERVES OPTIONS
+
+# RSRV_FORMAT=
+
+# RSRV_HEADER=
+
+# TABLEPARAM_RSRV_BIBS=
+
+
+
+# SAVING AND EXPORTING OPTIONS
+
+BRIEF_EXPORT=a|t:245|p|e
+
+BRIEF_EXPORT_CHKIN=h|n
+
+EMAILOP=WILO Exported Records|exporter|
+
+EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,endnote,procite
+
+# XRECTYPE=boireRECTYPE=boi
+
+
+
+# SCOPING OPTIONS
+
+#Do NOT use LOCKSCOPE
+
+LOCKSCOPE=no
+
+#RESET_SCOPE controls whether a scope is reset when the user
+
+#clicks 'New Search'
+
+RESET_SCOPE=no
+
+
+
+# SEARCH RESULTS OPTIONS
+
+# AUTHMSG=
+
+#AUTHMSG_SR
+
+BODYPARAM=BGCOLOR=#ffffff LINK=#0000FF VLINK=#0000FF onload="getInfo()"
+
+BRIEF_a=TU
+
+# BRIEF_t=P
+
+BROWSE_a=111/andce|100/aqbcd
+
+BROWSE_d=611/andcvxyz
+
+BROWSE_t=130/adfghklmnoprs
+
+# DISPLAY_245=
+
+DISPLAY_856=z3|f
+
+DISPLAY_SRCH=t
+
+#EXTENDED
+
+# HEADING_LENGTH=
+
+# IMAGE_MATTYPEx=
+
+INDEX_EXT=ecgf
+
+MEDIA=2
+
+# REDIRECT_7XX=
+
+# SORT_BROWSE=
+
+# SORT_MEDIA=
+
+#SUPPRESS_YEAR
+
+TABLEPARAM_BRIEFCIT=true|border="0" cellpadding="3" width="100%"
+
+TABLEPARAM_BROWSE=WIDTH=100%|BORDER=0
+
+
+
+# STAFF OPTIONS
+
+# RECORDFRAME=
+
+STAFF=22,54,65,83,144
+
+STAFF_LOGGEDIN_MESSAGE=You are STAFF logged into %s s %s
+
+
+
+# WEB ACCESS MANAGEMENT OPTIONS
+
+
+
+# WEBBRIDGE OPTIONS
+
+
+
+# WEBPAC PRO
+
+BROWSE50=true
+
+INNOVATIVE_FOOTER=center|b
+
+SPELLCHECK=<span class="spellcheckTool">Did you mean %a?</span> %s
+
+SPELLCHECK1=<span class="spellcheckTool">Did you mean %a?</span> %s
+
+SPELLCHECK2=<span class="spellcheckTool">Did you mean %a?</span> %s
+
+SPELLCHECK3=<span class="spellcheckTool">Did you mean %a?</span> %s
+
+SPELLCHECK4=<span class="spellcheckTool">Did you mean %a?</span> %s
+
+SPELLCHECK5=<span class="spellcheckTool">Did you mean %a?</span> %s
+
+SPELLCHECK6=<span class="spellcheckTool">Did you mean %a?</span> %s
+
+SPELLCHECK7=<span class="spellcheckTool">Did you mean %a?</span> %s
+
+SPELLCHECK8=<span class="spellcheckTool">Did you mean %a?</span> %s
+
+SPELLCHECK9=<span class="spellcheckTool">Did you mean %a?</span> %s
+
+SPELLCHECK10=<span class="spellcheckTool">Did you mean %a?</span> %s
+
+
+
+# Z39.50 OPTIONS
+
+Z39BROADCAST=Z39.50 Broadcast Search:Please select the Z39.50 servers to which you want to send your search
+
+# Z39IPOK=
+
+# Z39MULTI=500:100
+
+Z39PORT=2082:211
+
+# Z39RESTRICT=
+
+# Z39SEARCH=
+
+
+
+# OPTION BUTTONS
+
+BUT_ANOTHER=/screens/b_another.gif 
+
+BUT_BIBEXPORT=/screens/bibexport.gif
+
+BUT_BOOKING=/screens/bookitem.gif
+
+BUT_BRIEF=/screens/b_brief.gif
+
+BUT_CARDFORM_BOX=/screens/boxdisp.gif
+
+BUT_CARDFORM_LIN=/screens/linedisp.gif 
+
+BUT_CLEAR_MARKED=/screens/b_clrsaves.gif
+
+BUT_CLOSEWN=/screens/ret2cat.gif
+
+BUT_EMAIL=/screens/email.gif
+
+# BUT_ENCYCPD=/screens/b_encycpd.gif
+
+BUT_EXPORT_VIEW_SAVES=/screens/b_exportlist.gif
+
+BUT_EXTENDED=/screens/b_extended.gif
+
+BUT_FULL_TEXT=/sceens/b_fulltxt.gif
+
+BUT_ILL_CANCEL=/screens/illcan.gif
+
+BUT_ILL_FORM=/screens/illform.gif
+
+BUT_ILL_HOME=/screens/illano.gif
+
+BUT_LIMAVAIL=/screens/limavail.gif 
+
+BUT_LIMIT=/screens/b_limit.gif
+
+BUT_LOGOUT=/screens/logout.gif
+
+BUT_MARC_DISPLAY=/screens/b_marcdisp.gif
+
+BUT_MODIFY=/screens/modify.gif
+
+BUT_NEWSRCH=/screens/b_newsrch.gif
+
+BUT_NEXTPAGE=/screens/b_nextpage.gif
+
+BUT_NEXTREC=/screens/b_nextrec.gif
+
+BUT_PLOGOUT=/screens/ret2pat.gif
+
+BUT_PREVPAGE=/screens/b_prevpage.gif
+
+BUT_PREVREC=/screens/b_prevrec.gif
+
+BUT_PREVSCRN=/screens/prevscrn.gif
+
+BUT_PUBLIC=/screens/public.gif
+
+BUT_REGULAR_DISPLAY=/screens/b_regdisp.gif
+
+BUT_REQUEST=/screens/b_request.gif
+
+BUT_RET2CAT=/screens/ret2cat.gif
+
+BUT_RET2CRS=/screens/ret2crs.gif
+
+BUT_RET2FEAT=/screens/b_ret2feat.gif
+
+BUT_RET2PREC=/screens/ret2pat.gif
+
+BUT_RETHOME=/screens/b_rethome.gif
+
+BUT_RTRNTB=/screens/b_rtrntb.gif
+
+BUT_SHOWSIM=/screens/showsimilar.gif
+
+BUT_STAFF=/screens/staff.gif
+
+BUT_STARTOVER=/screens/startover.gif
+
+BUT_UNLIMAVAIL=/screens/unlimavail.gif
+
+BUT_WORDSRCH=/screens/b_wordsrch.gif
+
+BUT_Z39_ANOTHER=/screens/z39ano.gif
+
+BUT_Z39_REQUEST=/screens/request.gif
+
+BUT_Z39SEARCH=/screens/z39srch.gif
+
+BUT_VIEW_SAVES=/screens/b_bookcart.gif
+
+BUT_MODIFY=/screens/modify.gif
+
+BUT_SHOWSIM=/screens/showsimilar.gif
+
+
+
+# ICONS
+
+#ICON_856LINK	Search Results Options
+
+#ICON_962LINK 	Search Results Options
+
+#ICON_BIB_PAGING_CAPTION 	Record Display Options
+
+#ICON_BIB_PAGING_NEXT 	Record Display Options
+
+#ICON_BIB_PAGING_PREV 	Record Display Options
+
+#ICON_BIB_RESOURCE_DETAILS  	Electronic Resource Management Options
+
+#ICON_BOOKCART
+
+# ICON_CANCEL=<img src="/screens/b_cancel.gif" alt="Cancel" border="0" />
+
+# ICON_FULLRECORD<img src="/screens/b_viewfull.gif" alt="View Full Record" border="0" />
+
+# ICON_LOCATEINRESULTS=<INPUT TYPE="image" NAME="jumpto" SRC="screens/locateinresults.gif" alt="Locate in reults" border="0" />
+
+#ICON_OK 	Ecommerce Options
+
+#ICON_PAGING_CAPTION 	Search Results Options 
+
+# ICON_PAT_DELETE_ALL=<img src="/screens/b_removeall.gif" alt="Delete All" border="0" />
+
+# ICON_PAT_DELETE_MARKED=<img src="/screens/b_patdeleteselect.gif" alt="Delete Selected" border="0" />
+
+#ICON_PAY 	Ecommerce Options
+
+#ICON_PAY_CLEAR_ALL 	Ecommerce Options
+
+#ICON_PAY_SELECT_ALL 	Ecommerce Options
+
+#ICON_PRINT 	Ecommerce Options
+
+# ICON_READING_HISTORY=<img src="/screens/b_read_history.gif" alt="Reading History" border="0" />
+
+# ICON_READING_HISTORY_OPTIN=<img src="/screens/b_read_history_optin.gif" alt="Opt In" border="0" />
+
+# ICON_READING_HISTORY_OPTOUT=<img src="/screens/b_read_history_optout.gif" alt="Opt Out" border="0" />
+
+ICON_RECORDLINK=<div class="bibRecordLink"><img src="/screens/permlink.gif" alt=""/>&nbsp;<a id="recordnum" href="%s">Persistent link for bookmarking</a></div>
+
+ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="">&nbsp;Most relevant titles&nbsp;
+
+ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="">&nbsp;Highly relevant titles&nbsp;
+
+ICON_REL_GROUP_3=<img src="/screens/relevance3.gif" alt="">&nbsp;Very relevant titles&nbsp;
+
+ICON_REL_GROUP_4=<img src="/screens/relevance2.gif" alt="">&nbsp;Relevant titles&nbsp;
+
+ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="">&nbsp;Other relevant titles&nbsp;
+
+ICON_REQUEST=/screens/<img src="/screens/b_request.gif" alt="Request" border="0" />
+
+#ICON_RESOURCE_RECORD 	Electronic Resource Management Options
+
+ICON_SAVEALLPAGE=<input type="image" src="/screens/save_all_page.gif" alt="Save all on page" border="0" />
+
+ICON_SAVEMARKED=<input type="image" src="/screens/savemarked.gif" alt="Save record" border="0" />
+
+ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore">more ;</span>
+
+ICON_SPELLCHECK_SEARCH=<input type="button" value="Search" onClick="spell_submit(this);">
+
+ICON_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit" border="0" />
+
+# ICON_VIEW_ADDITIONAL_ITEMS=<img src="/screens/b_viewadditional.gif" alt="View Additional Items" border="0" />
+
+
+
+# MATTYPE IMAGES
+
+IMAGE_MATTYPE-=/screens/i_book.gif
+
+IMAGE_MATTYPEa=/screens/i_book.gif
+
+IMAGE_MATTYPEc=/screens/i_musicscore.gif
+
+IMAGE_MATTYPEe=/screens/i_globe.gif
+
+IMAGE_MATTYPEg=/screens/i_movie.gif
+
+IMAGE_MATTYPEi=/screens/i_cassette.gif
+
+IMAGE_MATTYPEj=/screens/i_audiodisc.gif
+
+IMAGE_MATTYPEk=/screens/i_art.gif
+
+IMAGE_MATTYPEm=/screens/i_computerfile.gif
+
 IMAGE_MATTYPEr=/screens/i_chess.gif
 
-IMAGE_MATTYPEs=/screens/i_ejournal.gif
-IMAGE_MATTYPE2=/screens/i_ebook.gif
-
-# CONTENT LINKING AND OTHER RESOURCES OPTIONS
-BIBIMAGE=http://www.librarything.com/devkey/4f5b96d61b456f6672be9d60b184dad9/small/isbn/%s|I|http://www.librarything.com/devkey/4f5b96d61b456f6672be9d60b184dad9/large/isbn/%s
-BIBIMAGE_TEXT=Book Jacket
+IMAGE_MATTYPEs=/screens/i_ejournal.gif
+
+IMAGE_MATTYPE2=/screens/i_ebook.gif
+
+
+
+# CONTENT LINKING AND OTHER RESOURCES OPTIONS
+
+BIBIMAGE=http://www.librarything.com/devkey/4f5b96d61b456f6672be9d60b184dad9/small/isbn/%s|I|http://www.librarything.com/devkey/4f5b96d61b456f6672be9d60b184dad9/large/isbn/%s
+
+BIBIMAGE_TEXT=Book Jacket
+
 
 # ENCORE
 
 PATFEEDS_MT=205.227.91.124
+
+#My Lists
+MY_LISTS7=t
+ICON_MYLISTS=My Lists
+ICON_MYLISTS_EXPORT=<img src="/screens/b_exportmylist.gif" alt="Export My List" border="0" />
+ICON_MYLISTS_MOVE=<img src="/screens/b_movemarked.gif" alt="Move Marked" border="0" />
+ICON_MYLISTS_REQUEST=<img src="/screens/b_request.gif" alt="Request" border="0" />
+ICON_MYLISTS_REMOVE_DUPLICATES=<img src="/screens/b_duplicates.gif" alt="Remove Duplicates" border="0" />
+ICON_MYLISTS_RENAME=<img src="/screens/b_changename.gif" alt="Change Name" border="0" />
+ICON_MYLISTS_SAVE=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
+ICON_MYLISTS_SAVE_TO_LIST=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
+ICON_MYLISTS_BRIEF=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
+ICON_BACK_TO_MYLISTS=<img src="/screens/b_backmylists.gif" alt="Back to My Lists" border="0" />
+ICON_MYLISTS_RECORD=<img src="/screens/b_savelist.gif" alt="Save to My Lists" border="0" />
+ICON_PAT_DELETE_ALL=<img src="/screens/b_deleteall.gif" alt="Delete All" border="0" />
+ICON_PAT_DELETE_MARKED=<img src="/screens/b_deletemarked.gif" alt="Delete Marked" border="0" />
+ICON_SAVEALLPAGE=<img src="/screens/b_saveall.gif" alt="Save All" border="0" />
+ICON_SAVEMARKED=<img src="/screens/b_savemarked.gif" alt="Save Marked" border="0" />
+
