@@ -511,7 +511,9 @@ Contents of  resourcelist token in webbridge forms
 #HEADER# token in WBHEADERTEXT wwwoption
 .wbsubheading { } */
 
-.libraryh3lp {margin:1em; width:320px; float:left; clear:none;}
+center .libraryh3lp {width:320px;}
+
+.libraryh3lp {margin:1em; float:left; clear:none;}
 #logoAndChat{width:570px; height:234px; margin-left:auto; margin-right:auto;}
 #logo {float:left; width:190px; margin: 74px 10px;}
 
