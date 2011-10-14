@@ -52,7 +52,11 @@
 <!--{artthumb}-->
 <!--{booking}-->
 <!--{holdings}-->
-<div style="margin:5px;">
+<div style="margin:5px;">
+	
+<!-- just a placeholder for the sms form -->
+<div id='sms' style="visibility:hidden;display:none">
+</div> 
 <!--{items}-->
 
 <div id="funStuff">
@@ -60,10 +64,9 @@
 <div id="qr" onclick="getInfo()">
 </div>
 
-<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;">
  <div id=smsfeatures>
 
-    <a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;"><img src="/screens/smsbutton.png" border=0></a>&nbsp;&nbsp;
+    <a href="#here" name="smsbutton" id="smsbutton" onClick="showsms();return false;"><img src="/screens/smsbutton.png" border=0></a>&nbsp;&nbsp;
        
     </div>
 
@@ -94,11 +97,7 @@
         document.getElementById('smsfeatures').style.visibility='hidden';
       }
 
-    </script>
-
-<!-- just a placeholder for the sms form -->
-<div id='sms' style="visibility:hidden;display:none">
-</div> 
+    </script>
 </div>
 <!--{orders}-->
 <div>
