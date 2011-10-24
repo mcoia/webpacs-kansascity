@@ -199,7 +199,7 @@ ERESERVE_PRINT_MESSAGE=Article has been sent to the system printer.
 
 LOGGEDIN_MSG=You are logged in %s as %s
 
-MY_WEBPAC=F,T
+MY_WEBPAC=F,2
 
 NO_REVERIFY=acq,book,ecr,req,ill
 
