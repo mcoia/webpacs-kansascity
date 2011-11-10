@@ -945,6 +945,8 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 .requestResult font { font-size:1.4em; }
 
+.navigationRow .resourceButton {margin:0;}
+
 .resourceButton {text-align:center; margin: 15px auto;}
 
 .resourceButton img {margin:.5em;border:none;}
