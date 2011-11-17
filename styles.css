@@ -180,7 +180,7 @@ a:hover  { color: #7C14B8; }
 
 .bibDisplayContentMore { border-top:1px dashed #767C70; clear:both; margin-bottom:15px; padding-top:20px; }
 
-.bibDisplayItems  { margin:8px 0 0 10%; width:80%; }
+.bibDisplayItems  { margin:12px; }
 
 .bibDisplayItems table, .requestMultiItems table { border:0; border-collapse: collapse; margin-bottom:20px; }
 
@@ -192,7 +192,7 @@ a:hover  { color: #7C14B8; }
 
 .bibDisplayItemsHeader h2, .resourceDisplayLicenseHeader h2 { color:#F7960C; font-size:1.2em; margin:0; }
 
-.bibDisplayItemsMain, .resourceLicenseArea { float:right; width:80%; }
+.bibDisplayItemsMain, .resourceLicenseArea { float:right; width:85%; }
 
 .bibDisplayJacket  { float:left; margin:0 0 1em 5%; display:inline; width:6em; }
 
@@ -321,7 +321,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitClear { clear:both; }
 
-.briefcitDetail, .briefcitAuthDetail  { display:inline; float:left; padding:0px 0 0px 3px; width:65%; }
+.briefcitDetail, .briefcitAuthDetail  { display:inline; float:left; padding:0px 0 0px 30px; width:92%; }
 
 .briefcitAuthDetail { margin-bottom:12px; }
 
@@ -361,7 +361,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitMediaEnd { display:none; }
 
-.briefcitJacket  { float:left; margin:5px 15px; width:80px; display:inline; }
+.briefcitJacket  { float:left; margin:5px 15px; width:80px; display:none; }
 
 .briefcitStatus { font-weight:bold; }
 
