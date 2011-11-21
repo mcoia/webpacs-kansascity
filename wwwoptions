@@ -74,7 +74,7 @@ TOPLOGO8=@screens/toplogo_s8.html
 TOPLOGO9=@screens/toplogo_s9.html
 TOPLOGO10=@screens/toplogo_s10.html
 SUPPRESS_OPTION=STARTOVER,ANOTHER,NEWSRCH
-TIMEOUT=300;URL=/search/
+TIMEOUT=3600;URL=/search/
 TOPLOGO=@screens/toplogo.html
 UPDATECIRC=true
 XSTARTOVER=/search
