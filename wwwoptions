@@ -117,7 +117,7 @@ STATGROUP=login
 
 STYLESHEET=/screens/wilo_styles.css
 
-TIMEOUT=300;URL=/search/
+TIMEOUT=3600;URL=/search/
 
 TOPLOGO=@screens/toplogo.html
 
