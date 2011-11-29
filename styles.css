@@ -1143,7 +1143,7 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 #topMyLibraryHeader { float:left; }
 
-div#searchNavMenu { clear:both; float:right; background:#3B77B6; width:100%; }
+div#searchNavMenu { clear:both; float:right; background:#065798; width:100%; }
 
 /*Special treatment for IE6, using the JS-activated "li.over"*/
 #toplogoMoreNav li.over ul { margin:0; }
