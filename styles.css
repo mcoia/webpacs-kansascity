@@ -551,10 +551,6 @@ div .confirmValue { padding-top:3px; }
 
 div .bibResourceSidebar { display:none; }
 
-.bibDisplayReviews { display:none; }
-
-.bibDisplayPermLink { display:none; }
-
 #bibDisplayBody { background:#FFFFFF; }
 
 .pageContent #bibDisplayBody { background:none; }
@@ -1082,7 +1078,9 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .topLogo { }
 
-.topLogoSmall img { border:0; margin-top:5px; }
+.topLogoSmall {padding: 15px 0;}
+
+.topLogoSmall img { border:0; }
 
 .topLogoSmall a:link, .topLogoSmall a:visited { background:#FFFFFF; padding:0; }
 
