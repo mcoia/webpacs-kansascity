@@ -41,6 +41,7 @@
 <!--Optional INNReach resources.-->
 <!--{innreach}-->
 <!--{relsearch}-->
+<div id="gbsLink" class="resourceButton" ></div>
 </div>
 
 <div class="bibDisplayJacket">
@@ -146,4 +147,41 @@
 
     </script>
        
+ <script>
+       
+
+var ISBN = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData").text();
+ISBN = ISBN.replace(/[^0123456789]/g,"")
+var bibapi_url ="http://books.google.com/books?jscmd=viewapi&bibkeys=" + ISBN;
+// Construct an inline javascript invocation of the remote GBS script
+var bibScriptLine = "%3Cscript src='" + bibapi_url + "' type='text/javascript'%3E%3C/script%3E";
+// Insert the line of script into this page so it returns the _GBSBookInfo object
+document.write(unescape(bibScriptLine));
+</script>
+                    
+<script type='text/javascript'>
+// Resuming the original script, add the link if the lookup succeeded
+// Just look up the first ISBN number, don't worry about any others
+var bibInfo = _GBSBookInfo[ISBN];
+// HTML for images
+gbsPreviewImg = '<img src="/screens/gbs_preview_button.gif" alt="Preview" title="Preview";>'
+if(bibInfo){
+	// Set text and link values depending on viewablity
+	if(bibInfo.preview == "full") {
+                textGBS = "Full text at"; //"Read at Google Books";  
+		linkGBS = bibInfo.preview_url;
+	}
+	if(bibInfo.preview == "partial") {
+                textGBS = "Preview & search inside book at"; //"Preview at Google Books";  
+		linkGBS = bibInfo.preview_url;
+	}
+	if(bibInfo.preview == "noview") {
+                textGBS = "Information at Google Book Search"; 
+		linkGBS = bibInfo.info_url;
+	}
+	// Rewrite the HTML inside the "gbsLink" <div> element
+$('#gbsLink').html( '<a href="' + linkGBS + '">' + gbsPreviewImg + '</a>')
+}
+</script>
+     
 <!--{botlogo}-->
