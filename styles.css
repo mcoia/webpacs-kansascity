@@ -972,9 +972,9 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 .navigationRow .resourceButton {margin:0;}
 
-.resourceButton {text-align:center; margin: 15px auto;}
+.resourceButton {text-align:center; margin: 5px auto;}
 
-.resourceButton img {margin:.5em;border:none;}
+.resourceButton img {border:none;}
 
 .resourceDisplayContentMain { width:68%; }
 
