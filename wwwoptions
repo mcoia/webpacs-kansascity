@@ -58,7 +58,7 @@ ICON_SELECT_ALL=<div onmousedown="this.className='pressedState';" onmouseout="th
 INSERTTAG_INHEAD=<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4"><link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print"><script type="text/javascript" src="/screens/bibdisplay.js"></script>
 INSERTTAG_HTML=<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html lang="en">
 RIGHT_CELL_WIDTH=18|25
-SSLPORT=80:443:wilo.missouri.edu:wilo.mobius.umsystem.edu|2082:444:wilo.missouri.edu:wilo.mobius.umsystem.edu
+SSLPORT=80:443:kansascity.searchmobius.org:kansascity.searchmobius.org|2082:444:kansascity.searchmobius.org:kansascity.searchmobius.org
 CUSTOM_MESSAGES=F
 STARTOVER=/search
 STATGROUP=login
@@ -258,7 +258,7 @@ ICON_BUT_CLEAR_MARKED=<span class="navButton">Empty Bag</span></span>
 ICON_BUT_EXPORT_MULTI=<span class="navButtonOneLine">Export Saved</span>
 ICON_BUT_EXPORT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Bag</span></span>
 ICON_BUT_VIEW_SAVES=<span class="navButton">View Bag</span>
-EMAILOP=WILO Exported Records|exporter|
+EMAILOP=Kansas City Exported Records|exporter|
 EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,endnote,procite
 XRECTYPE=boi
 
