@@ -107,7 +107,7 @@ CLEAR_PRIVATE_INFO=true
 
 FORM_FOCUS=TRUE
 
-SSLPORT=80:443:wilo.missouri.edu:wilo.mobius.umsystem.edu|2082:444:wilo.missouri.edu:wilo.mobius.umsystem.edu
+SSLPORT=80:443:wilo.searchmobius.org:wilo.searchmobius.org|2082:444:wilo.searchmobius.org:wilo.searchmobius.org
 
 #SSLPORT=80:443|2082:7878
 
