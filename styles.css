@@ -181,7 +181,7 @@ a:hover  { color: #7C14B8; }
 
 .bibDisplayContentMore { border-top:1px dashed #767C70; clear:both; margin-bottom:15px; padding-top:20px; }
 
-.bibDisplayItems  { margin:12px; }
+.bibDisplayItems  { margin:-15px; }
 
 .bibDisplayItems table, .requestMultiItems table { border:0; border-collapse: collapse; margin-bottom:20px; }
 
@@ -230,6 +230,10 @@ table.bibItems { clear:both; }
 .bibResourceSidebar { background:#FFFFFF url('tile_vgradient.jpg') repeat-x top left; display:inline; float:right; margin-right:10px; width:192px; padding-bottom:10px; }
 
 .bibResourceSidebar a:link, .bibResourceSidebar a:visited {padding:0 !important;}
+
+.bibResourceSidebar .navButton,  .bibResourceSidebar .navButtonOneLine {display:none;}
+
+.bibResourceSidebar .resourceButton {display:block;}
 
 table.bibResourceTable { border:0; }
 
@@ -805,6 +809,8 @@ span.navButtonSmall {
 
 .navigationRow select { font-size:.83333em; width:200px; }
 
+.navigationRowRecord .resourceButton, .navigationRowRecord #requestButton { display: none;}
+
 .pageContent { clear:both; }
 
 .pageContent > br { display:none; }
@@ -938,6 +944,18 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 .relSearch h2 { font-size:1.667em; color:#767C70; border-top:1px dotted #767C70; margin:0; }
 
+.requestDiv {
+    margin-top:12px;
+}
+
+.requestDiv .navButton, .requestDiv .navButtonOneLine {
+    display:none;
+}
+
+.requestDiv #requestButton {
+    display:block;
+}
+
 .requestForm { width: 32em; font-weight:bold; }
 
 .requestForm fieldset { font-weight:normal; padding-left:5px; }
@@ -972,7 +990,7 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 .navigationRow .resourceButton {margin:0;}
 
-.resourceButton {text-align:center; margin: 5px auto;}
+.resourceButton, #requestButton {text-align:center; margin: 5px auto;}
 
 .resourceButton img {border:none;}
 
