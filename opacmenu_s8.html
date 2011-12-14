@@ -87,8 +87,10 @@ obj.submit();
 </div><!-- browseSearchtool -->
 </div><!-- form1Part -->
 
-<div class="needs-js">
-  JavaScript disabled or chat unavailable.
+<div id="chat-widget">
+	<div class="needs-js">
+	  JavaScript disabled or chat unavailable.
+	</div>
 </div>
 
 
@@ -99,6 +101,15 @@ obj.submit();
 </div><!-- pageContent  -->
 
 <div style="clear:both"></div>
+
+<script type="text/javascript">
+  try {
+     window.parent.location.href;
+     document.getElementById('chat-widget').style.display = '';
+  } catch (err) {
+     document.getElementById('chat-widget').style.display = 'none';
+  }
+</script>
 
 <script type="text/javascript">
   (function() {
@@ -112,6 +123,8 @@ obj.submit();
 try { document.forms[0].searcharg.focus(); }
 catch(err) {}
 //--><!]]></script>
+
+
 </body>
 </html>
 
