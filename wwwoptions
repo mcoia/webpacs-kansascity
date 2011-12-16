@@ -255,10 +255,10 @@ ICON_MYLISTS_RECORD=<span class="navButton">Add to My Lists</span>
 BRIEF_EXPORT=a|t:245|p|e
 BRIEF_EXPORT_CHKIN=h|n
 ICON_BUT_BIBEXPORT=<span class="navButtonOneLine">Add to Bag</span>
-ICON_BUT_CLEAR_MARKED=<span class="navButton">Empty Bag</span></span>
+ICON_BUT_CLEAR_MARKED=<span class="navButtonOneLine">Empty Bag</span></span>
 ICON_BUT_EXPORT_MULTI=<span class="navButtonOneLine">Export Saved</span>
 ICON_BUT_EXPORT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Bag</span></span>
-ICON_BUT_VIEW_SAVES=<span class="navButton">View Bag</span>
+ICON_BUT_VIEW_SAVES=<span class="navButtonOneLine">View Bag</span>
 EMAILOP=Kansas City Exported Records|exporter|
 EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,endnote,procite
 XRECTYPE=boi
