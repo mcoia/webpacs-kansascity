@@ -157,7 +157,7 @@ a:hover  { color: #7C14B8; }
 
 .bibClear { clear:both; }
 
-.bibDetail {  }
+.bibDetail { margin-bottom:5px; }
 
 .bibDetail table { vertical-align:top; }
 
@@ -180,8 +180,6 @@ a:hover  { color: #7C14B8; }
 .bibDisplayContentMain > a, .resourceDisplayContentMain > a { margin:4px 4px 4px 9%; border:none; }
 
 .bibDisplayContentMore { border-top:1px dashed #767C70; clear:both; margin-bottom:15px; padding-top:20px; }
-
-.bibDisplayItems  { margin:-15px; }
 
 .bibDisplayItems table, .requestMultiItems table { border:0; border-collapse: collapse; margin-bottom:20px; }
 
@@ -954,6 +952,7 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 .requestDiv #requestButton {
     display:block;
+    margin-bottom:-15px;
 }
 
 .requestForm { width: 32em; font-weight:bold; }
