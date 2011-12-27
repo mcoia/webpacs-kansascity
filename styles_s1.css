@@ -42,11 +42,14 @@ div .bibResourceSidebar { display: block;}
     list-style-type:none;
     padding:4px 0;
     text-indent:-14px;
+    margin:0 0 0 3px;
 }
 
 #rightCol li a {
-    color:#444444;
-    margin:0 0 0 3px;
-    padding:0;
+    color:#444444;  
     text-decoration:none;
+}
+
+#searchNavMenu {
+    visibility:hidden;
 }
