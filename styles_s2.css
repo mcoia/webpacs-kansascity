@@ -1,3 +1,7 @@
+.bibPager, .bibResourceSidebar {
+    margin-right:2%;
+}
+
 .linkBanner {
     background: url("/screens/mcc_blue_background.jpg") repeat-x scroll center top transparent;
     height:60px;
@@ -17,6 +21,10 @@
 .minHeight {
     width:100%;
     min-width:1024px;
+}
+
+.pageContentInner {
+    padding:0 2%;
 }
 
 #searchNavMenu {
