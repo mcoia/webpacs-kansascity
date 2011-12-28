@@ -121,7 +121,7 @@ RELSEARCH=restable||<span class="button"><img src="/screens/ico_magnifyingglass.
 # Search Results
 AUTHMSG=<h2 class="briefcitTitle"><em>%u</em> -- See %w <strong>%a</strong></h2><span class="authPublicNote">%p</span>|<h2 class="briefcitTitle">%u -- See Also %w %a </h2><span class="authPublicNote">%p</span>
 AUTHMSG_SR=athe later heading|bthe earlier heading|dthe full form of the heading|fa musical composition based on this work|gthe narrower term|hthe broader term
-BODYPARAM=bgcolor="#FFFFFF"
+BODYPARAM=bgcolor="#FFFFFF" onload="getInfo()"
 BRIEF_a=TU
 BROWSE_a=111/andce|100/aqbcd
 BROWSE_d=611/andcvxyz
@@ -189,7 +189,7 @@ ICON_BIB_HOLDINGS_ITEMS=View Copies
 ICON_BIB_PAGING_CAPTION= 
 ICON_BIB_PAGING_NEXT=<span class="button"><span class="buttonText" id="buttonNextRecord">Next Record</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BIB_PAGING_PREV=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Previous Record</span></span>
-ICON_RECORDLINK=<a href="%s"><span class="button"><img src="/screens/ico_bookmark.png" alt=""><span class="buttonText">Permanent Link</span></span></a>
+ICON_RECORDLINK=<a id="recordnum" href="%s"><span class="button"><img src="/screens/ico_bookmark.png" alt=""><span class="buttonText">Permanent Link</span></span></a>
 LINK856TEXT=Connect to
 MARC=yes
 SHOWOREC=no_cdate

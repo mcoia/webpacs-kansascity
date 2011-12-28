@@ -3,6 +3,46 @@
 // set this to be the URL for the SMS script
 var smsurl = "http://mobiusconsortium.org/sms/sms-kansascity.php?";
 
+function getInfo(){
+  
+    var title = '';
+    var f = document.getElementById('bib_detail');
+    
+    var tr = document.getElementsByTagName('TR');		// we have to iterate through every TR b/c we can't get to the title otherwise
+    for(i = 0; i < tr.length; i++) {					// for every TR in the document
+      var x=tr[i].getElementsByTagName('TD');			// get all of the Columns
+      if (x.length == 2 && x[0].innerHTML == "Title") {  // if the row has 2 columns and the first one has the text of Title
+        title = x[1].innerHTML.replace(/(<([^>]+)>)/ig,""); // strip out all of the HTML so we just have text
+      }
+    }
+    
+    if(title.length > 40){
+      qrtitle = title.substring(0,39) + "...";
+    }else{
+      qrtitle = title;
+    }
+
+    
+    var itms = document.getElementById('bib_items');		// get the ITEM table
+    var tr = itms.getElementsByTagName('TR');	// get each row
+    for(i = 1; i < tr.length; i++) {
+      var x=tr[i].getElementsByTagName('TD');			// get each cell
+      if (x.length == 4) {								// if there's only 3 cells (like our ITEM table)
+	var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");		// get the location (remove tags)
+	//var callLinks = x[1].getElementsByTagName("a"); //get the call number without extras
+	//var call = callLinks[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+	var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");	// get the call number + copies if any (remove tags)
+	var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");	// get the status (remove tags)
+      }
+    }
+      
+      var link =  document.getElementById("recordnum").getAttribute("href");
+      var qrInfo = qrtitle + "  |  " + loc + "  |  " + call + "  |  " + status + "  |  " + "http://wilo.missouri.edu" + link;
+      var qrCode = '<img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chl=' + qrInfo + '">'
+      document.getElementById("qr").innerHTML = qrCode;
+  
+}
+
    function showsms() {
 
 	/*   This function shows the SMS layer and creates the form   */
