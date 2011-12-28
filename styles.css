@@ -701,7 +701,7 @@ div .bibResourceSidebar { display:none; }
 
 .linkBanner .navLeft ul li {margin-left: 0; margin-right:2em;}
 
-.linkBanner ul {list-style-type:none; margin: 0; padding: 0 1.2em;}
+.linkBanner ul {list-style-type:none; margin: 0; padding: 0 0 0 1.2em;}
 
 .linkBanner ul li {display: inline; margin-left:2em;}
 

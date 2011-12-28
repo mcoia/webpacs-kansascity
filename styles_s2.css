@@ -1,3 +1,46 @@
+.linkBanner {
+    background: url("/screens/mcc_blue_background.jpg") repeat-x scroll center top transparent;
+    height:60px;
+}
+
+.linkBanner a {
+    color:#002242;
+    font-family:geneva,verdana,arial,tacoma,helvetica,sans-serif;
+    font-size:14px;
+    font-weight:normal;
+}
+
+.linkBanner ul {
+    padding:0;
+}
+
+.minHeight {
+    width:100%;
+    min-width:1024px;
+}
+
+#searchNavMenu {
+    margin-top:-2px;
+}
+
+.topLogo, .topLogoInner {
+    height:100px;
+    margin-bottom:0;
+}
+
+.topLogo {
+    background: url("/screens/mcc_dark_background.jpg") repeat-x scroll center top transparent;
+}
+.topLogoInner {
+    background: url("/screens/mcc_background.jpg") no-repeat scroll center top transparent;
+    width:706px;
+}
+
+.topLogoInner, .linkBanner .navLeft {
+    margin-left:8%;
+}
+
 .topLogoImage {
-    padding: 55px 0;
+    float:left;
+    width:auto;
 }
