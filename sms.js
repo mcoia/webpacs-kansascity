@@ -5,9 +5,7 @@ var smsurl = "http://mobiusconsortium.org/sms/sms-kansascity.php?";
 
 function showQR(){
 
-
-
-title = $(".bibInfoLabel:contains('Title')").siblings(".bibInfoData").text();    
+var title = $(".bibInfoLabel:contains('Title')").siblings(".bibInfoData").text();    
     
     if(title.length > 40){
       qrtitle = title.substring(0,39) + "...";
@@ -15,31 +13,30 @@ title = $(".bibInfoLabel:contains('Title')").siblings(".bibInfoData").text();
       qrtitle = title;
     }
     
-loc = $("tr.bibItemsEntry td:eq(0)").text()
-call = $("tr.bibItemsEntry td:eq(1)").text()
-status = $("tr.bibItemsEntry td:eq(3)").text()
-link =  document.getElementById("recordnum").getAttribute("href");
-var qrInfo = qrtitle + "  |  " + loc + "  |  " + call + "  |  " + status + "  |  " + "http://kansascity.searchmobius.org" + link;
-var qrCode = '<img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chl=' + qrInfo + '">'
-document.getElementById("qr").innerHTML = qrCode;
+var link =  document.getElementById("recordnum").getAttribute("href");
 
+if ( $("tr.bibItemsEntry").index() < 2 ) {
+    $("#qrChoice").hide();
+}
+    
 $("tr.bibItemsEntry").each(function(index) {
-    loc = $("tr.bibItemsEntry:eq(" + index + ") td:eq(0)").text();
-    call = $("tr.bibItemsEntry:eq(" + index + ") td:eq(1)").text();
-    $("<input type='radio' name='item' />" + loc + "-" + call + "<br />").appendTo("#qrChoice")
+    var loc = $("tr.bibItemsEntry:eq(" + index + ") td:eq(0)").text();
+    var call = $("tr.bibItemsEntry:eq(" + index + ") td:eq(1)").text();
+    var status = $("tr.bibItemsEntry td:eq(3)").text()
+    var qrInfo = qrtitle + "  |  " + loc + "  |  " + call + "  |  " + status + "  |  " + "http://kansascity.searchmobius.org" + link;
+    var qrCode = '<img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chl=' + qrInfo + '">'
+    $("#qr").html(qrCode)
+    $("<div><input type='radio' name='item' /><span class='qrLocation'>" + loc + "</span><br /><span id='qrlocation'>" + call + "</span><br /></div>").appendTo("#qrChoice")
 });
-
-
+    
 
 $("#qrChoice input").change(function () {
-  // this is the dom element clicked
-  var radio = $("#qrChoice input").index(this);
-  loc = $("tr.bibItemsEntry:eq(" + radio + ") td:eq(0)").text()
-  call = $("tr.bibItemsEntry:eq(" + radio + ") td:eq(1)").text()
-  status = $("tr.bibItemsEntry:eq(" + radio + ") td:eq(2)").text()
-  var qrInfo = qrtitle + "  |  " + loc + "  |  " + call + "  |  " + status + "  |  " + "http://kansascity.searchmobius.org" + link;
-  var qrCode = '<img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chl=' + qrInfo + '">'
-  document.getElementById("qr").innerHTML = qrCode;
+    index = $("#qrChoice input").index(this);
+    var call = $("tr.bibItemsEntry:eq(" + index + ") td:eq(1)").text();
+    var status = $("tr.bibItemsEntry td:eq(3)").text()
+    var qrInfo = qrtitle + "  |  " + loc + "  |  " + call + "  |  " + status + "  |  " + "http://kansascity.searchmobius.org" + link;
+    var qrCode = '<img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chl=' + qrInfo + '">'
+    $("#qr").html(qrCode)
 });
 
 
