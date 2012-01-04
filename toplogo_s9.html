@@ -8,10 +8,7 @@
 <script type="text/javascript">
 $(document).ready(function () {
 	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
-
-	$('#searchtype').change(function(){
-    	$("#exampleText").load("screens/" + this.value + ".inc");
-	});
+	showQR();
 });
 </script>
 
@@ -63,8 +60,9 @@ $(document).ready(function () {
 <ul>
     <li><a href="/search/">New Search</a></li>
     <li><a href="/patroninfo">My Library Account</a></li>
-    <li><a href="http://www.spst.edu/site/library/index.php">Saint Paul School of Theology</a></li>
+    <li><a href="http://www.spst.edu/site/library/index.php">Saint Paul</a></li>
     <li><a href="/">Kansas City</a></li>
+    <li><a href="http://searchmobius.org">MOBIUS</a></li>
 </ul>
 </div>
 
