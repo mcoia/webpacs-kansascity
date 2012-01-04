@@ -1,4 +1,22 @@
+<!-- begin toplogo.html file -->
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 12 Apr 2010 -->
 <script type="text/javascript" src='/screens/sms.js'> </script>
+<script type="text/javascript" src="/screens/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="/screens/jquery.cookie.js"></script>
+<script type="text/javascript" src="/screens/mobileredirect.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
+
+	$('#searchtype').change(function(){
+		$("#exampleText").load("screens/" + this.value + ".inc");
+	});
+	if ( $('.rightColumn ').css('display') == 'none' ) {
+		$('#sideChat').html('') 
+	}
+});
+</script>
 
 <script type="text/javascript">
 
@@ -12,73 +30,95 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+</script> 
+
+<link rel="stylesheet" type="text/css" href="/screens/styles_s8.css" />
+<link rel="shortcut icon" type="ximage/icon" href="/screens/favicon.ico" />
+
+<div class="minHeight">
+<div class="fullPage">
+
+<div id="skipNav"><a href="#content" tabindex="1">Skip to content</a></div>
+<div class="topLogo">
+
+
+<div class="topLogoImage">
+<a href="/search/" tabindex="10"><img src="/screens/rockhurst.gif" alt="Rockhurst University"></a>
+</div>
+</div>
+<div class="topLinks">
+
+<ul id="topLinksList">
+<li><a  href="" onclick="window.external.AddSearchProvider('/screens/opensearch.xml')"><span class="buttonTopLinks"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonTopLinksText">Install search plugin</span></span></a></li>
+<li><a href="/help" tabindex="115">Help</a></li>
+<li>
+</ul>
+</div>
+<div class="clusterLogo">
+<a href="/"><img src="/screens/kansascity_smaller.png" alt="Kansas City"></a>
+</div>
+
+</div><!--topLogo-->
+
+<div class="linkBanner">
+
+<div class="navLeft">
+<ul>
+    <li><a href="/search/">New Search</a></li>
+    <li><a href="/patroninfo">My Library Account</a></li>
+    <li><a href="http://www.rockhurst.edu/services/library/">Rockhurst University</a></li>
+    <li><a href="/">Kansas City</a></li>
+</ul>
+</div>
+
+<div class="navRight">
+
+<script language="JavaScript"> 
+<!--
+function GotoURL() { 
+//top.location.href = dl.specializedSearch.options[dl.specializedSearch.selectedIndex].value;
+window.location.assign(document.getElementById("specializedSearch").value);
+return false;
+} 
+// -->
 </script>
+<div id="searchNavMenu">
+<select name="specializedSearch" id="specializedSearch">
+<option selected="selected" value=" ">(More Searches)</option>
+<option value="/search/X">Advanced Keyword</option>
+<option value="/search/t">Title</option>
+<option value="/search/s">Journal Title</option>
+<option value="/search/a">Author</option>
+<option value="/search/d">Subject</option>
+<option value="/search/y">Resource Name</option>
+<option value="/search/c">Call Number</option>
+<option value="/search/i">ISBN</option>
+<option value="/search/g">Government Document #</option>
+<option value="/search/q">Author and Title</option>
+<!--<option value="/search/p">Instructor</option>
+<option value="/search/r">Course</option> -->
+</select>
+<input type="image" src="/screens/ico_go.png" class="searchNavBut" value="Go" onclick="GotoURL();" >
+</div>
 
-<script type="text/javascript" src="/screens/jquery-1.7.1.min.js"></script>
 
-<script type="text/javascript" src="/screens/jquery.cookie.js"></script>
 
-<script type="text/javascript" src="/screens/mobileredirect.js"></script>
+<div class="clear"></div>
 
-<script type="text/javascript" src="http://libraryh3lp.com/js/libraryh3lp.js?multi"></script>
-<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tr>
-<!-- Shim row, height 1. -->
-   <td><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="87" BORDER="0" ALT=""></td>
-   <td><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="485" BORDER="0" ALT=""></td>
-   <td><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="1" BORDER="0" ALT=""></td>
-  </tr>
-
-  <tr valign="top">
-<!-- row 1 -->
-    <td rowspan="4" width="1%"><a href="http://wilo.missouri.edu/"><IMG SRC="/screens/WILO_navbar.gif" HEIGHT="79" WIDTH="87" ALT=" WILO Home " BORDER="0" ></a></td>
-    <td><IMG SRC="/screens/shim.gif" HEIGHT="9" WIDTH="485" BORDER="0" ALT=""></td>
-    <td width="1%"><IMG SRC="/screens/shim.gif" HEIGHT="9" WIDTH="1" BORDER="0" ALT=""></td>
-  </tr>
-
-  <tr valign="top">
-<!-- row 2 -->
-    <td bgcolor="#336633" valign="middle"> 
-      <div align="right"><font face="Verdana, Arial, Helvetica, sans-serif" color="#FFFFCC"><b>Rockhurst University
-
- Library Catalog
-
-</font></b>&nbsp;</div>
-    </td>
-    <td width="1%"><IMG SRC="/screens/shim.gif" HEIGHT="31" WIDTH="1" BORDER="0" ALT=""></td>
-  </tr>
-
-  <tr valign="top">
-<!-- row 3 -->
-    <td bgcolor="#9EB69B" valign="middle" class="qs" nowrap><font color="#336633" face="Verdana, Arial, Helvetica, sans-serif" size="-1">
-	<a href="http://mobius.umsystem.edu/search/" class="qs">MOBIUS</a> | <a href="/search~S0" CLASS="qs">WILO</a>
-
- | <a href="/search~S8/" class="qs">Rockhurst University Library Catalog</a>
- | <a href="http://www.rockhurst.edu/services/library/" class="qs">Library Home Page</a>
-
- | <a href="/screens/help.html" class="qs">Help</a>
-    
- | <a href="/patroninfo~S8" class="qs">View Your Library Account</a>   </font></td>
-    <td width="1%"><IMG SRC="/screens/shim.gif" HEIGHT="31" WIDTH="1" BORDER="0" ALT=""></td>
-  </tr>
-
-  <tr valign="top">
-<!-- row 4 -->
-    <td><IMG SRC="/screens/shim.gif" HEIGHT="8" WIDTH="485" BORDER="0" ALT=""></td>
-    <td width="1%"><IMG SRC="/screens/shim.gif" HEIGHT="8" WIDTH="1" BORDER="0" ALT=""></td>
-  </tr>
-
-</table>
+</div><!--linkBanner-->
+</div>
 
+<div class="clear"></div>
 <div class="rightColumn">
-<div class="libraryh3lp" jid="rucatalog@chat.libraryh3lp.com">
-<iframe src="http://libraryh3lp.com/chat/rucatalog@chat.libraryh3lp.com?skin=9095&amp;theme=simpletext&amp;title=RU+Library+Chat&amp;identity=librarian" frameborder="1" style="width: 230px; height: 200px; border: 2px inset black;"></iframe>
+
+<div class="chat-widget" id="sideChat">
+	<div class="needs-js">
+	  JavaScript disabled or chat unavailable.
+	</div>
 </div>
-<div class="libraryh3lp" style="display: none;">
-Chat is offline.
-</div>
+
 
 </div>
 <div class="mainColumn">
 <!--end toplogo.html-->
-<!--this is customized <screens/toplogo.html>-->
+<!--end toplogo.html-->
