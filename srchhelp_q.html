@@ -1,185 +1,87 @@
-<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-<HEAD>
-	<TITLE>WILO/ </TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="http://wilo.missouri.edu:2082/screens/wilo_styles.css">
-</HEAD>
-<BODY bgcolor="#ffffff" text="#000000" link="#003399" vlink="#003399" alink="#003399" 
-	onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-<!--{toplogo}-->
-<!--{patron}-->
-<!--{logout}-->
-<br />
-<center>
-<!-- Begin Tabs-->
-<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
-<tr valign="bottom"> 
-<td height="30" colspan="13" noWrap>
-<img src="/screens/tabs_search_on.png" width="124" height="30" border="0" style="margin-bottom:-3px;">
-<a href="/search~S0/X"><img src="/screens/tabs_advanced.png" width="124" height="30" border="0" style="margin-bottom:-3px;"></a>
-<a href="/search~S0/b"><img src="/screens/tabs_reserves.png" width="124" height="30" border="0" style="margin-bottom:-3px;"></a>
-<a href="/screens/other_catalogs.html"><img src="/screens/tabs_otherlibraries.png" width="124" height="30" border="0" style="margin-bottom:-3px;"></a>
-<a href="http://mobius.umsystem.edu/search"><img src="/screens/tabs_mobius.png" width="124" height="30" border="0" style="margin-bottom:-3px;"></a></td>
-</tr>
-<tr width="90%" height="30px" align="center" border="0" bgcolor="#336633">
-<td style="width:10%; border:0px; font-size:80%; font-weight:bold; text-align:center;">
-<a href="/search~S0/Y" style="color:#FFFFCC">Keyword</a></td><td style=" width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:8%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/t" style="color:#FFFFCC">Title</a></td><td style=" width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:8%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/a" style="color:#FFFFCC">Author</a></td><td style=" width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:8%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/d" style="color:#FFFFCC">Subject</a></td><td style=" width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:10%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/s" style="color:#FFFFCC">Journal Title</a></td><td style="width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:15%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/m" style="color:#FFFFCC">Children's Subject</a></td><td style=" width:2%; text-align:center; color:#ffffcc;">|</td>
-<td style="width:10%; border:0px; font-size:80%; font-weight:bold; text-align:center;"><a href="/search~S0/n" style="color:#ffffcc">Numbers</a></td>
-</tr>
-</table>
-<!-- Begin Search Help Text -->
-<table width="90%" border="1" bordercolor="#336633" align="center" cellpadding="10">
-<tr><td>
-<center>
-<form class="unpadded" action="/search" method="post" name="search" id="search">
-Enter the <b>AUTHOR AND TITLE</b> you want to search:<br /><br />
-<form name="frmAuthorTitle" METHOD="GET" ACTION="/search/q">
-  <table>
-    <tr> 
-      <td valign="top">Author </td>
-      <td valign="top"> 
-        <input TYPE="text" NAME="author" SIZE="40">
-        <br>
-      </td>
-    </tr>
-    <tr> 
-      <td valign="top">Words in the Title </td>
-      <td valign="top"> 
-        <input TYPE="text" NAME="title" SIZE="50">
-        <br>
-      </td>
-    </tr>
-    <tr> 
-      <td></td>
-      <td> 
-        <input TYPE="submit" value="Search">
-        <br>
-      </td>
-    </tr>
-  </table>
-</form>
-<script language="JavaScript">
-<!--
-document.frmAuthorTitle.author.focus();
-//-->
-</script>
-
-  <table border="0" cellpadding="0" cellspacing="0" width="570">
- 
-    <tr>
-
-      <td width="280" align="left" valign="top">Type the Author's or Artist's last name first, for example:<br><br></td>
-
-     <td width="4"><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="4" BORDER="0" ALT=""></td><td width="2" bgcolor="#CDC8B1"><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="2" BORDER="0" ALT=""></td><td width="6"><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="6" BORDER="0" ALT=""></td>
-
-      <td width="278" align="left" valign="top">Type as many or <i>as few</i> of the words in the title as you want, for example:<br><br></td>
-
-    </tr>
-<tr>
-
-      <td width="280" align="right" valign="top"><pre>Shakespeare</pre></td>
-
-     <td width="4"><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="4" BORDER="0" ALT=""></td><td width="2" bgcolor="#CDC8B1"><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="2" BORDER="0" ALT=""></td><td width="6"><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="6" BORDER="0" ALT=""></td>
-
-      <td width="278" align="left" valign="top"><pre>Merchant of Venice</pre></td>
-
-    </tr>
-<tr>
-
-      <td width="280" align="right" valign="top"><pre>shakespeare, william</pre></td>
-
-     <td width="4"><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="4" BORDER="0" ALT=""></td><td width="2" bgcolor="#CDC8B1"><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="2" BORDER="0" ALT=""></td><td width="6"><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="6" BORDER="0" ALT=""></td>
-
-      <td width="278" align="left" valign="top"><pre>venice</pre></td>
-
-    </tr>
-<tr>
-
-      <td width="280" align="right" valign="top"><pre>Bach, J.</pre></td>
-
-     <td width="4"><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="4" BORDER="0" ALT=""></td><td width="2" bgcolor="#CDC8B1"><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="2" BORDER="0" ALT=""></td><td width="6"><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="6" BORDER="0" ALT=""></td>
-
-      <td width="278" align="left" valign="top"><pre>sonata no. 6</pre></td>
-
-    </tr>
-<tr>
-
-      <td width="280" align="right" valign="top"><pre>United States Congress</pre></td>
-
-     <td width="4"><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="4" BORDER="0" ALT=""></td><td width="2" bgcolor="#CDC8B1"><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="2" BORDER="0" ALT=""></td><td width="6"><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="6" BORDER="0" ALT=""></td>
-
-      <td width="278" align="left" valign="top"><pre>Report of the House</pre></td>
-    </tr>
-</table>
-<p>If your search is unsuccessful, try a <a href="/search/Y">KEYWORD</a> search. </p>
-</td></tr></table></center>
-<!-- End Search Help Text -->
-<p align="center"><A HREF="/search~S0"><IMG SRC="/screens/startover.gif" BORDER=0 ALT="[START OVER]"></A></p> 
-
-
-
-
-	
-
-
-
-
-
-
-
-	<center>
-  <table border="0" cellpadding="6" cellspacing="0">
-    <tr valign="top"> 
-      <td>&nbsp;</td>
-    </tr>
-    <tr valign="top"> 
-      <td class="qs"> 
-        <center>
-          <font face="Verdana, Arial, Helvetica, sans-serif">Suggestions? 
-          Feedback? <a href="/suggest" class="qs">Send us a Note</a></font> 
-        </center>
-      </td>
-    </tr>
-    <tr valign="top"> 
-      <td>&nbsp;</td>
-    </tr>
-    <tr valign="top"> 
-      <td> 
-        <div align="center"><font color="#339933" face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b><font color="#336633">WILO</font></b> 
-          <font color="#336633"><b>&middot;</b> Western InterLibrary Organization 
-          <b>&middot;</b> a MOBIUS Library Catalog</font></font><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="-1"> 
-          </font></div>
-      </td>
-    </tr>
-    <tr valign="top"> 
-      <td class="qs"> 
-        <center>
-          <font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><a href="http://mobius.umsystem.edu/search/" class="qs">MOBIUS</a> 
-          &middot; <a href="/search~S0" class="qs">WILO Catalog</a><br>
-          <a href="/search~S1/" class="qs">Avila University</a> &middot; 
-		  <a href="/search~S10/" class="qs">Kansas City Art Institute</a> &middot; 
-          <a href="/search~S2/" class="qs">MCC Blue River</a> &middot; 
-		  <a href="/search~S3/" class="qs">MCC Longview</a> &middot; 
-		  <a href="/search~S5/" class="qs">MCC Maple Woods</a> &middot; 
-		  <a href="/search~S4/" class="qs">MCC Penn Valley</a><br>
-		 
-          <a href="/search~S7/" class="qs">Midwestern Baptist Theological Seminary</a> &middot;
-		  <a href="/search~S8/" class="qs">Rockhurst University</a> &middot; 
-          <a href="/search~S9/" class="qs">Saint Paul School of Theology</a>&middot;
-		  <a href="/search~S6/" class="qs">William Jewell College</a><br>
-</font></center></td>
-    </tr>
-  </table>
-</center>
-
-
-</BODY>
-</HTML>
-
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 23 Mar 2010 -->
+<head>
+<title>Kansas City Catalog - Author and Title Search</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+<body>
+<!--{toplogo}-->
+<div class="pageContentInner">
+
+<h1 class="pageHeader">Author and Title Search</h1>
+
+<div id="accessibleForm" class="form2Part">
+<div class="formLeft">
+<form method="get">
+<fieldset>
+<!-- Optional legend:
+<legend>Type the author and title you want to find, then press the Enter key or click Submit.</legend>
+-->
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="author">Author:</label>
+</span>
+<input name="author" size="48">
+</div>
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="title">Title:</label>
+</span>
+<input name="title" size="48">
+</div>
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="sortdropdown">Sort by:</label>
+</span>
+<!--{indexsort}-->
+</div>
+<div class="formEntryArea formScopeSearch">
+<span class="formLabel">
+<label for="searchscope">Search in the:</label>
+</span>
+<!--{scope}-->
+</div>
+
+<div class="formButtonArea">
+<!--{submit}-->
+</div>
+</fieldset>
+</form>
+</div><!--formLeft -->
+
+<div class="formRight">
+<p>Type the author's or artist's last name first. For example:</p>
+<ul>
+<li>shakespeare</li>
+<li>shakespeare, william</li>
+<li>angelou, m</li>
+</ul>
+<p>Type as many or as few of the words in the title as you want. For example:</p>
+<ul>
+<li>merchant of venice</li>
+<li>venice</li>
+</ul>
+</div><!--formRight -->
+
+</div><!--form2Part -->
+</div><!-- pageContentInner -->
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].author.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>

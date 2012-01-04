@@ -1,298 +1,114 @@
-
-
-
-<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
-
-
-
-
-<HTML>
-<HEAD>
-	<TITLE>WILO /Rockhurst University</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-
-
-
-<LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="http://wilo.mobius.umsystem.edu/screens/wilo_styles.css">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 09 June 2010 -->
+<head>
+<title>Kansas City Catalog</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<link rel="stylesheet" type="text/css" href="/screens/styles_nocolumn.css">
+<!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
+<script type="text/javascript">/* <![CDATA[ */
+function iiiSearchValidate() {
+	try{
+	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
+		return false;
+		}
+	}
+	catch(err) {
+	}
+  return true;
+}
 
-
-
-
-
-</HEAD>
-
-<BODY bgcolor="#ffffff" text="#000000" link="#003399" vlink="#003399" alink="#003399" 
-	>
-
-
-
-
-<div id="opacmenu">
-
-<!--{toplogo}-->
-
-
-
-
-
-<!--{patron}-->
-<!--{logout}-->
-
-
-
-	<center>
-	  <form name="SearchForm" target="_parent" action="/search/Y" method="GET">
-	    <table border="0" cellspacing="0" cellpadding="2" width="570" bgcolor="#CCCCCC">
-	      <tr bgcolor="#0000CC"> 
-		    <td colspan="5" align="left"> 
-				<table border="0" cellpadding="0" cellpadding="0" width="100%">
-					<tr>
-						<td>
-				      		<b><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif">Quick Search</font></b>
-					    </td>
-						<td align="right" valign="top">
-					  		<a href="/screens/help.html#quicksearch"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>Help</b></font></a>
-						</td>
-					</tr>
-				</table>
-			</td>
-		  </tr>
-	      <tr> 
-	        <td align="right" nowrap  class="qs"> 
-	          <font size="-2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><b> 
-	            Library: </b></font>
-	        </td>
-	        <td nowrap> 
-	          <select name="searchscope">
-	
-	            <option value="11" >
-					WILO Catalog</option>
-	
-	            <option value="1" >
-					Avila</option>
-	
-	            <option value="10" >
-					Kansas City Art Institute</option>
-	
-	            <option value="2" >
-					MCC-Blue River</option>
-	
-	            <option value="3" >
-					MCC-Longview</option>
-	
-	            <option value="5" >
-					MCC-Maple Woods</option>
-	
-	            <option value="4" >
-					MCC-Penn Valley</option>
-	
-	            <option value="7" >
-					Midwestern Seminary</option>
-	
-	            <option value="8" selected>
-					Rockhurst University</option>
-	
-	            <option value="9" >
-					Saint Paul</option>
-	
-	            <option value="6" >
-					William Jewell</option>
-	
-	          </select>
-	        </td>
-	        <td align="right" nowrap class="qs"> 
-	          <font size="-2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><b>Search by:</b></font>
-	        </td>
-	        <td> 
-	          <select name="searchtype">
-	
-	
-		<option value="Y"selected>Keyword</option>
-		
-	
-		<option value="t">Title</option>
-		
-	
-		<option value="a">Author</option>
-		
-	
-		<option value="d">LC Subject</option>
-		
-	
-		<option value="s">Journal Title</option>
-		
-	
-		<option value="c">LC Call Number</option>
-		
-	
-		<option value="g">SuDoc/MoDoc Number</option>
-		
-	
-		<option value="i">Standard Number</option>
-		
-	
-	          </select>
-	        </td>
-	        <td><IMG SRC="/screens/shim.gif" HEIGHT="1" WIDTH="1" ALT="" BORDER="0" ></td>
-	      </tr>
-	      <tr> 
-	        <td align="right" nowrap class="qs"> 
-	          <font size="-2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><b>Search for:</b></font>
-	        </td>
-	        <td colspan="3"> 
-	          <input type="TEXT" name="searcharg" maxlength="75" size="36" style="width: 360px;">
-			  <input type="Hidden" name="SORT" value="D">
-	        </td>
-			<td align="right">
-			  <input name="cmdSubmit" type="Submit" value="Search" align="right">
-			</td>
-	      </tr>
-	    </table>
-	  </form>
-
-	
-
-
-
-<script language="JavaScript">
-<!-- hide JavaScript
-document.SearchForm.searcharg.focus();
-document.SearchForm.searcharg.select();
-//-->
-</script>
-
-<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
-	<tr><td><font face="Arial, Helvetica, sans-serif" size="-1">
-	<b><center></center></b></font></td></tr>
-</table>
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+if(iiiSearchValidate()){
+obj.submit();
+}
+}
+/* ]]> */
+</script>
+</head>
+<body>
+<!--{toplogo}-->
 
-<div id="logoAndChat">
-<P id="logo"><A HREF="http://www.rockhurst.edu/services/library/"><IMG SRC="/screens/rhurst.gif" HEIGHT="61" WIDTH="190" ALT=" ROCKHURST: a Jesuit University " BORDER="0" ></A></P>
-
-<div class="libraryh3lp" style="display: none;" jid="rucatalog@chat.libraryh3lp.com">
-<iframe src="http://libraryh3lp.com/chat/rucatalog@chat.libraryh3lp.com?skin=9095&amp;theme=simpletext&amp;title=RU+Library+Chat&amp;identity=librarian" frameborder="1" style="width: 320px; height: 200px; border: 2px inset black;"></iframe>
-</div>
-<div class="libraryh3lp" style="display: none;">
-Chat is offline.
+<div class="miscButtons">
+<!--{logout}-->
 </div>
 
+<div class="pageContentInner mainSearch">
+
+<h1 class="accessibleAddInfo">Search</h1>
+
+<div id="accessibleForm" class="form1Part">
+<div class="browseSearchtool">
+<form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
+
+
+<input type="hidden" id="iiiFormHandle_1">
+
+<!-- Optional legend:
+<fieldset>
+<legend>Type the search term you want to find.</legend>-->
+<div class="formEntryArea">
+<div class="inlineBlock">
+<label for="searchtype" class="accessibleAddInfo">Search type</label>
+<select name="searchtype" id="searchtype">
+<option value="X" selected="selected">Keyword</option>
+<option value="t">Title</option>
+<option value="a">Author</option>
+<option value="d">Subject (LC)</option>
+<option value="m">Subject (Children's)</option>
+<option value="s">Journals, Magazines, Newspapers</option>
+</select>
+<!--{nosort}-->
+<label for="searcharg" class="accessibleAddInfo">Search term</label>
+<input maxlength="75" name="searcharg" size="20" >
+</div>
+<div class="inlineBlock">
+<label for="scope" class="accessibleAddInfo">Location</label>
+<!--{scope}-->
+<span class="formButtonArea">
+
+  <!--{submit}-->
+
+<input type="hidden" id="iiiFormHandle_1"/>
+<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
+
+<input type="submit" class="submitHidden">
+
+</span>
+</div>
+</div><!-- formEntryArea -->
+<!--</fieldset> optional-->
+</form>
+</div><!-- browseSearchtool -->
+</div><!-- form1Part -->
+
+<div class="chat-widget" id="frontChat">
+	<div class="needs-js">
+	  JavaScript disabled or chat unavailable.
+	</div>
 </div>
 
 
+<!--{botlogo}-->
 
-
-<!-- Guided Searches -->
+</div><!--pageContentInner -->
 
-<CENTER>
-<table width="570" border="0" cellspacing="0" cellpadding="2" vspace="10">
-    <tr valign="top" bgcolor="#0000CC"> 
-      <td colspan="3"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif"><b>Guided 
-Searches</b></font></td>
-    </tr>
-    <tr valign="top"> 
-      <td width="280">
-		<p><a href="/search~S8/Y"><b>KEYWORD</b></a><i>&nbsp; search for a word or words...</i></p>
-		<p><a href="/search~S8/t"><b>TITLE</b></a><i>&nbsp; search for a word or words in a title...</i></p>
-		<p><a href="/search~S8/a"><b>AUTHOR</b></a><i>&nbsp; search for a specific author, editor, composer, or organization...</i></p>
-		<p><a href="/search~S8/q"><b>AUTHOR & TITLE</b></a><i>&nbsp; search for an author and a title ...</i></p>
-      </td>
-      <td width="10">&nbsp;</td>
-      <td width="280">
-		<p><a href="/search~S8/s"><b>JOURNAL, MAGAZINE & NEWSPAPER</b></a><i>&nbsp; search for a journal, magazine or newspaper title...</i></p>
-		<p><a href="/search~S8/d"><b>SUBJECT (Library of Congress)</b></a><i>&nbsp; search using Library of Congress Subject Headings...</i></p>
-		
-		<p><a href="/search~S8/n"><b>NUMBERS</b></a><i>&nbsp; search by call number or other number...</i></p>
-      </td>
-    </tr>
-    <tr valign="top">
-      <td width="280">&nbsp;</td>
-      <td width="10">&nbsp;</td>
-      <td width="280">&nbsp;</td>
-    </tr>
-</table>
-</CENTER>
-
-<!-- Other Options -->
-<CENTER>
-<table width="570" border="0" cellspacing="0" cellpadding="2">
-    <tr valign="top" bgcolor="#0000CC"> 
-      <td colspan="3"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif"><b>Other 
-        Options </b></font></td>
-    </tr>
-    <tr valign="top">
-      <td width="260">
-		<p><a href="/patroninfo~S8"><b>VIEW YOUR LIBRARY ACCOUNT</b></a><i>&nbsp; renew items, view your holds, view other items related to your account...</i></p>
-		<p><a href="/screens/other_catalogs.html"><b>OTHER LIBRARY CATALOGS</b></a><i>&nbsp; link to other library catalogs in western Missouri...</i></p>
-      </td>
-      <td width="10"> 
-        <p>&nbsp;</p>
-        </td>
-      <td width="260"> 
-        <p><b>COURSE RESERVES</b> <br>
-          <i>retrieve by <a href="/search~S8/p">Instructor Name</a><br>
-          retrieve by <a href="/search~S8/r">Course Name</a></i> </p>
-      </td>
-    </tr>
-</table>
+</div><!-- pageContent  -->
+
+<div style="clear:both"></div>
 
 
-
-</CENTER>
-</center>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].searcharg.focus(); }
+catch(err) {}
+//--><!]]></script>
 
-
-
-
-
-
-
-
-
-	<center>
-  <table border="0" cellpadding="6" cellspacing="0">
-    <tr valign="top"> 
-      <td>&nbsp;</td>
-    </tr>
-    <tr valign="top"> 
-      <td class="qs"> 
-        <center>
-          <font face="Verdana, Arial, Helvetica, sans-serif">Suggestions? 
-          Feedback? <a href="/suggest" class="qs">Send us a Note</a></font> 
-        </center>
-      </td>
-    </tr>
-    <tr valign="top"> 
-      <td>&nbsp;</td>
-    </tr>
-    <tr valign="top"> 
-      <td> 
-        <div align="center"><font color="#339933" face="Verdana, Arial, Helvetica, sans-serif" size="-1"><b><font color="#336633">WILO</font></b> 
-          <font color="#336633"><b>&middot;</b> Western InterLibrary Organization 
-          <b>&middot;</b> a MOBIUS Library Catalog</font></font><font color="#000000" face="Verdana, Arial, Helvetica, sans-serif" size="-1"> 
-          </font></div>
-      </td>
-    </tr>
-    <tr valign="top"> 
-      <td class="qs"> 
-        <center>
-          <font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><a href="http://mobius.umsystem.edu/search/" class="qs">MOBIUS</a> 
-          &middot; <a href="/search~S0" class="qs">WILO Catalog</a><br>
-          <a href="/search~S1/" class="qs">Avila University</a> &middot; 
-		  <a href="/search~S10/" class="qs">Kansas City Art Institute</a> &middot; 
-          <a href="/search~S2/" class="qs">MCC Blue River</a> &middot; 
-		  <a href="/search~S3/" class="qs">MCC Longview</a> &middot; 
-		  <a href="/search~S5/" class="qs">MCC Maple Woods</a> &middot; 
-		  <a href="/search~S4/" class="qs">MCC Penn Valley</a><br>
-		 
-          <a href="/search~S7/" class="qs">Midwestern Baptist Theological Seminary</a> &middot;
-		  <a href="/search~S8/" class="qs">Rockhurst University</a> &middot; 
-          <a href="/search~S9/" class="qs">Saint Paul School of Theology</a>&middot;
-		  <a href="/search~S6/" class="qs">William Jewell College</a><br>
-</font></center></td>
-    </tr>
-  </table>
-</center>
-</div>
-
-</BODY>
-</HTML>
+
+</body>
+</html>
+
