@@ -861,7 +861,7 @@ span.navButtonSmall {
 
 .patHelp { border-top:1px dotted #D3D3D3; margin-top:10px; }
 
-.patFloat { background:#FFFFFF url('tile_pat3.jpg') repeat-x top left; height:700px; }
+.patFloat { background:#FFFFFF url('tile_pat3.jpg') repeat-x top left; }
 
 .patFloat .button img { margin-top:3px; }
 
@@ -1140,7 +1140,8 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 #topLinksList  { float:right; margin:0px; padding:0px; font-size:.9em; display:inline; }
 
 .topMyLibrary {
-    width:250px;
+    float:left;
+    clear:both;
 }
 
 #topMyLibraryList { display:inline; line-height:2.4em; margin:0px 10px 0px 0px; padding:0px; }
