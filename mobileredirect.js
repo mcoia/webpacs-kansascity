@@ -16,11 +16,7 @@ $.extend({
   }
 });
 
-<<<<<<< HEAD
 var mobileHost = 'https://m.kansascity.searchmobius.org'; // No trailing slash
-=======
-var mobileHost = 'https://m.cluster.searchmobius.org'; // No trailing slash
->>>>>>> 3b39f37ad40098b9b4086b08e5d18f1da4aac81f
 var redirectUrl = mobileHost;
 var scope;
 var scopeMatch = /~S(\d+)/.exec(window.location.href);
