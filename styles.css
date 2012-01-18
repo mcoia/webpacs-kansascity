@@ -197,6 +197,8 @@ a:hover  { color: #7C14B8; }
 
 .bibLinks th { text-align:center; }
 
+.bibLinks td { padding-top: .75em; }
+
 .bibMedia  { margin-left:auto; margin-right:auto; }
 
 .bibMedia   img { margin-top:10px;  }
