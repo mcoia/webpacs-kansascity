@@ -39,22 +39,6 @@ $(document).ready(function () {
 <img class="topLogoImage" src="/screens/mcc.gif">
 </div>
 
-</div><!--topLogo-->
-
-<div class="linkBanner">
-
-<div class="navLeft">
-<ul>
-    <li><a href="/search/">New Search</a></li>
-    <li><a href="/patroninfo">My Library Account</a></li>
-    <li><a href="http://www.mcckc.edu/services/libraries/pennvalley_lib/pv_lib.asp">MCC - Penn Valley</a></li>
-    <li><a href="/">Kansas City</a></li>
-    <li style="margin-right:0;"><a href="http://searchmobius.org">MOBIUS</a></li>
-</ul>
-</div>
-
-<div class="navRight">
-
 <script language="JavaScript"> 
 <!--
 function GotoURL() { 
@@ -77,17 +61,27 @@ return false;
 <option value="/search/i">ISBN</option>
 <option value="/search/g">Government Document #</option>
 <option value="/search/q">Author and Title</option>
-<!--<option value="/search/p">Instructor</option>
-<option value="/search/r">Course</option> -->
+<option value="/search/r">Course Reserves</option>
 </select>
-<input type="image" src="/screens/ico_go.png" class="searchNavBut" value="Go" onclick="GotoURL();" >
+<input type="image" src="/screens/ico_go_blue.png" class="searchNavBut" value="Go" onclick="GotoURL();" >
 </div>
 
 
+</div><!--topLogo-->
 
-<div class="clear"></div>
+<div class="linkBanner">
 
-</div><!--linkBanner-->
+<div class="navLeft">
+<ul>
+    <li><a href="/search/">New Search</a></li>
+    <li><a href="/search/r">Course Reserves</a>
+    <li><a href="/patroninfo">My Library Account</a></li>
+    <li><a href="http://www.mcckc.edu/services/libraries/pennvalley_lib/pv_lib.asp">MCC - Penn Valley</a></li>
+    <li><a href="/">Kansas City</a></li>
+    <li style="margin-right:0;"><a href="http://searchmobius.org">MOBIUS</a></li>
+</ul>
+</div>
+
 </div>
 
 <div class="clear"></div>
