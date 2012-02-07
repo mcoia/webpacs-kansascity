@@ -32,7 +32,9 @@
 }
 
 #searchNavMenu {
-    margin-top:-2px;
+    text-align:inherit;
+    padding-top:18px;
+    float:right;
 }
 
 .topLogo, .topLogoInner {
@@ -50,6 +52,7 @@
 
 .topLogoInner, .linkBanner .navLeft {
     margin-left:8%;
+    float:left;
 }
 
 .topLogoImage {
