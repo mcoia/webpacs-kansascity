@@ -691,7 +691,7 @@ div .bibResourceSidebar { display:none; }
     text-align:right;
     padding:.2em 0;
     clear:both;
-    float:right;
+    float:left;
     width:100%;
 }
 
@@ -940,9 +940,11 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 #bibDisplayBody .rateData a:link, #bibDisplayBody .rateData a:visited { padding:0; }
 
 #redirectMessage {
-    margin:1em;
     font-size:1.2em;
     color:#6c0000;
+    clear:both;
+    float:left;
+    width:800px;
 }
 
 #redirectMessage a {
