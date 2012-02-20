@@ -618,6 +618,8 @@ div .bibResourceSidebar { display:none; }
 
 .formMultiSelect { display:inline; }
 
+.frontPageNavColumn { display:none; }
+
 .fullPage { background:#ffffff; padding:0px; text-align:left; }
 
 .pageContent div.helpContent { padding-bottom:12em; }
