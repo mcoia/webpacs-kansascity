@@ -53,3 +53,7 @@ div .bibResourceSidebar { display: block;}
 #searchNavMenu {
     visibility:hidden;
 }
+
+.topLogoImage {
+    padding:20px 0;
+}
