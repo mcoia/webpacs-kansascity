@@ -46,6 +46,8 @@ th.bibItemsHeader { color:#000000; font-family:Times New Roman,Times,Georgia,ser
 
 #bibDisplayBody .resourceDisplayBibs a:link  { font-size:80%; }
 
+#botlogo {display:none;}
+
 .briefcitActions { display:none; }
 
 .briefcitCell { width:100%; }
