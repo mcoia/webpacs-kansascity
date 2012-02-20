@@ -417,8 +417,7 @@ ICON_BUT_RET2FEAT=<span class="navButtonOneLine">Back</span>
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
-#BIBIMAGE=http://contentcafe2b.btol.com/ContentCafe/Jacket.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;Return=T&amp;Type=S&amp;Value=%s&amp;erroroverride=1|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=Y
-BIBIMAGE=http://www.librarything.com/devkey/4f5b96d61b456f6672be9d60b184dad9/small/isbn/%s|I|http://www.librarything.com/devkey/4f5b96d61b456f6672be9d60b184dad9/large/isbn/%s
+#BIBIMAGE=http://www.librarything.com/devkey/4f5b96d61b456f6672be9d60b184dad9/small/isbn/%s|I|http://www.librarything.com/devkey/4f5b96d61b456f6672be9d60b184dad9/large/isbn/%s
 BIBIMAGE_TEXT=Book Jacket
 BUT_ENCYCPD=/screens/encycpd.gif
 BUT_FULL_TEXT=/screens/full_text.gif
