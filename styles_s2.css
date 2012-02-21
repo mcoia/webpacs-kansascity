@@ -2,6 +2,10 @@
     margin-right:2%;
 }
 
+.clear {
+    height:0;
+}
+
 .linkBanner {
     background: url("/screens/mcc_blue_background.jpg") repeat-x scroll center top transparent;
     height:60px;
@@ -32,30 +36,25 @@
 }
 
 #searchNavMenu {
-    text-align:inherit;
-    padding-top:18px;
-    float:right;
-}
-
-.topLogo, .topLogoInner {
-    height:100px;
-    margin-bottom:0;
+    width:215px;
+    position:absolute;
+    right:10px;
+    top:20px;
 }
 
 .topLogo {
     background: url("/screens/mcc_dark_background.jpg") repeat-x scroll center top transparent;
 }
-.topLogoInner {
-    background: url("/screens/mcc_background.jpg") no-repeat scroll center top transparent;
-    width:706px;
-}
-
-.topLogoInner, .linkBanner .navLeft {
-    margin-left:8%;
-    float:left;
-}
 
 .topLogoImage {
-    float:left;
-    width:auto;
+    padding:18px 0 26px 0;
+}
+
+.topLogoInner {
+    background: url("/screens/mcc_background.jpg") no-repeat scroll center top transparent;
+    width:100%;
+}
+
+.topLogoInner, .linkBanner .navLeft, #alertMessage {
+    margin-left:8%;
 }
