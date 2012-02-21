@@ -28,7 +28,7 @@ if (href.indexOf("&redirected") != -1 ) {
     var redirectMessage = "<p>You've been redirected from wilo.mobius.umsystem.edu or wilo.missouri.edu. Starting in June of 2012, those addresses will no longer work.</p><p>Please update your bookmarks to <a href='http://kansascity.searchmobius.org'>http://kansascity.searchmobius.org</a>.</p>"
 
     $(document).ready(function () {
-        $('#redirectMessage').html(redirectMessage);
+        $('#alertMessage').html(redirectMessage);
     });  
 }
 
