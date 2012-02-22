@@ -17,7 +17,11 @@ var title = $(".bibInfoLabel:contains('Title')").siblings(".bibInfoData").text()
       qrtitle = title;
     }
     
-var link =  document.getElementById("recordnum").getAttribute("href");
+if (document.getElementById("recordnum")) {
+  var link =  document.getElementById("recordnum").getAttribute("href");
+}else{
+  var link 
+}
 
 if ( $("tr.bibItemsEntry").index() < 2 ) {
     $("#qrChoice").hide();
