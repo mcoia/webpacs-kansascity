@@ -12,6 +12,9 @@
 $(document).ready(function () {
 	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
 	showQR();
+	//Changes the search examples
+	$('#b option:not([value^="r"])').hide(); //Hides the out-of-scope locations
+	$('#b option[value="r"]').show(); //Shows the any location for the scopes
 });
 </script>
 
