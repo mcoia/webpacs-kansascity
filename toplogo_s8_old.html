@@ -1,0 +1,124 @@
+<!-- begin toplogo.html file -->
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 12 Apr 2010 -->
+<script type="text/javascript" src="/screens/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src='/screens/sms.js'> </script>
+<script type="text/javascript" src="/screens/jquery.cookie.js"></script>
+<script type="text/javascript" src="/screens/domainredirect.js"></script>
+<script type="text/javascript" src="/screens/mobileredirect.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
+	if ( $('.rightColumn ').css('display') == 'none' ) {
+		$('#sideChat').html('') 
+	}
+	showQR();
+});
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16151549-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> 
+
+<link rel="stylesheet" type="text/css" href="/screens/styles_s8.css" />
+<link rel="shortcut icon" type="ximage/icon" href="/screens/favicon.ico" />
+
+<div class="minHeight">
+<div class="fullPage">
+
+<div id="skipNav"><a href="#content" tabindex="1">Skip to content</a></div>
+<div class="topLogo">
+
+
+<div class="topLogoImage">
+<a href="/search/" tabindex="10"><img src="/screens/rockhurst.gif" alt="Rockhurst University"></a>
+</div>
+</div>
+<div class="topLinks">
+
+<ul id="topLinksList">
+<li><a  href="" onclick="window.external.AddSearchProvider('/screens/opensearch.xml')"><span class="buttonTopLinks"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonTopLinksText">Install search plugin</span></span></a></li>
+<li><a href="/help" tabindex="115">Help</a></li>
+<li>
+</ul>
+</div>
+<div class="clusterLogo">
+<a href="/"><img src="/screens/kansascity_smaller.png" alt="Kansas City"></a>
+</div>
+
+<div id="redirectMessage"></div>
+
+
+</div><!--topLogo-->
+
+<div class="linkBanner">
+
+<div class="navLeft">
+<ul>
+    <li><a href="/search/">New Search</a></li>
+    <li><a href="/patroninfo">My Library Account</a></li>
+    <li><a href="http://www.rockhurst.edu/library/">Rockhurst University</a></li>
+    <li><a href="/">Kansas City</a></li>
+    <li><a href="http://searchmobius.org">MOBIUS</a></li>
+</ul>
+</div>
+
+<div class="navRight">
+
+<script language="JavaScript"> 
+<!--
+function GotoURL() { 
+//top.location.href = dl.specializedSearch.options[dl.specializedSearch.selectedIndex].value;
+window.location.assign(document.getElementById("specializedSearch").value);
+return false;
+} 
+// -->
+</script>
+<div id="searchNavMenu">
+<select name="specializedSearch" id="specializedSearch">
+<option selected="selected" value=" ">(More Searches)</option>
+<option value="/search/X">Advanced Keyword</option>
+<option value="/search/t">Title</option>
+<option value="/search/s">Journal Title</option>
+<option value="/search/a">Author</option>
+<option value="/search/d">Subject</option>
+<option value="/search/c">Call Number</option>
+<option value="/search/i">ISBN</option>
+<option value="/search/g">Government Document #</option>
+<option value="/search/q">Author and Title</option>
+<option value="/search/r">Course Reserves</option>
+</select>
+<input type="image" src="/screens/ico_go.png" class="searchNavBut" value="Go" onclick="GotoURL();" >
+</div>
+
+
+
+<div class="clear"></div>
+
+</div><!--linkBanner-->
+</div>
+
+<div class="clear"></div>
+<div class="rightColumn">
+
+<div class="chat-widget" id="sideChat">
+	<div class="needs-js">
+	  JavaScript disabled or chat unavailable.
+	</div>
+</div>
+
+
+</div>
+<div class="mainColumn">
+<!--end toplogo.html-->
+<!--end toplogo.html-->
