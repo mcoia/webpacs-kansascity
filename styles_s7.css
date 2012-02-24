@@ -1,3 +1,22 @@
 .topLogoImage {
     padding: 25px 0;
 }
+
+.briefcitDetail, .briefcitAuthDetail {
+    width:89.25%;
+}
+
+.mainColumn {
+    width:73%;
+}
+
+.rightColumn {
+    margin: 1%;
+    width:21%;
+}
+
+#sideChat {
+    width:205px;
+    margin-left:auto;
+    margin-right:auto;
+}
