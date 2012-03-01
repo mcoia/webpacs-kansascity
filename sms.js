@@ -17,7 +17,11 @@ var title = $(".bibInfoLabel:contains('Title')").siblings(".bibInfoData").text()
       qrtitle = title;
     }
     
-var link =  document.getElementById("recordnum").getAttribute("href");
+if (document.getElementById("recordnum")) {
+  var link =  document.getElementById("recordnum").getAttribute("href");
+}else{
+  var link 
+}
 
 if ( $("tr.bibItemsEntry").index() < 2 ) {
     $("#qrChoice").hide();
@@ -126,7 +130,7 @@ out += "<p><b>Select your provider:</b><select name=provider>";	// pull-down for
    sms.style.visibility = 'visible';
    sms.style.display = 'block';
 	// some fancy positioning
-    findPos(document.getElementById('smsbutton'),sms,300,300);
+    findPos(document.getElementById('smsbutton'),sms,-500,-329);
 } catch (e) {
 	// doesn't work?  hide the SMS buttons
 document.getElementById('smsfeatures').style.visibility='hidden';
