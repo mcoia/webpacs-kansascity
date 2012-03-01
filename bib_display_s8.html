@@ -65,6 +65,8 @@
 
 <div class="bibDisplayJacket">
 <!--{bibimage}-->
+<div id="googlejacket">
+</div>
 <div class="bibMedia">
 <!--{media}-->
 </div>
@@ -146,6 +148,11 @@
 
 </div><!-- close bibDisplayContent -->
 <div class="clear"></div>
+
+<div class="bibPager">
+<!--{pager}-->
+</div>
+
 </div><!-- close bibDisplayBody -->
     <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
        <script>
@@ -167,23 +174,25 @@
 
     </script>
        
- <script type='text/javascript'> 
+<script type='text/javascript'> 
     var ProcessResults = function(bookInfo) {
         var buttonImg = "<img src='/screens/googlebutton.gif' alt='Google Preview'>"
         var textGBS = "";
         for (ISBN in bookInfo) {
             var b = bookInfo[ISBN];
-            var googleButton = "<a href='" + b.preview_url + "' target='blank'>" + buttonImg;
+            var bookJacket =  "<img src='" + b.thumbnail_url + "&zoom=1'>";
             //form the text of Google Book contents
             if (b && (b.preview == "full")) {
-                //textGBS = "Full Text";
+                //textGBS = "<p>Full Text</p>";
                 //"Google Book Search";
-                document.getElementById("googlebooks").innerHTML = googleButton
+                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>";
+                document.getElementById("googlejacket").innerHTML = bookJacket;
             }
             else if (b && (b.preview == "partial")) {
-                //textGBS = "(Limited preview)"
+                // textGBS = "<p>Limited Preview</p>"
                 //"Preview at Google Book Search";
-                document.getElementById("googlebooks").innerHTML = googleButton
+                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>";
+                document.getElementById("googlejacket").innerHTML = bookJacket
             }
             else {
                 //document.getElementById("googlebooks").innerHTML = "None available.";
