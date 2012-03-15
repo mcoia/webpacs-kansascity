@@ -182,6 +182,14 @@
                 document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>";
                 document.getElementById("googlejacket").innerHTML = bookJacket
             }
+            else if (b && (b.preview == "noview")) {
+                // textGBS = "<p>Limited Preview</p>"
+                //"Preview at Google Book Search";
+                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>";
+                if (b.thumbnail_url != undefined){
+                    document.getElementById("googlejacket").innerHTML = bookJacket
+                }
+            }
             else {
                 //document.getElementById("googlebooks").innerHTML = "None available.";
             }
