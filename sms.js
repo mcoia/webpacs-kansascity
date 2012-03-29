@@ -30,7 +30,7 @@ if ( $("tr.bibItemsEntry").index() < 2 ) {
 function create_qr_code(index) {
 	loc = $("tr.bibItemsEntry:eq(" + index + ") td:eq(0)").text();
 	call = $("tr.bibItemsEntry:eq(" + index + ") td:eq(1)").text();
-	status = $("tr.bibItemsEntry td:eq(3)").text()
+	status = $("tr.bibItemsEntry td:eq(2)").text()
 	qrInfo = qrtitle + " | " + loc + " | " + call + " | " + status + " | " + "http://kansascity.searchmobius.org" + link;
 }
     
