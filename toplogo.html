@@ -2,7 +2,7 @@
 <!-- Rel 2009B Example Set -->
 <!-- Updated: 12 Apr 2010 -->
 
-<script type="text/javascript" src="/screens/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="/screens/jquery.cookie.js"></script>
 <script type="text/javascript" src="/screens/domainredirect.js"></script>
 <script type="text/javascript" src="/screens/mobileredirect.js"></script>
@@ -12,12 +12,24 @@
 $(document).ready(function () {
 	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
 	showQR();
+
+	//$('#searchtype').change(function(){
+    	//$("#exampleText").load("/screens/" + this.value + ".inc");
+	//});
+	//Changes the search examples
+	
+	
 	//$('#b option:not([value^="z"])').hide(); //Hides the out-of-scope locations
 	//$('#b option[value=""]').show(); //Shows the any location for the scopes
 });
 </script>
 
 <link rel="stylesheet" type="text/css" href="/screens/styles_s0.css" />
+<script type="text/javascript">
+if (document.body){document.body.className = "bodybg";}
+</script>
+
+<link rel="stylesheet" type="text/css" href="/screens/styles_s0.css" / >
 
 <div class="minHeight">
 <div class="fullPage">
