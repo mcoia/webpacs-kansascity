@@ -32,6 +32,8 @@ function create_qr_code(index) {
 	call = $("tr.bibItemsEntry:eq(" + index + ") td:eq(1)").text();
 	status = $("tr.bibItemsEntry td:eq(2)").text()
 	qrInfo = qrtitle + " | " + loc + " | " + call + " | " + status + " | " + "http://kansascity.searchmobius.org" + link;
+	qrInfo = qrInfo.replace(/[&\"]/g,"");
+	alert(qrInfo)
 }
     
 $("tr.bibItemsEntry").each(function(index) {
@@ -43,12 +45,12 @@ $("tr.bibItemsEntry").each(function(index) {
 $("#qrChoice input").change(function () {
 	index = $("#qrChoice input").index(this);
 	create_qr_code(index);
-	qrCode = '<img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chl=' + qrInfo + '">'
+	qrCode = '<img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chl=' + encodeURI(qrInfo) + '">'
 	$("#qr").html(qrCode)
 });
 
 create_qr_code(0);
-qrCode = '<img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chl=' + qrInfo + '">'
+qrCode = '<img src="http://chart.apis.google.com/chart?chs=150x150&cht=qr&chl=' + encodeURI(qrInfo) + '">'
 $("#qr").html(qrCode)
 $('#qrChoice input:eq(0)').attr('checked', true);
 
