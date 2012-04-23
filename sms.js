@@ -33,7 +33,6 @@ function create_qr_code(index) {
 	status = $("tr.bibItemsEntry td:eq(2)").text()
 	qrInfo = qrtitle + " | " + loc + " | " + call + " | " + status + " | " + "http://kansascity.searchmobius.org" + link;
 	qrInfo = qrInfo.replace(/[&\"]/g,"");
-	alert(qrInfo)
 }
     
 $("tr.bibItemsEntry").each(function(index) {
