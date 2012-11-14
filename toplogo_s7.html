@@ -17,6 +17,9 @@ $(document).ready(function () {
 	var selectAny = $('#b option[value="7"]')
 	$('#b option:not([value^="b"])').detach(); 
 	selectAny.prependTo("#b")
+	if ( $('.rightColumn ').css('display') == 'none' ) {
+		$('#sideChat').html('') 
+	}
 	//Hides the out-of-scope locations
 });
 </script>
@@ -107,7 +110,7 @@ return false;
 	  JavaScript disabled or chat unavailable.
 	</div>
 </div>
-
 </div>
 <div class="mainColumn">
 <!--end toplogo.html-->
+

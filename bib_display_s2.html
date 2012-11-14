@@ -2,10 +2,12 @@
 <!--{ifbibdisplay}-->
 <!--{xif}-->
 <!--{catedit}-->
-<link rel="stylesheet" type="text/css" href="/screens/styles_bib_s7.css" >
+<link rel="stylesheet" type="text/css" href="/screens/styles_bib_s2.css" >
+
 <div id="bibDisplayBody">
 <div class="navigationRowRecord">
 <!--{navrow}-->
+<!--{innreach}-->
 </div>
 <div id="bibDisplayContent">
 <div class="bibSearch">
@@ -23,27 +25,23 @@
 
 <div class="rightBib">
 
-<div class="chat-widget" id="frontChat">
-  <div class="needs-js">
-    JavaScript disabled or chat unavailable.
-  </div>
-</div>
-
 
 <div class="bibResourceSidebar">
 <!--{ifhasresourcetable}-->
 <!--{resourcetable}-->
 <!--{xif}-->
 
+
 <div class="bibResourceTableHeader">Resources</div>
-  
+ 
 <!--Optional INNReach resources.-->
 <!--{innreach}-->
 <!--{navrow}-->
 <!--{relsearch}-->
+
 <div id="googlebooks" class="resourceButton" ></div>
-<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;">
-<div id="smsfeatures" class="resourceButton">
+<a href="#here" class="resourceButton" name=smsbutton id=smsbutton onClick="showsms();return false;">
+<div id="smsfeatures">
     <span class="button">
     <img src="/screens/ico_phone.gif">
         <span class="buttonText">Text item location</span>
@@ -58,13 +56,27 @@
 <p>Choose a QR code to display:</p>
 </form>
 
+<div class="chat-widget" id="frontChat">
+<!--ZOHO CHAT-->
+<div style="height:300px;"><iframe style='overflow:hidden;width:300;height:100%;' frameborder='0' border='0' src="http://chat.zoho.com/mychat.sas?u=4f6d98eb0142be128cce6f0c7cc94a8f&chaturl=Chat%20Reference&V=000000-70a9e1-eff4f9-70a9e1-Chat%20Reference"></iframe></div>
+<body>
+   <p>
+   Reference Librarian Chat Schedule:<br>
+          Monday - Thursday<br>
+              9:00 AM - 7:00 PM<br>
+              Friday<br>
+              9:00 AM - 4:00 PM<br>
+  </div>
+ </div>
+ </body>
 </div>
 
 </div>
-
 
 <div class="bibDisplayJacket">
 <!--{bibimage}-->
+<div id="googlejacket">
+</div>
 <div class="bibMedia">
 <!--{media}-->
 </div>
@@ -82,7 +94,7 @@
 <!--{recordinfo:t}-->
 </h1>
 
-<!--{recordinfo:pR}-->
+<!--{recordinfo:pRe}-->
 
 <!--{ifhaspatrate}-->
 <div class="bibDisplayRatings">
@@ -120,6 +132,7 @@
 
 <!--{orders}-->
 
+
 <div class="bibDisplayContentMore">
 <!--{recordinfo:#}-->
 </div>
@@ -143,7 +156,6 @@
 
 </div>
 
-
 </div><!-- close bibDisplayContent -->
 <div class="clear"></div>
 
@@ -151,7 +163,9 @@
 <!--{pager}-->
 </div>
 
+
 </div><!-- close bibDisplayBody -->
+
     <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
        <script>
        var f = document.getElementById('bib_detail');
@@ -160,7 +174,7 @@
         var tr = itms.getElementsByTagName('TR');
         for(i = 1; i < tr.length; i++) {
          var x=tr[i].getElementsByTagName('TD');
-         if (x.length == 3) {
+         if (x.length == 4) {
           var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
           var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
           var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
@@ -172,23 +186,25 @@
 
     </script>
        
- <script type='text/javascript'> 
+<script type='text/javascript'> 
     var ProcessResults = function(bookInfo) {
         var buttonImg = "<img src='/screens/googlebutton.gif' alt='Google Preview'>"
         var textGBS = "";
         for (ISBN in bookInfo) {
             var b = bookInfo[ISBN];
-            var googleButton = "<a href='" + b.preview_url + "' target='blank'>" + buttonImg;
+            var bookJacket =  "<img src='" + b.thumbnail_url + "&zoom=1'>";
             //form the text of Google Book contents
             if (b && (b.preview == "full")) {
-                //textGBS = "Full Text";
+                //textGBS = "<p>Full Text</p>";
                 //"Google Book Search";
-                document.getElementById("googlebooks").innerHTML = googleButton
+                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>";
+                document.getElementById("googlejacket").innerHTML = bookJacket;
             }
             else if (b && (b.preview == "partial")) {
-                //textGBS = "(Limited preview)"
+                // textGBS = "<p>Limited Preview</p>"
                 //"Preview at Google Book Search";
-                document.getElementById("googlebooks").innerHTML = googleButton
+                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>";
+                document.getElementById("googlejacket").innerHTML = bookJacket
             }
             else if (b && (b.preview == "noview")) {
                 // textGBS = "<p>Limited Preview</p>"
@@ -220,5 +236,5 @@ document.documentElement.firstChild.appendChild(s);
 //alert (api_url);
 
 </script>
+     
 <!--{botlogo}-->
-
