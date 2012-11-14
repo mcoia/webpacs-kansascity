@@ -1,0 +1,23 @@
+div .bibResourceSidebar {
+    display:block;
+    margin-right:0;
+    width:205px;
+}
+
+.chat-widget {
+    margin-bottom:3em;
+}
+
+.mainColumn {
+    width:100%;
+}
+
+.rightBib {
+    float:right;
+    width:205px;
+}
+
+
+.rightColumn {
+    margin: 2% 0 2% 1.75%;
+}
