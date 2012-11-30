@@ -1,3 +1,5 @@
+.bibDisplayJacket  { float:left; margin:0 0 1em 5%; display:inline; width:6em; }
+
 .briefcitDetail, .briefcitAuthDetail  { display:inline; float:left; padding:0px 0 0px 30px; width:65%; }
 
 .briefcitJacket  { float:left; margin:5px 15px; width:80px; display:inline; }
