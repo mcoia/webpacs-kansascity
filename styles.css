@@ -336,7 +336,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitClear { clear:both; }
 
-.briefcitDetail, .briefcitAuthDetail  { display:inline; float:left; padding:0px 0 0px 30px; width:92%; }
+.briefcitDetail, .briefcitAuthDetail  { display:inline; float:left; padding:0px 0 0px 30px; width:90%; }
 
 .briefcitAuthDetail { margin-bottom:12px; }
 
@@ -376,7 +376,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitMediaEnd { display:none; }
 
-.briefcitJacket  { float:left; margin:5px 15px; width:80px; display:none; }
+.briefcitJacket  { float:left; margin:5px 15px; width:80px; display:inline; }
 
 .briefcitStatus { font-weight:bold; }
 
