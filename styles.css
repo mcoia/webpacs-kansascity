@@ -241,6 +241,8 @@ table.bibItems { clear:both; }
 
 .bibResourceSidebar a:link, .bibResourceSidebar a:visited {padding:0 !important;}
 
+.bibResourceSidebar p { display: block; text-align: center; }
+
 .bibResourceSidebar .navButton,  .bibResourceSidebar .navButtonOneLine {display:none;}
 
 .bibResourceSidebar .resourceButton {display:block;}
