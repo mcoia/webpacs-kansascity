@@ -262,7 +262,7 @@ ICON_BUT_CLEAR_MARKED=<span class="navButtonOneLine">Empty Bag</span></span>
 ICON_BUT_EXPORT_MULTI=<span class="navButtonOneLine">Export Saved</span>
 ICON_BUT_EXPORT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Bag</span></span>
 ICON_BUT_VIEW_SAVES=<span class="navButtonOneLine">View Bag</span>
-EMAILOP=Kansas City Exported Records|exporter|
+EMAILOP=Kansas City Exported Records|mcohelp@mobiusconsortium.org|
 EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,endnote,procite
 XRECTYPE=boi
 
