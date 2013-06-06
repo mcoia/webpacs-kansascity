@@ -421,6 +421,7 @@ ICON_BUT_RET2FEAT=<span class="navButtonOneLine">Back</span>
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
 #BIBIMAGE=http://www.librarything.com/devkey/4f5b96d61b456f6672be9d60b184dad9/small/isbn/%s|I|http://www.librarything.com/devkey/4f5b96d61b456f6672be9d60b184dad9/large/isbn/%s
 BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=kcartinst|I|http://www.syndetics.com/index.aspx?isbn=%s/LC.GIF&client=kcartinst
+BIBIMAGE=http://syndetics.com/index.aspx?issn=%s/SC.GIF&client=kcartinst|I|http://syndetics.com/index.aspx?issn=%s/SC.GIF&client=kcartinst
 BIBIMAGE_TEXT=Book Jacket
 BUT_ENCYCPD=/screens/encycpd.gif
 BUT_FULL_TEXT=/screens/full_text.gif
