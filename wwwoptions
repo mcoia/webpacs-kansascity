@@ -168,6 +168,7 @@ IMAGE_MATTYPEp=/screens/media_mixed.gif
 IMAGE_MATTYPEr=/screens/media_3dartwork.gif
 IMAGE_MATTYPEs=/screens/media_ejournal.gif
 IMAGE_MATTYPEt=/screens/media_manuscript.gif
+IMAGE_MATTYPEu=/screens/media_emovie.gif
 IMAGE_MATTYPE2=/screens/media_ebook.gif
 INDEX_EXT=coie
 MEDIA=2
