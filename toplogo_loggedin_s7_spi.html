@@ -1,6 +1,6 @@
-<!-- begin toplogo.html file -->
+<!-- begin toplogo_loggedin.html file -->
 <!-- Rel 2009B Example Set -->
-<!-- Updated: 12 Apr 2010 -->
+<!-- Updated: 06 Oct 2010 -->
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="/screens/jquery.cookie.js"></script>
@@ -12,6 +12,10 @@
 $(document).ready(function () {
 	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
 	showQR();
+
+	//$('#searchtype').change(function(){
+    	//$("#exampleText").load("/screens/" + this.value + ".inc");
+	//});
 	//Changes the search examples
 	
 	//var selectAny = $('#b option[value=""]')
@@ -21,23 +25,23 @@ $(document).ready(function () {
 });
 </script>
 
-<link rel="stylesheet" type="text/css" href="/screens/styles_s9.css" />
+<link rel="stylesheet" type="text/css" href="/screens/styles_s7.css" / >
 
 <div class="minHeight">
 <div class="fullPage">
 
-<div id="skipNav"><a href="#content" tabindex="1">Skip to content</a></div>
+<div id="skipNav"><a href="#content" tabindex="1">Saltar al contenido</a></div>
 <div class="topLogo">
 
 <div class="topLogoImage">
-<a href="/search/" tabindex="10"><img src="/screens/saintpaul.jpg" alt="Saint Paul School of Theology"></a>
+<a href="/search/" tabindex="10"><img src="/screens/midwestern_baptist.jpg" alt="Midwestern Baptist Theological Seminary"></a>
 </div>
 
 <div class="topLinks">
 <ul>
 <li><a  href="" onclick="window.external.AddSearchProvider('http://kansascity.searchmobius.org/screens/opensearch.xml')"><span class="buttonTopLinks"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonTopLinksText">Install search plugin</span></span></a></li>
-<li><a href="/help" tabindex="115">Help</a></li>
-<li><a href="/search*spi~S0">Espa&ntilde;ol</a></li>
+<li><a href="/help*spi" tabindex="115">Ayuda</a></li>
+<li><a href="#" onclick="iiiSwitchLang('eng')">English</a></li>
 </ul>
 </div>
 
@@ -53,9 +57,16 @@ $(document).ready(function () {
 
 <div class="navLeft">
 <ul>
-    <li><a href="/search/">New Search</a></li>
-    <li><a href="/patroninfo">My Library Account</a></li>
-    <li><a href="http://www.spst.edu/site/library/index.php">Saint Paul</a></li>
+<li>
+<a href="/search*spi/" tabindex="105">B&#250;squeda nueva</a>
+</li>
+<li>
+<!--{patronrecord}-->   
+</li>
+<li>
+<a href="/logout*spi" tabindex="120">Salir</a>
+</li>
+	<li><a href="http://www.mbts.edu/academics/library/">Midwestern Baptist</a></li>
     <li><a href="/">Kansas City</a></li>
     <li><a href="http://searchmobius.org">MOBIUS</a></li>
 </ul>
@@ -74,18 +85,20 @@ return false;
 </script>
 <div id="searchNavMenu">
 <select name="specializedSearch" id="specializedSearch">
-<option selected="selected" value=" ">(More Searches)</option>
-<option value="/search/X">Advanced Keyword</option>
-<option value="/search/t">Title</option>
-<option value="/search/s">Journal Title</option>
-<option value="/search/a">Author</option>
-<option value="/search/d">Subject</option>
-<option value="/search/c">Call Number</option>
-<option value="/search/i">ISBN</option>
-<option value="/search/g">Government Document #</option>
-<option value="/search/q">Author and Title</option>
+<option selected="selected" value=" ">(M&#225;s b&#250;squedas)</option>
+<option value="/search*spi/X">B&#250;squeda avanzada</option>
+<option value="/search*spi/t">T&#237;tulo</option>
+<option value="/search*spi/s">T&#237;tulo de revista</option>
+<option value="/search*spi/a">Autor</option>
+<option value="/search*spi/d">Materia</option>
+
+<option value="/search*spi/c">Signatura</option>
+<option value="/search*spi/i">ISBN</option>
+<option value="/search*spi/g">N&#186; Documento Gobierno</option>
+<option value="/search*spi/q">Autor y T&#237;tulo</option>
+<option value="/search*spi/r">B&#250;squeda por curso</option>
 <!--<option value="/search/p">Instructor</option>
-<option value="/search/r">Course</option> -->
+<option value="/search*spi/r">Curso</option> -->
 </select>
 <input type="image" src="/screens/ico_go.png" class="searchNavBut" value="Go" onclick="GotoURL();" >
 </div>
@@ -97,8 +110,21 @@ return false;
 </div><!--linkBanner-->
 </div>
 
-
 <div class="clear"></div>
-<div class="pageContent"><!-- content container -->
-<a name="content" id="content"></a>
+<div class="rightColumn">
+	
+<div class="chat-widget" id="sideChat">
+	<div class="needs-js">
+	  JavaScript disabled or chat unavailable.
+	</div>
+</div>
+
+
+</div>
+<div class="mainColumn">
 <!--end toplogo.html-->
+
+
+
+
+
