@@ -81,17 +81,17 @@ TOPLOGO10=@screens/toplogo_s10.html
 TOPLOGO12=@screens/toplogo_s12.html
 
 TOPLOGO_spi=@screens/toplogo_spi.html
-TOPLOGO1_spi=@screens/toplogo_s1_spi.html
-TOPLOGO2_spi=@screens/toplogo_s2_spi.html
-TOPLOGO3_spi=@screens/toplogo_s3_spi.html
-TOPLOGO4_spi=@screens/toplogo_s4_spi.html
-TOPLOGO5_spi=@screens/toplogo_s5_spi.html
-TOPLOGO6_spi=@screens/toplogo_s6_spi.html
-TOPLOGO7_spi=@screens/toplogo_s7_spi.html
-TOPLOGO8_spi=@screens/toplogo_s8_spi.html
-TOPLOGO9_spi=@screens/toplogo_s9_spi.html
-TOPLOGO10_spi=@screens/toplogo_s10_spi.html
-TOPLOGO12_spi=@screens/toplogo_s12_spi.html
+TOPLOGO1_spi=@screens/toplogo_spi_s1.html
+TOPLOGO2_spi=@screens/toplogo_spi_s2.html
+TOPLOGO3_spi=@screens/toplogo_spi_s3.html
+TOPLOGO4_spi=@screens/toplogo_spi_s4.html
+TOPLOGO5_spi=@screens/toplogo_spi_s5.html
+TOPLOGO6_spi=@screens/toplogo_spi_s6.html
+TOPLOGO7_spi=@screens/toplogo_spi_s7.html
+TOPLOGO8_spi=@screens/toplogo_spi_s8.html
+TOPLOGO9_spi=@screens/toplogo_spi_s9.html
+TOPLOGO10_spi=@screens/toplogo_spi_s10.html
+TOPLOGO12_spi=@screens/toplogo_spi_s12.html
 
 SUPPRESS_OPTION=STARTOVER,ANOTHER,NEWSRCH
 TIMEOUT=3600;URL=/search/
