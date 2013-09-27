@@ -606,7 +606,7 @@ ICON_BUT_LIMIT_spi=<span class="navButton">Limitar/Ordenar b&#250;squeda</span>
 ICON_BUT_UNLIMAVAIL_spi=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">Mostrar todo</span></span>
 ICON_856LINK_spi=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Sitio Web
 ICON_962LINK_spi=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Imagen digital
-#ICON_BOOKCART_spi=<span class="navButtonOneLine">A&#241;adir a la cesta</span>
+#ICON_BOOKCART_spi=<span class="navButton">A&#241;adir a la cesta</span>
 ICON_BOOKCART_SAVED_spi=<span class="navButtonYellow navButton">Eliminar de la cesta</span>
 ICON_FULLRECORD_spi=Ver registro completo
 ICON_LOCATEINRESULTS_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Localizar en resultados</span></span></div></div>
