@@ -650,7 +650,7 @@ ICON_MYLISTS_SAVE_TO_LIST_spi=<span class="button"><img src="/screens/ico_list_a
 ICON_MYLISTS_BRIEF_spi=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">A&#241;adir a Mis Listas</span></span>
 ICON_BACK_TO_MYLISTS_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Volver a Mis Listas</span></span></div></div>
 ICON_MYLISTS_RECORD_spi=<span class="navButton">A&#241;adir a Mis Listas</span>
-ICON_BUT_BIBEXPORT_spi=<sspan class="navButtonOneLine">A&#241;adir a la cesta</span>
+ICON_BUT_BIBEXPORT_spi=<span class="navButtonOneLine">A&#241;adir a la cesta</span>
 ICON_BUT_CLEAR_MARKED_spi=<span class="navButtonOneLine">Vaciar cesta</span>
 ICON_BUT_EXPORT_MULTI_spi=<span class="navButtonOneLine">Exportar guardados</span>
 ICON_BUT_EXPORT_VIEW_SAVES_spi=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">Ver cesta</span></span>
