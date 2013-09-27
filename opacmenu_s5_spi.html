@@ -44,30 +44,30 @@ obj.submit();
 <h1 class="navHeader">Search Options</h1>
 
 <ul id="rightCol">
-<li><a href="/search/X">Palabra clave</a></li>
-<li><a href="/search/t">T&#237;tulo</a></li>
-<li><a href="/search/a">Autor</a></li>
-<li><a href="/search/d">Materia (LC)</a></li>
-<li><a href="/search/m">Subject (Children's)</a></li>
-<li><a href="/search/s">T&#237;tulo de revista, Magazines, Newspapers</a></li>
+<li><a href="/search*spi/X">Palabra clave</a></li>
+<li><a href="/search*spi/t">T&#237;tulo</a></li>
+<li><a href="/search*spi/a">Autor</a></li>
+<li><a href="/search*spi/d">Materia (LC)</a></li>
+<li><a href="/search*spi/m">Subject (Children's)</a></li>
+<li><a href="/search*spi/s">T&#237;tulo de revista, Magazines, Newspapers</a></li>
 
 <li><a href="#">Numbers</a>
 			<ul>
 				
-				<li><a href="/search/c">Library of Congress Call Number</a></li>
+				<li><a href="/search*spi/c">Library of Congress Call Number</a></li>
 				
-				<li><a href="/search/e">Dewey Call Number</a></li>
+				<li><a href="/search*spi/e">Dewey Call Number</a></li>
                                 
-                                <li><a href="/search/f">Local Call Number</a></li>
+                                <li><a href="/search*spi/f">Local Call Number</a></li>
                                 
-                                <li><a href="/search/i">ISBN/ISSN</a></li>
+                                <li><a href="/search*spi/i">ISBN/ISSN</a></li>
                                 
-                                <li><a href="/search/g">N&#186; Documento Gobierno</a></li>
+                                <li><a href="/search*spi/g">N&#186; Documento Gobierno</a></li>
 				
-				<li><a href="/search/o">OCLC Number</a></li>
+				<li><a href="/search*spi/o">OCLC Number</a></li>
 			</ul>
 </li>
-<li><a href="/search/q">Autor y T&#237;tulo</a></li>
+<li><a href="/search*spi/q">Autor y T&#237;tulo</a></li>
 </ul>
         
 </div>
@@ -103,9 +103,11 @@ obj.submit();
 <!--{nosort}-->
 <label for="searcharg" class="accessibleAddInfo">T&#233;rmino de b&#250;squeda</label>
 <input maxlength="75" name="searcharg" size="20" >
+</div>
+<div class="inlineBlock">
 <label for="scope" class="accessibleAddInfo">Ubicaci&#243;n</label>
 <!--{scope}-->
-<span class="nowrap formButtonArea">
+<span class="formButtonArea">
 
   <!--{submit}-->
 
@@ -115,6 +117,7 @@ obj.submit();
 <input type="submit" style="display:none">
 
 </span>
+</div>
 </div><!-- formEntryArea -->
 <!--</fieldset> optional-->
 </form>
