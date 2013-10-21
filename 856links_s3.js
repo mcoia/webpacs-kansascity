@@ -2,15 +2,12 @@ function hideLinks(){
     
     var stringsToHide = new Array ();
     stringsToHide[1] = new Array ("avila");
-    stringsToHide[2] = new Array ("mcckc");
+    stringsToHide[3] = new Array ("mcckc");
     stringsToHide[6] = new Array ("wjewell", "William Jewel");
     stringsToHide[7] = new Array ("mbts");
     stringsToHide[8] = new Array ("rockhurst");
     stringsToHide[9] = new Array ("spst");
-    stringsToHide[10] = new Array ("kcai");
- 
-
-    
+    stringsToHide[10] = new Array ("kcai");       
     
     var scopeDropdown = $("#searchscope").val();
     
