@@ -6,6 +6,7 @@
 <title>Cat&#225;logo Web de Kansas City</title>
 <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<link rel="stylesheet" type="text/css" href="/screens/styles_nocolumn.css">
 <script type="text/javascript">/* <![CDATA[ */
 function iiiSearchValidate() {
 	try{
@@ -53,6 +54,7 @@ obj.submit();
 <fieldset>
 <legend>Indique el t&#233;rmino de b&#250;squeda que quiera encontrar.</legend>-->
 <div class="formEntryArea">
+<div class="inlineBlock">
 <label for="searchtype" class="accessibleAddInfo">Tipo de b&#250;squeda</label>
 <select name="searchtype" id="searchtype">
 <option value="X" selected="selected">Palabra clave</option>
@@ -93,6 +95,41 @@ obj.submit();
 	<div class="needs-js">
 	  JavaScript disabled or chat unavailable.
 	</div>
+
+	  <!-- Patrons will see this first libraryh3lp div if their home library is online. Substitute your queue name for my-real-queue. Substitute the desired widget id for 9999 in the widget skin setting. -->
+
+  <div class="libraryh3lp" jid="ruaskalibrarian@chat.libraryh3lp.com" style="display: none;">
+  Chat with a Rockhurst Librarian :<br />
+    <iframe src="https://libraryh3lp.com/chat/rucatalog@chat.libraryh3lp.com?skin=20175"
+    frameborder="1" style="border: 2px inset black; width: 200px; height: 350px;">
+    </iframe>
+  </div>
+
+<!-- Patrons will see this second libraryh3lp div if their home library is offline but someone from the AJCU consortium is
+available. Substitute the desired widget ID for the skin and also substitue your profile queue name for the profile. -->
+
+  <div class="libraryh3lp" jid="ajcu-consortium@chat.libraryh3lp.com" style="display: none;">
+    Chat with a Librarian (AJCU):<br />
+    <iframe src="https://libraryh3lp.com/chat/ajcu-consortium@chat.libraryh3lp.com?skin=20166&profile=cs-rockhurst",
+    frameborder="1" style="border: 2px inset black; width: 200px; height: 350px;">
+    </iframe>
+  </div>
+
+<!-- Patrons will see this third libraryh3lp div if their home library and the consortium are offline but ChatStaff is
+available. Substitute the desired widget ID for the skin and also substitue your profile queue name for the profile. -->
+
+  <div class="libraryh3lp" jid="ajcu-chatstaff@chat.libraryh3lp.com" style="display: none;">
+    Chat with a Librarian (Chatstaff):<br />
+    <iframe src="https://libraryh3lp.com/chat/ajcu-chatstaff@chat.libraryh3lp.com?skin=20167&profile=cs-rockhurst",
+    frameborder="1" style="border: 2px inset black; width: 200px; height: 350px;">
+    </iframe>
+  </div>
+<!-- Patrons will see this final libraryh3lp div if the home library, the consortium, AND ChatStaff are all offline. -->
+
+  <div class="libraryh3lp" style="display: none;">
+    Our chat service is offline.<br />
+    Please contact library@rockhurst.edu if you need assistance.
+  </div>
 </div>
 
 <!--{botlogo}-->
