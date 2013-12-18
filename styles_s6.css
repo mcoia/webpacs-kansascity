@@ -1,3 +1,6 @@
 .topLogoImage {
     padding: 13px 0;
 }
+span.path{display: none;}
+
+td.bibResourceTableEntry span.path{display: none;}
