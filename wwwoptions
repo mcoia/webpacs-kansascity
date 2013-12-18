@@ -428,7 +428,7 @@ WEBADDRESS=http://www.worldcat.org/search?q=%s|I|http://www.worldcat.org/search?
 
 # WebBridge/Pathfinder Pro
 ICON_BUT_CLOSEFRAME=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Close Frame</span></span>
-ICON_BUT_RESOURCELINK=<div id="resourcelink"><span class="button"><img src="/screens/ico_globe.png" alt=""><span class="buttonText">Other Resources</span></span></div>
+ICON_BUT_RESOURCELINK=<div id="resourcelink"><span class="navButton resourceButton path">Other Resources</span></div>
 ICON_BUT_RET2RESOURCE=<div id="resourcelink"><span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span></div>
 RESLINK=bibresourcetop|browseresourcetop||
 #WBHEADERTEXT=The following resources may provide additional information about<br>#HEADER#
