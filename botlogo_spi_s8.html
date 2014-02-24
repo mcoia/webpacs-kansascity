@@ -1,247 +1,46 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- Rel 2009B Example Set -->
-<!-- Updated: 09 June 2010 -->
-<head>
-<link rel="stylesheet" type="text/css" href="/scripts/ProStyles.css" />
-<link rel="stylesheet" type="text/css" href="/screens/styles.css" />
-<script type="text/javascript" src="/scripts/elcontent.js"></script>
-<script type="text/javascript" src="/scripts/common.js"></script>
-<script type="text/javascript" src="/scripts/webbridge.js"></script>
-<title>Kansas City Catalog</title>
-<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
-<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
-<link rel="stylesheet" type="text/css" href="/screens/styles_nocolumn.css">
-<!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
-<script type="text/javascript">/* <![CDATA[ */
-function iiiSearchValidate() {
-	try{
-	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
-		return false;
-		}
-	}
-	catch(err) {
-	}
-  return true;
-}
-
-function iiiDoSubmit_1()
-{
-//getFormHandleForm() is in common.js
-var obj = getFormHandleForm(1);
-if(iiiSearchValidate()){
-obj.submit();
-}
-}
-/* ]]> */
-</script>
-</head>
-<body>
-<!-- begin toplogo.html file -->
-<!-- Rel 2009B Example Set -->
-<!-- Updated: 12 Apr 2010 -->
-
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type="text/javascript" src="/screens/jquery.cookie.js"></script>
-<script type="text/javascript" src="/screens/domainredirect2.js"></script>
-<script type="text/javascript" src="/screens/mobileredirect.js"></script>
-<script src="/screens/menu-collapsed.js" type="text/javascript"></script>
-<script type="text/javascript" src='/screens/sms.js'> </script>
-<script type="text/javascript">
-$(document).ready(function () {
-	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
-	showQR();
-
-	//$('#searchtype').change(function(){
-    	//$("#exampleText").load("/screens/" + this.value + ".inc");
-	//});
-	//Changes the search examples
-	
-	//var selectAny = $('#b option[value=""]')
-	//$('#b option:not([value^="z"])').detach(); 
-	//selectAny.prependTo("#b")
-	//Hides the out-of-scope locations
-});
-</script>
-
-<script type="text/javascript">
-if (document.body){document.body.className = "bodybg";}
-</script>
-
-<link rel="stylesheet" type="text/css" href="/screens/styles_s0.css" />
-<script type="text/javascript">
-if (document.body){document.body.className = "bodybg";}
-</script>
-
-<link rel="stylesheet" type="text/css" href="/screens/styles_s0.css" / >
-
-<div class="minHeight">
-<div class="fullPage">
-
-<div id="skipNav"><a href="#content" tabindex="1">Skip to content</a></div>
-<div class="topLogo">
-
-<div class="topLogoImage">
-<a href="/search/" tabindex="10"><img src="/screens/kansascity.png" alt="KansasCity"></a>
-</div>
-
-<div class="topLinks">
-<ul>
-<li><a  href="" onclick="window.external.AddSearchProvider('http://kansascity.searchmobius.org/screens/opensearch.xml')"><span class="buttonTopLinks"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonTopLinksText">Install search plugin</span></span></a></li>
-<li><a href="/help" tabindex="115">Help</a></li>
-<li><a href="/search*spi~S0">Espa&ntilde;ol</a></li>
-</ul>
-</div>
-
-<div class="mobiusLogo">
-<a href="http://searchmobius.org"><img src="/screens/mobius.png" alt="MOBIUS Catalog"></a>
-</div>
-
-<div id="alertMessage"></div>
-
-</div><!--topLogo-->
-
-<div class="linkBanner">
-
-<div class="navLeft">
-<ul>
-    <li><a href="/search/">New Search</a></li>
-    <li><a href="/patroninfo">My Library Account</a></li>
-</ul>
-</div>
-
-<div class="navRight">
-
-<script language="JavaScript"> 
-<!--
-function GotoURL() { 
-//top.location.href = dl.specializedSearch.options[dl.specializedSearch.selectedIndex].value;
-window.location.assign(document.getElementById("specializedSearch").value);
-return false;
-} 
-// -->
-</script>
-<div id="searchNavMenu">
-<select name="specializedSearch" id="specializedSearch">
-<option selected="selected" value=" ">(More Searches)</option>
-<option value="/search/X">Advanced Keyword</option>
-<option value="/search/t">Title</option>
-<option value="/search/s">Journal Title</option>
-<option value="/search/a">Author</option>
-<option value="/search/d">Subject</option>
-
-<option value="/search/c">Call Number</option>
-<option value="/search/i">ISBN</option>
-<option value="/search/g">Government Document #</option>
-<option value="/search/q">Author and Title</option>
-<!--<option value="/search/p">Instructor</option>
-<option value="/search/r">Course</option> -->
-</select>
-<input type="image" src="/screens/ico_go.png" class="searchNavBut" value="Go" onclick="GotoURL();" >
-</div>
-
-
-
-<div class="clear"></div>
-
-</div><!--linkBanner-->
-</div>
-
-
-<div class="clear"></div>
-<div class="pageContent"><!-- content container -->
-<a name="content" id="content"></a>
-<!--end toplogo.html-->
-
-
-<div class="miscButtons">
-</div>
-
-<div class="pageContentInner mainSearch">
-
-<h1 class="accessibleAddInfo">Search</h1>
-
-<div id="accessibleForm" class="form1Part">
-<div class="browseSearchtool">
-<form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
-
-
-<input type="hidden" id="iiiFormHandle_1">
-
-<!-- Optional legend:
-<fieldset>
-<legend>Type the search term you want to find.</legend>-->
-<div class="formEntryArea">
-<div class="inlineBlock">
-<label for="searchtype" class="accessibleAddInfo">Search type</label>
-<select name="searchtype" id="searchtype">
-<option value="X" selected="selected">Keyword</option>
-<option value="t">Title</option>
-<option value="a">Author</option>
-<option value="d">Subject (LC)</option>
-<option value="m">Subject (Children's)</option>
-<option value="s">Journals, Magazines, Newspapers</option>
-</select>
-<input type="hidden" name="SORT" id="SORT" value="D" />
-<label for="searcharg" class="accessibleAddInfo">Search term</label>
-<input maxlength="75" name="searcharg" size="20" >
-</div>
-<div class="inlineBlock">
-<label for="scope" class="accessibleAddInfo">Location</label>
-<label for="searchscope" style="display:none;">Search Scope</label><select name="searchscope" id="searchscope">
-<option value="1"> Avila University</option> <option value="10"> KC Art Institute</option> <option value="2"> MCC-Blue River</option> <option value="3"> MCC-Longview</option> <option value="5"> MCC-Maple Woods</option> <option value="4"> MCC-Penn Valley</option> <option value="12"> MCC-Business Tech</option> <option value="7"> Midwestern Baptist</option> <option value="8"> Rockhurst University</option> <option value="9"> Saint Paul</option> <option value="6"> William Jewell</option> <option value="11" selected="selected"> Kansas City Catalog</option> </select>
-
-<span class="formButtonArea">
-
-  <!--{submit}-->
-
-<input type="hidden" id="iiiFormHandle_1"/>
-<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
-
-<input type="submit" class="submitHidden">
-
-</span>
-</div>
-</div><!-- formEntryArea -->
-<!--</fieldset> optional-->
-</form>
-</div><!-- browseSearchtool -->
-</div><!-- form1Part -->
-
-<div class="chat-widget" id="frontChat">
-	<div class="needs-js">
-	  JavaScript disabled or chat unavailable.
-	</div>
-</div>
-
-
-
 <!-- begin botlogo.html file -->
 <!-- Rel 2009B Example Set -->
 <!-- Updated: Sept 2009 -->
 <div style="clear:both"></div>
 <div id="botlogo">
 <ul>
-    <li class="first"><a href="/search~S1">Avila University</a></li>
-    <li><a href="/search~S10">Kansas City Art Institute</a></li>
-    <li><a href="/search~S7">Midwestern Baptist Theological Seminary</a></li>
+    <li class="first"><a href="/search*spi~S1">Avila University</a></li>
+    <li><a href="/search*spi~S10">Kansas City Art Institute</a></li>
+    <li><a href="/search*spi~S7">Midwestern Baptist Theological Seminary</a></li>
 </ul>
 <ul>
-    <li class="first"><a href="/search~S2">MCC Blue River</a></li>
-    <li><a href="/search~S3">MCC Longview</a></li>
-    <li><a href="/search~S5">MCC Maple Woods</a></li>
-    <li><a href="/search~S4">MCC Penn Valley</a></li>
-    <li><a href="/search~S12">MCC Business & Technology</a></li>
+    <li class="first"><a href="/search*spi~S2">MCC Blue River</a></li>
+    <li><a href="/search*spi~S3">MCC Longview</a></li>
+    <li><a href="/search*spi~S5">MCC Maple Woods</a></li>
+    <li><a href="/search*spi~S4">MCC Penn Valley</a></li>
+    <li><a href="/search*spi~S12">MCC Business & Technology</a></li>
 </ul>
 <ul>
-    <li class="first"><a href="/search~S8">Rockhurst University</a></li>
-    <li><a href="/search~S9">Saint Paul School of Theology</a></li>
-    <li><a href="/search~S6">William Jewell College</a></li>
+    <li class="first"><a href="/search*spi~S8">Rockhurst University</a></li>
+    <li><a href="/search*spi~S9">Saint Paul School of Theology</a></li>
+    <li><a href="/search*spi~S6">William Jewell College</a></li>
 </ul>
 </div>
 </div><!-- fullPage -->
 </div><!-- min-height -->
-<link rel="shortcut icon" type="ximage/icon" href="/screens/favicon.ico" />
+<script type="text/javascript">
+  try {
+     if (window.parent.location.href === undefined) {
+        $('.chat-widget').hide()
+     } else {
+     }
+  } catch (err) {
+        $('.chat-widget').hide()
+  }
+</script> 
+
+<script type="text/javascript">
+  (function() {
+    var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
+    x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?334"
+    var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
+  })();
+</script>
 
 <script type="text/javascript">
 
@@ -258,26 +57,3 @@ return false;
 </script>
 <!-- end botlogo.html file -->
 
-
-
-
-
-
-
-</div><!--pageContentInner -->
-
-</div><!-- pageContent  -->
-
-<div style="clear:both"></div>
-
-
-<script type="text/javascript"><!--//--><![CDATA[//><!--
-try { document.forms[0].searcharg.focus(); }
-catch(err) {}
-//--><!]]></script>
-
-
-</body>
-</html>
-
-<!--this is customized <screens/opacmenu_s8.html>-->
