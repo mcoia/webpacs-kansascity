@@ -564,8 +564,9 @@ PATFEEDS_MT=205.227.91.124
 LOCKSCOPE=no
 
 #SPANISH LANG
+INNREACH_spi=<span class="navButton resourceButton">Buscar en MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;m=h;o=o;s=s;t=t)
+
 AVAILLIM_spi=<span class="availLimMessage">Limitar la b&#250;squeda a ejemplares disponibles</span>|<span class="availLimMessage">Resultados de la b&#250;squeda limitados a ejemplares disponibles</span>
-BOTLOGO_spi=@screens/botlogo_spi.html
 ICON_BUT_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
 ICON_BUT_CLOSEWINDOW_spi=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Cerrar ventana</span></span>
 ICON_BUT_RET2CAT_spi=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Volver al cat&#225;logo</span></span>
@@ -627,7 +628,7 @@ ICON_BIB_HOLDINGS_ITEMS_spi=Ver Copias
 #ICON_NEARBY_spi=<img src="/screens/bullet.gif" alt="Ejemplares cercanos en la estanter&#237;a" border="0">
 ICON_BIB_PAGING_NEXT_spi=<span class="button"><span class="buttonText" id="buttonNextRecord">Registro siguiente</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BIB_PAGING_PREV_spi=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Registro anterior</span></span>
-ICON_RECORDLINK_spi=<a id="recordnum"><span class="button"><img src="/screens/ico_bookmark.png" alt=""><span class="buttonText">Enlace permanente</span></span></a>
+ICON_RECORDLINK_spi=<a id="recordnum" href="%s"><span class="button"><img src="/screens/ico_bookmark.png" alt=""><span class="buttonText">Enlace permanente</span></span></a>
 LINK856TEXT_spi=Conectar a
 BIB_LICENSE_FIELDS_spi=Permitido:Vlw|Restringido:Vlx
 BIB_RESOURCE_CAPTION_spi=<strong>Este t&#237;tulo est&#225; disponible electr&#243;nicamente a trav&#233;s de:</strong>
