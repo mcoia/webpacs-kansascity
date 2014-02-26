@@ -41,8 +41,8 @@
 <!--{navrow}-->
 <!--{relsearch}-->
 <div id="googlebooks" class="resourceButton" ></div>
-<a href="#here" class="resourceButton" name=smsbutton id=smsbutton onClick="showsms();return false;">
-<div id="smsfeatures">
+<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;">
+<div id="smsfeatures" class="resourceButton">
     <span class="button">
     <img src="/screens/ico_phone.gif">
         <span class="buttonText">Ubicaci&#243;n del elemento del  texto</span>
@@ -78,7 +78,7 @@
 <!--{recordinfo:t}-->
 </h1>
 
-<!--{recordinfo:pRe}-->
+<!--{recordinfo:pR}-->
 
 <!--{ifhaspatrate}-->
 <div class="bibDisplayRatings">
@@ -156,7 +156,7 @@
         var tr = itms.getElementsByTagName('TR');
         for(i = 1; i < tr.length; i++) {
          var x=tr[i].getElementsByTagName('TD');
-         if (x.length == 4) {
+         if (x.length == 3) {
           var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
           var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
           var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
@@ -174,19 +174,17 @@
         var textGBS = "";
         for (ISBN in bookInfo) {
             var b = bookInfo[ISBN];
-            var bookJacket =  "<img src='" + b.thumbnail_url + "&zoom=1'>";
+            var googleButton = "<a href='" + b.preview_url + "' target='blank'>" + buttonImg;
             //form the text of Google Book contents
             if (b && (b.preview == "full")) {
-                //textGBS = "<p>Full Text</p>";
+                //textGBS = "Full Text";
                 //"Google Book Search";
-                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>";
-                document.getElementById("googlejacket").innerHTML = bookJacket;
+                document.getElementById("googlebooks").innerHTML = googleButton
             }
             else if (b && (b.preview == "partial")) {
-                // textGBS = "<p>Limited Preview</p>"
+                //textGBS = "(Limited preview)"
                 //"Preview at Google Book Search";
-                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>";
-                document.getElementById("googlejacket").innerHTML = bookJacket
+                document.getElementById("googlebooks").innerHTML = googleButton
             }
             else if (b && (b.preview == "noview")) {
                 // textGBS = "<p>Limited Preview</p>"
