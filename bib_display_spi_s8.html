@@ -38,10 +38,11 @@
 
 <!--Optional INNReach resources.-->
 <!--{innreach}-->
+<!--{navrow}-->
 <!--{relsearch}-->
 <div id="googlebooks" class="resourceButton" ></div>
-<a href="#here" class="resourceButton" name=smsbutton id=smsbutton onClick="showsms();return false;">
-<div id="smsfeatures">
+<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;">
+<div id="smsfeatures" class="resourceButton">
     <span class="button">
     <img src="/screens/ico_phone.gif">
         <span class="buttonText">Ubicaci&#243;n del elemento del  texto</span>
@@ -80,7 +81,7 @@
 <!--{recordinfo:t}-->
 </h1>
 
-<!--{recordinfo:pRe}-->
+<!--{recordinfo:pR}-->
 
 <!--{ifhaspatrate}-->
 <div class="bibDisplayRatings">
@@ -158,7 +159,7 @@
         var tr = itms.getElementsByTagName('TR');
         for(i = 1; i < tr.length; i++) {
          var x=tr[i].getElementsByTagName('TD');
-         if (x.length == 4) {
+         if (x.length == 3) {
           var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
           var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
           var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
