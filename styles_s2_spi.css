@@ -1,0 +1,67 @@
+.bibPager, .bibResourceSidebar {
+    margin-right:2%;
+}
+
+#botPager {padding-top: 100px;}
+
+.clear {
+    height:0;
+}
+
+.linkBanner {
+    background: url("/screens/mcc_blue_background.jpg") repeat-x scroll center top transparent;
+    height:60px;
+}
+
+.linkBanner a {
+    color:#002242;
+    font-family:geneva,verdana,arial,tacoma,helvetica,sans-serif;
+    font-size:14px;
+    font-weight:normal;
+}
+
+.linkBanner ul {
+    padding:0;
+}
+
+.linkBanner .navLeft ul li {
+   margin-right:1.75em;
+}
+
+.minHeight {
+    width:100%;
+    min-width:1024px;
+}
+
+.pageContentInner {
+    padding:0 2%;
+}
+
+#searchNavMenu {
+    width:215px;
+    position:absolute;
+    right:51px;
+    top:20px;
+}
+
+.searchNavBut {
+    margin: -24px -29px 3px 5px;
+    vertical-align: bottom;
+}
+
+.topLogo {
+    background: url("/screens/mcc_dark_background.jpg") repeat-x scroll center top transparent;
+}
+
+.topLogoImage {
+    padding:18px 0 26px 0;
+}
+
+.topLogoInner {
+    background: url("/screens/mcc_background.jpg") no-repeat scroll center top transparent;
+    width:100%;
+}
+
+.topLogoInner, .linkBanner .navLeft, #alertMessage {
+    margin-left:8%;
+}
