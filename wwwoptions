@@ -163,13 +163,15 @@ IMAGE_MATTYPEi=/screens/media_cdbook.gif
 IMAGE_MATTYPEj=/screens/media_musicalsound.gif
 IMAGE_MATTYPEk=/screens/media_2dgraphic.gif
 IMAGE_MATTYPEm=/screens/media_computerfile.gif
+IMAGE_MATTYPEn=/screens/media_periodical2.gif
 IMAGE_MATTYPEo=/screens/media_kit.gif
 IMAGE_MATTYPEp=/screens/media_mixed.gif    
 IMAGE_MATTYPEr=/screens/media_3dartwork.gif
 IMAGE_MATTYPEs=/screens/media_ejournal.gif
 IMAGE_MATTYPEt=/screens/media_manuscript.gif
+IMAGE_MATTYPEu=/screens/media_emovie.gif
 IMAGE_MATTYPE2=/screens/media_ebook.gif
-INDEX_EXT=coi
+INDEX_EXT=coie
 MEDIA=2
 NO_COPIES=Currently no copies available
 SORT_BROWSE=t:Title|a:Author|c:Year|r:Reverse Year|n:Call Number|m:Material Type
@@ -415,12 +417,13 @@ TABLEPARAM_RSRV_BIBS=width="100%" border="0" cellpadding="0" cellspacing="0"
 # Featured Lists
 ICON_BUT_PREVSCRN=<span class="navButtonOneLine">Back</span>
 ICON_BUT_RET2FEAT=<span class="navButtonOneLine">Back</span>
-#FEATURED_LIST=01,02,03|FEATURED LISTS|CATEGORY|# of Titles
+FEATURED_LIST=03,67,73,179,181|FEATURED LISTS|CATEGORY|# of Titles
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
 #BIBIMAGE=http://www.librarything.com/devkey/4f5b96d61b456f6672be9d60b184dad9/small/isbn/%s|I|http://www.librarything.com/devkey/4f5b96d61b456f6672be9d60b184dad9/large/isbn/%s
-#BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=kcartinst|I|http://www.syndetics.com/index.aspx?isbn=%s/LC.GIF&client=kcartinst
+BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=kcartinst|I|http://www.syndetics.com/index.aspx?isbn=%s/LC.GIF&client=kcartinst
+#BIBIMAGE=http://syndetics.com/index.aspx?issn=%s/SC.GIF&client=kcartinst|I|http://syndetics.com/index.aspx?issn=%s/SC.GIF&client=kcartinst
 BIBIMAGE_TEXT=Book Jacket
 BUT_ENCYCPD=/screens/encycpd.gif
 BUT_FULL_TEXT=/screens/full_text.gif
@@ -556,4 +559,3 @@ PATFEEDS_MT=205.227.91.124
 # Scoping
 
 LOCKSCOPE=no
-
