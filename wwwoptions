@@ -434,15 +434,10 @@ ICON_BUT_CLOSEFRAME=<span class="button"><img src="/screens/ico_x.png" alt=""><s
 ICON_BUT_RESOURCELINK=<div id="resourcelink"><span class="navButton resourceButton path">Other Resources</span></div>
 ICON_BUT_RESOURCELINK10=<div id="resourcelink"><span class="navButton resourceButton path">Subject Guides</span></div>
 ICON_BUT_RET2RESOURCE=<div id="resourcelink"><span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span></div>
-RESLINK1=bibresourcetop|browseresourcetop||
 RESLINK2=bibresourcetop|||
 RESLINK3=bibresourcetop|||
 RESLINK4=bibresourcetop|||
 RESLINK5=bibresourcetop|||
-RESLINK6=bibresourcetop|||
-RESLINK7=bibresourcetop|browseresourcetop||
-RESLINK8=bibresourcetop|browseresourcetop||
-RESLINK9=bibresourcetop|browseresourcetop||
 RESLINK10=bibresourcetop|||
 RESLINK12=bibresourcetop|||
 #WBHEADERTEXT=The following resources may provide additional information about<br>#HEADER#
