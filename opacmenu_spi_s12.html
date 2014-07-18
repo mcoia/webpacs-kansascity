@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 11 June 2010 -->
+<head>
+<title>Cat&#225;logo Web de Kansas City</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+<script type="text/javascript">/* <![CDATA[ */
+function iiiSearchValidate() {
+	try{
+	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
+		return false;
+		}
+	}
+	catch(err) {
+	}
+  return true;
+}
+
+function iiiDoSubmit_1()
+
+{
+//getFormHandleForm() is in common.js
+var obj = getFormHandleForm(1);
+if(iiiSearchValidate()){
+obj.submit();
+}
+}
+/* ]]> */
+</script>
+<script type="text/javascript" src="/screens/iiilangswitch.js"></script> 
+<script type="text/javascript" src="/screens/jquery-1.7.1.min.js"></script>
+
+<script type="text/javascript" src="/screens/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="/screens/mobileredirect.js"></script>
+</head>
+<body>
+
+<!--{toplogo}-->
+<div class="frontPageNavColumn"><!-- nav menu column-->
+
+<h1 class="navHeader">Busque Opciones</h1>
+
+<ul id="rightCol">
+<li><a href="/search*spi/X">Palabra clave</a></li>
+<li><a href="/search*spi/t">T&#237;tulo</a></li>
+<li><a href="/search*spi/a">Autor</a></li>
+<li><a href="/search*spi/d">Materia (LC)</a></li>
+<li><a href="/search*spi/m">Materia (Ni&#241;os)</a></li>
+<li><a href="/search*spi/s">T&#237;tulo de Revistas, Periódicos</a></li>
+<li><a href="#">N&#250;mero de Clasificaci&#243;n</a>
+			<ul>
+				<li><a href="/search*spi/c">N&#250;mero de Llamada de la Biblioteca del Congreso</a></li>
+				<li><a href="/search*spi/e">N&#250;mero de Llamada de Dewey</a></li>
+                                <li><a href="/search*spi/f">N&#250;mero de Llamada Locall</a></li>
+                                <li><a href="/search*spi/i">ISBN/ISSN</a></li>
+                                <li><a href="/search*spi/g">Documentos Gubernamentales</a></li>
+				<li><a href="/search*spi/o">N&#250;mero de OCLC</a></li>
+			</ul>
+</li>
+
+<li><a href="/search*spi/q">Autor y T&#237;tulo</a></li>
+</ul>
+        
+</div>
+
+<div class="frontPageMainColumn">
+
+<div class="pageContentInner mainSearch">
+
+<h1 class="accessibleAddInfo">Buscar</h1>
+
+<div id="accessibleForm" class="form1Part">
+<div class="browseSearchtool">
+<form action="/search*spi/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
+
+<input type="hidden" id="iiiFormHandle_1">
+
+<!-- Optional legend:
+<fieldset>
+<legend>Indique el t&#233;rmino de b&#250;squeda que quiera encontrar.</legend>-->
+<div class="formEntryArea">
+<div class="inlineBlock">
+<label for="searchtype" class="accessibleAddInfo">Tipo de b&#250;squeda</label>
+<select name="searchtype" id="searchtype">
+<option value="X" selected="selected">Palabra clave</option>
+<option value="t">T&#237;tulo</option>
+<option value="a">Autor</option>
+<option value="d">Materia(LC)</option>
+<option value="e">N&#250;mero de Llamada de Dewey</option>
+<option value="s">T&#237;tulo de revista</option>
+
+</select>
+<!--{nosort}-->
+<label for="searcharg" class="accessibleAddInfo">T&#233;rmino de b&#250;squeda</label>
+<input maxlength="75" name="searcharg" size="20" >
+</div>
+<div class="inlineBlock">
+<label for="scope" class="accessibleAddInfo">Ubicaci&#243;n</label>
+<!--{scope}-->
+<span class="formButtonArea">
+
+  <!--{submit}-->
+
+<input type="hidden" id="iiiFormHandle_1"/>
+<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Buscar</span></span></div></div></a>
+
+<input type="submit" style="display:none">
+
+</span>
+</div>
+</div><!-- formEntryArea -->
+<!--</fieldset> optional-->
+</form>
+</div><!-- browseSearchtool -->
+</div><!-- form1Part -->
+
+<!--ZOHO CHAT-->
+<div style="height:300px;"><iframe style='overflow:hidden;width:300;height:100%;' frameborder='0' border='0' src="http://chat.zoho.com/mychat.sas?u=4f6d98eb0142be128cce6f0c7cc94a8f&chaturl=Chat%20Reference&V=000000-70a9e1-eff4f9-70a9e1-Chat%20Reference"></iframe></div>
+<body>
+	 <p>
+	 Reference Librarian Chat Schedule:<br>
+	  		  Monday - Thursday<br>
+              9:00 AM - 7:00 PM<br>
+              Friday<br>
+              9:00 AM - 4:00 PM<br>
+	</div>
+ </div>
+ </body>
+
+<!--{botlogo}-->
+
+</div><!--pageContentInner -->
+
+</div><!--frontPageMainColumn-->
+
+</div><!-- pageContent  -->
+<div style="clear:both"></div>
+
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].searcharg.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
