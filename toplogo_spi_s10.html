@@ -13,16 +13,14 @@
 $(document).ready(function () {
 	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
 	showQR();
-
-	//$('#searchtype').change(function(){
-    	//$("#exampleText").load("/screens/" + this.value + ".inc");
-	//});
 	//Changes the search examples
 	
 	var selectAny = $('#b option[value=""]')
 	$('#b option:not([value^="7"])').detach(); 
 	selectAny.prependTo("#b")
 	//Hides the out-of-scope locations
+
+	 $( ".worldCat" ).hide();  
 });
 </script>
 
