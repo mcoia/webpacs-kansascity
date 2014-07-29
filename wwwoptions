@@ -449,7 +449,7 @@ WEBADDRESS=http://www.worldcat.org/search?q=%s|I|http://www.worldcat.org/search?
 # WebBridge/Pathfinder Pro
 ICON_BUT_CLOSEFRAME=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Close Frame</span></span>
 ICON_BUT_RESOURCELINK=<div id="resourcelink"><span class="navButton resourceButton path">Other Resources</span></div>
-ICON_BUT_RESOURCELINK10=<div id="resourcelink"><span class="navButton resourceButton path">Subject Guides</span></div>
+#ICON_BUT_RESOURCELINK10=<div id="resourcelink"><span class="navButton resourceButton path">Subject Guides</span></div>
 ICON_BUT_RET2RESOURCE=<div id="resourcelink"><span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Back</span></span></div>
 RESLINK2=bibresourcetop|||
 RESLINK3=bibresourcetop|||
@@ -759,7 +759,7 @@ ICON_BUT_CLOSEFRAME_spi=<span class="button"><img src="/screens/ico_x.png" alt="
 #ICON_BUT_RESOURCELINK_spi=<div id="resourcelink"><span class="button"><img src="/screens/ico_globe.png" alt=""><span class="buttonText">Otros recursos</span></span></div>
 #ICON_BUT_RET2RESOURCE_spi=<div id="resourcelink"><span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Volver</span></span></div>
 ICON_BUT_RESOURCELINK_spi=<div id="resourcelink"><span class="navButton resourceButton path">Other Resources</span></div>
-ICON_BUT_RESOURCELINK10_spi=<div id="resourcelink"><span class="navButton resourceButton path">Subject Guides</span></div>
+#ICON_BUT_RESOURCELINK10_spi=<div id="resourcelink"><span class="navButton resourceButton path">Subject Guides</span></div>
 #WBHEADERTEXT_spi=Los siguientes recursos le pueden proporcionar informaci&#243;n adicional sobre<br>#ENCABEZAMIENTO#
 ICON_PATFEED_spi=<span class="button"><img src="/screens/ico_rss.gif" alt=""><span class="buttonText">Mis Registros Feeds</span></span>
 PATFEED_CONFIG_spi=Novedades de Su Registro de la Biblioteca|Para ver m&#225;s informaci&#243;n, siga los enlaces de la biblioteca.
