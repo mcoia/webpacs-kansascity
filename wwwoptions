@@ -434,7 +434,7 @@ TABLEPARAM_RSRV_BIBS=width="100%" border="0" cellpadding="0" cellspacing="0"
 # Featured Lists
 ICON_BUT_PREVSCRN=<span class="navButtonOneLine">Back</span>
 ICON_BUT_RET2FEAT=<span class="navButtonOneLine">Back</span>
-FEATURED_LIST=03,67,73,179,181|FEATURED LISTS|CATEGORY|# of Titles
+FEATURED_LIST=03,67,73,179,181,68|FEATURED LISTS|CATEGORY|# of Titles
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
@@ -751,7 +751,7 @@ ICON_BUT_RET2CRS_spi=<span class="button"><img src="/screens/ico_back.png" alt="
 #RSRV_HEADER_spi=T&#237;tulos destacados este mes
 ICON_BUT_PREVSCRN_spi=<span class="navButtonOneLine">Volver</span>
 ICON_BUT_RET2FEAT_spi=<span class="navButtonOneLine">Volver</span>
-FEATURED_LIST_spi=03,67,73,179,181|LISTADOS DESTACADOS|CATEGOR&#205;A|N&#186; de t&#237;tulos
+FEATURED_LIST_spi=03,67,73,179,181,68|LISTADOS DESTACADOS|CATEGOR&#205;A|N&#186; de t&#237;tulos
 BIBIMAGE_TEXT_spi=Cubierta del libro
 WEBADDRESS_spi=http://www.worldcat.org/search?q=%s|I|http://www.worldcat.org/search?q=bn:%s|<span class="worldCat navButton resourceButton">Buscar en WorldCat</span>|<span class="worldCat navButton resourceButton">Buscar en WorldCat</span>|-1
 #WEBADDRESS_spi=|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=N||<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|-1
