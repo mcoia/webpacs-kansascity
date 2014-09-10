@@ -22,6 +22,16 @@ $(document).ready(function () {
 	if ( $('.rightColumn ').css('display') == 'none' ) {
 		$('#sideChat').html('') 
 	}
+
+		//hides out of scope featured lists
+	var pathnameFtList = window.location.href.slice(window.location.href.indexOf('/') + 1).split('/')[3];
+	if(pathnameFtList.indexOf('ftlist') > -1){
+		$('.browseEntry:not(:contains("Rockhurst"))').addClass('hideMe');
+		$(".hideMe").hide();
+		text = $('.ftlistHeader').text();
+		listName = text.replace(/[^a-z0-9]/gmi, " ").replace(/[\d]{1,2}/m, " ").replace("entries", " ");
+		namewoNum = $('.ftlistHeader').replaceWith("<th colSpan='3'>" + listName + "</th>");
+	}
 });
 </script>
 
@@ -62,7 +72,7 @@ $(document).ready(function () {
     <li><a href="http://www.rockhurst.edu/library/">Rockhurst University</a></li>
     <li><a href="/">Kansas City</a></li>
     <li><a href="http://searchmobius.org">MOBIUS</a></li>
-    <li><a href="/ftlists">Featured Lists</a></li>
+    <li><a href="/search~S8/ftlists">Featured Lists</a></li>
 </ul>
 </div>
 
