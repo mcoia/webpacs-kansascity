@@ -163,6 +163,10 @@ a:hover  { color: #7C14B8; }
     font-weight:bold;
 }
 
+#spanishsearchMessage {
+    font-weight:bold;
+}
+
 .availLimMessage { font-style:normal; }
 
 .bibClear { clear:both; }
