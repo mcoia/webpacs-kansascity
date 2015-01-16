@@ -14,6 +14,14 @@ $(document).ready(function () {
 	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
 	showQR();
 
+	var selectAny = $('#b option[value=""]')
+	$('#b option:not([value^="r"])').detach(); 
+	selectAny.prependTo("#b")
+	//Hides the out-of-scope locations
+	if ( $('.rightColumn ').css('display') == 'none' ) {
+		$('#sideChat').html('') 
+	}
+
 	//$('#searchtype').change(function(){
     	//$("#exampleText").load("/screens/" + this.value + ".inc");
 	//});
@@ -104,7 +112,18 @@ return false;
 
 <div class="clear"></div>
 
+</div>
 </div><!--linkBanner-->
+<div class="clear"></div>
+<div class="rightColumn">
+
+<div class="chat-widget" id="sideChat">
+	<div class="needs-js">
+	  JavaScript disabled or chat unavailable.
+	</div>
+</div>
+
+
 </div>
 
 

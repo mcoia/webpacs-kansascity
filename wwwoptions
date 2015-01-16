@@ -42,9 +42,11 @@ AVAILLIM_STATS=-,o
 BOTLOGO7=@screens/botlogo_s7.html
 BOTLOGO=@screens/botlogo.html
 BOTLOGO8=@screens/botlogo_s8.html
+BOTLOGO13=@screens/botlogo_s13.html
 BOTLOGO7_spi=@screens/botlogo_spi_s7.html
 BOTLOGO_spi=@screens/botlogo_spi.html
 BOTLOGO8_spi=@screens/botlogo_spi_s8.html
+BOTLOGO13_spi=@screens/botlogo_spi_s13.html
 ICON_BUT_CANCEL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel</span></span></div></div>
 ICON_BUT_CLOSEWINDOW=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Close Window</span></span>
 ICON_BUT_RET2CAT=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Catalog</span></span>
