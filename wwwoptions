@@ -111,7 +111,8 @@ STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode 
 
 # General and Phrase Searching
 ICON_BUT_ANOTHER=<span class="navButton">Another Search</span>
-ICON_BUT_NEWSRCH=New Search
+#ICON_BUT_NEWSRCH=New Search
+ICON_BUT_NEWSRCH13=<span class="navButtonOneLine">New Search</span>
 ICON_BUT_WORDSRCH=<span class="navButton">Search as Words</span>
 DROP_DOWN=Ytadmsecgfi
 FRAMEURL=0
@@ -422,6 +423,7 @@ ILL_HOME=/screens/ill.html
 # INN-Reach
 IR_PLACEMENT=2
 INNREACH=<span class="navButton resourceButton">Search MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;m=h;o=o;s=s;t=t)
+INNREACH13=<span class="navButton resourceButton">Search All MOBIUS Libraries</span>@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;m=h;o=o;s=s;t=t)
 
 # Media Management
 ICON_BUT_RET2CRS=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Course</span></span>
@@ -602,7 +604,8 @@ ICON_BUT_PUBLIC_spi=<span class="navButtonOneLine">Vista usuario</span>
 ICON_BUT_STAFF_spi=<span class="navButtonOneLine">Vista del personal</span>
 STAFF_LOGGEDIN_MSG_spi=<span class="loggedInMessage">Est&#225; conectado como "personal" en %s como %s</span>
 ICON_BUT_ANOTHER_spi=<span class="navButton">Otra b&#250;squeda</span>
-ICON_BUT_NEWSRCH_spi=Inicio
+#ICON_BUT_NEWSRCH_spi=Inicio
+#ICON_BUT_NEWSRCH13_spi=<span class="navButtonOneLine">Inicio</span>
 ICON_BUT_WORDSRCH_spi=<span class="navButton">Buscar como palabras</span>
 ICON_BUT_MODIFY_spi=<span class="navButton">Modificar b&#250;squeda</span>
 ICON_BUT_SHOWSIM_spi=<span class="navButton">M&#225;s como este</span>
