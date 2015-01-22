@@ -463,6 +463,7 @@ RESLINK4=bibresourcetop|||
 RESLINK5=bibresourcetop|||
 #RESLINK10=bibresourcetop|||
 RESLINK12=bibresourcetop|||
+#RESLINK13=bibresourcetop|||
 #WBHEADERTEXT=The following resources may provide additional information about<br>#HEADER#
 ENH_IMAGE=false
 
@@ -836,4 +837,3 @@ ICON_ADD_TO_WAITLIST_spi=<br><strong>A&#241;adir a lista de espera</strong>
 ICON_VIEW_ADDITIONAL_SESSIONS_spi=<span class="button"><span class="buttonText">Ver sesiones adicionales</span></span>
 ICON_HIDE_ADDITIONAL_SESSIONS_spi=<span class="button"><span class="buttonText">Esconder sesiones adicionales</span></span>
 ICON_PROGRAM_CAL_spi=<span class="button"><img src="/screens/ico_calendar.png" alt=""><span class="buttonText">Calendario de eventos</span></span>
->>>>>>> origin/kc_spainlang_32004
