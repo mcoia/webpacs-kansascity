@@ -61,3 +61,28 @@ div .bibResourceSidebar { display: block;}
 .topLogoImage {
     padding:20px 0;
 }
+
+span.kcbutton {
+    background: url("button_blank.gif") no-repeat scroll 0 0;
+    font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+    display:block;
+    font-size:9px;
+    color: #000000;
+    cursor: pointer;
+    font-weight: normal;
+    height: 27px;
+    line-height: 11px;
+    text-align: center;
+    width: 65px;
+}
+
+
+#pathbutton a:link, #pathbutton a:visited {
+    font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+    padding: 6px 5px 3px 0;
+    text-decoration: none;
+    width: auto;
+    color: #000000;
+    cursor: pointer;
+    font-weight: normal;
+}
