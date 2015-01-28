@@ -27,6 +27,12 @@ $(document).ready(function () {
     	//$("#exampleText").load("/screens/" + this.value + ".inc");
 	//});
 	//Changes the search examples
+
+
+//adds kc link after Another search on navRow
+
+var kcUrl = 'http://kansascity.searchmobius.org/search/?searchtype=X&SORT=D&searcharg=' + $('#searcharg').val();
+ $("#modifySearch").after('<a href="' + kcUrl + '"><img alt="" src="/screens/kcsearch_button.gif" class="prospectorButton"></a>');
 	
 
 });
