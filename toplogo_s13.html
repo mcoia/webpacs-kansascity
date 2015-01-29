@@ -31,9 +31,10 @@ $(document).ready(function () {
 
 //adds kc link after Another search on navRow
 
-//var kcUrl = 'http://kansascity.searchmobius.org/search/?searchtype=X&SORT=D&searcharg=' + $('#searcharg').val();
- //$("#modifySearch").after('<a href="' + kcUrl + '"><img alt="" src="/screens/kcsearch_button.gif" class="prospectorButton"></a>');
-	
+var kcUrl = 'http://kansascity.searchmobius.org/search/?searchtype=X&SORT=D&searcharg=' + $('#searcharg').val();
+$("#kcsearch").before('<a href="' + kcUrl + '"><img alt="" src="/screens/kcsearch_button.gif" class="navButton resourceButton"></a>');
+var mobUrl = 'http://searchmobius.org/search/?searchtype=X&SORT=D&searcharg=' + $('#searcharg').val();
+$("#kcsearch").before('<a href="' + mobUrl + '"><img alt="" src="/screens/mobiusLibrarysearch.gif" class="navButton resourceButton"></a>');	
 
 });
 </script>
