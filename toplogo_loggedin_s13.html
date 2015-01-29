@@ -17,7 +17,13 @@ $(document).ready(function () {
 	//$('#searchtype').change(function(){
     	//$("#exampleText").load("/screens/" + this.value + ".inc");
 	//});
+
+//Hides the out-of-scope locations
+	if ( $('.rightColumn ').css('display') == 'none' ) {
+		$('#sideChat').html('') 
+	}
 	//Changes the search examples
+
 	
 	//var selectAny = $('#b option[value=""]')
 	//$('#b option:not([value^="z"])').detach(); 
