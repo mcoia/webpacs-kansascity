@@ -85,3 +85,11 @@ span.kcbutton {
     cursor: pointer;
     font-weight: normal;
 }
+
+.bibResourceTableHeader, .browseResourceTableHeader{
+    display: none;
+}
+
+#worldCatBut {
+    display:none;
+}

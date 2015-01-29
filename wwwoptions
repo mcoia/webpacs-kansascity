@@ -450,7 +450,7 @@ BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=kcartinst|I|h
 BIBIMAGE_TEXT=Book Jacket
 BUT_ENCYCPD=/screens/encycpd.gif
 BUT_FULL_TEXT=/screens/full_text.gif
-WEBADDRESS=http://www.worldcat.org/search?q=%s|I|http://www.worldcat.org/search?q=bn:%s|<span class="worldCat navButton resourceButton">Search WorldCat</span>|<span class="worldCat navButton resourceButton">Search WorldCat</span>|-1
+WEBADDRESS=http://www.worldcat.org/search?q=%s|I|http://www.worldcat.org/search?q=bn:%s|<span id="worldCatBut" class="worldCat navButton resourceButton">Search WorldCat</span>|<span id="worldCatBut" class="worldCat navButton resourceButton">Search WorldCat</span>|-1
 
 # WebBridge/Pathfinder Pro
 ICON_BUT_CLOSEFRAME=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Close Frame</span></span>
