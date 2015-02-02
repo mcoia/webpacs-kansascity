@@ -75,21 +75,14 @@ span.kcbutton {
     width: 65px;
 }
 
-
-#pathbutton a:link, #pathbutton a:visited {
-    font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
-    padding: 6px 5px 3px 0;
-    text-decoration: none;
-    width: auto;
-    color: #000000;
-    cursor: pointer;
-    font-weight: normal;
-}
-
 .bibResourceTableHeader, .browseResourceTableHeader{
     display: none;
 }
 
 #worldCatBut {
     display:none;
+}
+
+#kcSearch {
+    margin-bottom: 24px;
 }
