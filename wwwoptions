@@ -126,7 +126,7 @@ OFFER_HISTORY=true
 AVS_MODIFY_TAG=X
 AVS_TAG=XYZ
 ICON_BUT_MODIFY=<span id="modifySearch"class="navButton">Modify Search</span>
-ICON_BUT_MODIFY13=<span id="modifySearch"class="navButton">Limit Search Results</span>
+ICON_BUT_MODIFY13=<span title="Narrow your search results by author, title, subject, location, etc." id="modifySearch"class="navButton">Limit Search Results</span>
 ICON_BUT_SHOWSIM=<span class="navButton">More Like This</span>
 ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;<h1 class="browseSuperEntryTitle">Most relevant titles</h1>&nbsp;
 ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;<h1 class="browseSuperEntryTitle">Highly relevant titles</h1>&nbsp;
@@ -172,7 +172,9 @@ ICON_PAGING_PREV=Prev
 ICON_PROGRAM=<img src="/screens/media_program.gif" border="0" alt="Library Event">
 ICON_RESOURCE=<img src="/screens/media_resource.gif" alt="Internet Resource">
 ICON_SAVEALLPAGE=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add All On Page</span></span>
+ICON_SAVEALLPAGE13=<span title="Save all search results on this page temporarily (i.e., during this session only). " class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add All On Page</span></span>
 ICON_SAVEMARKED=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add Marked to Bag</span></span>
+ICON_SAVEMARKED13=<span title="Save search results temporarily (i.e., during this session only)." class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add Marked to Bag</span></span>
 IMAGE_MATTYPE-=/screens/media_book.gif
 IMAGE_MATTYPEa=/screens/media_book.gif
 IMAGE_MATTYPEb=/screens/media_archive.gif
@@ -275,6 +277,7 @@ ICON_MYLISTS_REMOVE_DUPLICATES=<div onmousedown="this.className='pressedState';"
 ICON_MYLISTS_RENAME=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Change Name/Description</span></span></div></div>
 ICON_MYLISTS_SAVE=<span class="navButton">Add to My Lists</span>
 ICON_MYLISTS_SAVE_TO_LIST=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add Marked to My Lists</span></span>
+ICON_MYLISTS_SAVE_TO_LIST13=<span title="Save search results for future reference (i.e., they will still be viewable the next time you use the catalog)." class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add Marked to My Lists</span></span>
 ICON_MYLISTS_BRIEF=<span class="button"><img src="/screens/ico_list_add.png" alt=""><span class="buttonText">Add to My Lists</span></span>
 ICON_BACK_TO_MYLISTS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Back to My Lists</span></span></div></div>
 ICON_MYLISTS_RECORD=<span class="navButton">Add to My Lists</span>
@@ -424,7 +427,7 @@ ILL_HOME=/screens/ill.html
 # INN-Reach
 IR_PLACEMENT=2
 INNREACH=<span class="navButton resourceButton">Search MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;m=h;o=o;s=s;t=t)
-INNREACH13=<span id="parkInnReach"class="resourceButton"><img src="/screens/mobiusLibrarysearch.gif" alt=""></span>@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;m=h;o=o;s=s;t=t)
+INNREACH13=<span title="Search for items held by libraries throughout the entire MOBIUS system." id="parkInnReach"class="resourceButton"><img src="/screens/mobiusLibrarysearch.gif" alt=""></span>@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;m=h;o=o;s=s;t=t)
 
 # Media Management
 ICON_BUT_RET2CRS=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Course</span></span>
