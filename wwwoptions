@@ -586,6 +586,7 @@ LOCKSCOPE=no
 
 #SPANISH LANG
 INNREACH_spi=<span class="navButton resourceButton">Buscar en MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;m=h;o=o;s=s;t=t)
+INNREACH13_spi=<span class="navButton resourceButton">Buscar en MOBIUS</span>@searchmobius.org(X=X*;Y=Y*;a=a;c=c;d=d;e=e;g=g;i=i;m=h;o=o;s=s;t=t)
 
 AVAILLIM_spi=<span class="availLimMessage">Limitar la b&#250;squeda a ejemplares disponibles</span>|<span class="availLimMessage">Resultados de la b&#250;squeda limitados a ejemplares disponibles</span>
 ICON_BUT_CANCEL_spi=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancelar</span></span></div></div>
