@@ -112,7 +112,6 @@ STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode 
 # General and Phrase Searching
 ICON_BUT_ANOTHER=<span class="navButton">Another Search</span>
 #ICON_BUT_NEWSRCH=New Search
-ICON_BUT_NEWSRCH13=<span class="navButtonOneLine">New Search</span>
 ICON_BUT_WORDSRCH=<span class="navButton">Search as Words</span>
 DROP_DOWN=Ytadmsecgfi
 FRAMEURL=0
