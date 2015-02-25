@@ -17,7 +17,10 @@ $(document).ready(function () {
 	//$('#searchtype').change(function(){
     	//$("#exampleText").load("/screens/" + this.value + ".inc");
 	//});
-//Hides the out-of-scope locations
+	var selectAny = $('#b option[value=""]')
+	$('#b option:not([value^="p"])').detach(); 
+	selectAny.prependTo("#b")
+	//Hides the out-of-scope locations
 	if ( $('.rightColumn ').css('display') == 'none' ) {
 		$('#sideChat').html('') 
 	}
