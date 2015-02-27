@@ -1,0 +1,88 @@
+div .bibResourceSidebar { display: block;}
+
+.briefcitDetail, .briefcitAuthDetail  { display:inline; float:left; padding:0px 0 0px 30px; width:89%; }
+
+.linkBanner { background:#ab2941; }
+
+.navHeader {
+    border-bottom:1px dashed #5E5D5D;
+    color:#5E5D5D;
+    font-size:small;
+    font-weight:bold;
+    letter-spacing:1px;
+    margin-bottom:0;
+    margin-top:5px;
+    padding:2px;
+}
+
+
+.pageNavColumn {
+    background-color:#F3F3F3;
+    border:1px solid #D3D3D3;
+    float:right;
+    margin:2% 1.75%;
+    padding:0.5%;
+    width:19%;
+}
+
+.pageContentColumn {
+    float:right;
+    margin-left:1%;
+    padding:1%;
+    width:71%;
+}
+
+#rightCol {
+    font-size:15px;
+    margin:0 20px;
+    padding:0;
+}
+
+#rightCol li {
+    list-style-type:none;
+    padding:4px 0;
+    text-indent:-14px;
+    margin:0 0 0 3px;
+}
+
+#rightCol li a {
+    color:#444444;  
+    text-decoration:none;
+}
+
+.rightColumn {
+    margin: 2% 0 2% 1.75%;
+}
+
+#searchNavMenu {
+    visibility:hidden;
+}
+
+.topLogoImage {
+    padding:20px 0;
+}
+
+span.kcbutton {
+    font-family: Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif;
+    display:block;
+    font-size:9px;
+    color: #000000;
+    cursor: pointer;
+    font-weight: normal;
+    height: 27px;
+    line-height: 11px;
+    text-align: center;
+    width: 65px;
+}
+
+.bibResourceTableHeader, .browseResourceTableHeader{
+    display: none;
+}
+
+#worldCatBut {
+    display:none;
+}
+
+#kcSearch {
+    margin-bottom: 24px;
+}
