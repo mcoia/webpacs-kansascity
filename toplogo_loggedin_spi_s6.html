@@ -23,6 +23,16 @@ $(document).ready(function () {
 	$('#b option:not([value^="w"])').detach(); 
 	selectAny.prependTo("#b")
 	//Hides the out-of-scope locations
+
+	//hides out of scope featured lists
+	var pathnameFtList = window.location.href.slice(window.location.href.indexOf('/') + 1).split('/')[3];
+	if(pathnameFtList.indexOf('ftlist') > -1){
+		$('.browseEntry:not(:contains("WJC"))').addClass('hideMe');
+		$(".hideMe").hide();
+		text = $('.ftlistHeader').text();
+		listName = text.replace(/[^a-z0-9]/gmi, " ").replace(/[\d]{1,2}/m, " ").replace("entradas", " ");
+		namewoNum = $('.ftlistHeader').replaceWith("<th colSpan='3'>" + listName + "</th>");
+	}
 });
 </script>
 
@@ -70,6 +80,8 @@ $(document).ready(function () {
 	<li><a href="http://www.jewell.edu/william_jewell/gen/william_and_jewell_generated_pages/Curry_Library_Welcome_p2444.html">William Jewell College</a></li>
     <li><a href="/search*spi~S0">Kansas City</a></li>
     <li><a href="http://searchmobius.org">MOBIUS</a></li>
+    <li><a href="/search~S6*spi/ftlists">Listados Destacados</a></li>
+    <li><a href="/search*spi/r">B&#250;squeda por curso</a></li>
 </ul>
 </div>
 
