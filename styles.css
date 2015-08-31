@@ -38,6 +38,8 @@ For 10pt, apply .7353em
 /* Section 1 */
 /*Global tag styles*/
 
+.hidemeIR {display: none;}
+
 a img {border:none;}
 
 
