@@ -11,6 +11,7 @@ function hideLinks(){
     stringsToHide[9] = new Array ("spst");
     stringsToHide[10] = new Array ("kcai");
     stringsToHide[12] = new Array ("mcckc");
+    stringsToHide[13] = new Array ("park.edu");
  
 
     
