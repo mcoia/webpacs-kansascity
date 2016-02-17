@@ -34,7 +34,7 @@
 # WebPAC Pro
 # Research Pro
 # Program Registration
-# SPANISH LANGUAGE 
+# SPANISH LANGUAGE
 
 # General Display and Behavior
 REFRESH_MESSAGE=You are getting this error because the catalog server received multiple requests in a short period of time. This can happen if you double-click a link, refresh the browser too quickly, or redo the same search quickly. You should be able to get past this error by using your browser's "back" button or by refreshing this window. (Please click the refresh button just once.)
@@ -194,7 +194,7 @@ IMAGE_MATTYPEk=/screens/media_2dgraphic.gif
 IMAGE_MATTYPEm=/screens/media_computerfile.gif
 IMAGE_MATTYPEn=/screens/media_periodical2.gif
 IMAGE_MATTYPEo=/screens/media_kit.gif
-IMAGE_MATTYPEp=/screens/media_mixed.gif    
+IMAGE_MATTYPEp=/screens/media_mixed.gif
 IMAGE_MATTYPEr=/screens/media_3dartwork.gif
 IMAGE_MATTYPEs=/screens/media_ejournal.gif
 IMAGE_MATTYPEt=/screens/media_manuscript.gif
@@ -219,7 +219,7 @@ HOLDINGS_POS=atpe
 HOTLINK=o^001,i^020
 ICON_BIB_HOLDINGS_ITEMS=View Copies
 #ICON_NEARBY=<img src="/screens/bullet.gif" alt="Nearby on shelf" border="0">
-ICON_BIB_PAGING_CAPTION= 
+ICON_BIB_PAGING_CAPTION=
 ICON_BIB_PAGING_NEXT=<span class="button"><span class="buttonText" id="buttonNextRecord">Next Record</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BIB_PAGING_PREV=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Previous Record</span></span>
 ICON_RECORDLINK=<a id="recordnum" href="%s"><span class="button"><img src="/screens/ico_bookmark.png" alt=""><span class="buttonText">Permanent Link</span></span></a>
@@ -265,7 +265,7 @@ ICON_BUT_CARDFORM_LIN=<span class="button"><img src="/screens/ico_gear.png" alt=
 CHECKIN_BGCOLOR=ARRIVED=#FFFFFF|EXPECTED=#FFFFFF|TO BIND/BOUND=#FFFFFF|LATE=#FFFFFF|OTHER=#FFFFFF
 CHECKIN_FONTCOLOR=ARRIVED=GREEN|EXPECTED=BLACK|TO BIND/BOUND=RED|LATE=BLACK|OTHER=BLACK
 CHECKIN_STATUS=EXPECTED=Expected|ARRIVED=Arrived|PARTIALLY RECEIVED=Partial|MISSING=Missing|BOUND=Bound|AT BINDERY=To bind|BINDERY PREP=Binding prepration|REMOVED=Removed|NOT PUBLISHED=Not published|OUT OF PRINT=Out of print|UNAVAILABLE=Unavailable|LATE=Late
-#For the above wwwoption, see page 106918 of the manual for the correct label terminology.  For the left (all caps) side of the wwwoption, use what's in the manual, not what's in Millennium. 
+#For the above wwwoption, see page 106918 of the manual for the correct label terminology.  For the left (all caps) side of the wwwoption, use what's in the manual, not what's in Millennium.
 DISPLAY_CHECKIN_856=z
 HOLDINGS_REQ=Deliver this article to me
 SORT_ITEMS=true
@@ -309,7 +309,7 @@ ICON_REQUEST=<span class="navButtonSmall navButton">Request</span>
 #REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
 REQUEST=Request this title|denyiflocalavail|ask|yes
 #REQUEST_ARTICLE_IFCHKIN=Y
-REQUEST_INSTRUCTION=Any special instructions? 
+REQUEST_INSTRUCTION=Any special instructions?
 REQUEST_MULTI=Request All Items in Book Cart|denyiflocalavail|ask|yes
 
 # Patron Record
@@ -452,7 +452,7 @@ TABLEPARAM_RSRV_BIBS=width="100%" border="0" cellpadding="0" cellspacing="0"
 # Featured Lists
 ICON_BUT_PREVSCRN=<span class="navButtonOneLine">Back</span>
 ICON_BUT_RET2FEAT=<span class="navButtonOneLine">Back</span>
-FEATURED_LIST=03,67,73,179,181,68,177|FEATURED LISTS|CATEGORY|# of Titles
+FEATURED_LIST=03,36,67,70,73,179,181,68,177|FEATURED LISTS|CATEGORY|# of Titles
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
@@ -774,7 +774,7 @@ ICON_BUT_RET2CRS_spi=<span class="button"><img src="/screens/ico_back.png" alt="
 #RSRV_HEADER_spi=T&#237;tulos destacados este mes
 ICON_BUT_PREVSCRN_spi=<span class="navButtonOneLine">Volver</span>
 ICON_BUT_RET2FEAT_spi=<span class="navButtonOneLine">Volver</span>
-FEATURED_LIST_spi=03,67,73,179,181,68|LISTADOS DESTACADOS|CATEGOR&#205;A|N&#186; de t&#237;tulos
+FEATURED_LIST_spi=03,36,67,70,73,179,181,68|LISTADOS DESTACADOS|CATEGOR&#205;A|N&#186; de t&#237;tulos
 BIBIMAGE_TEXT_spi=Cubierta del libro
 WEBADDRESS_spi=http://www.worldcat.org/search?q=%s|I|http://www.worldcat.org/search?q=bn:%s|<span class="worldCat navButton resourceButton">Buscar en WorldCat</span>|<span class="worldCat navButton resourceButton">Buscar en WorldCat</span>|-1
 #WEBADDRESS_spi=|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&amp;Password=PUTACCOUNTHERE&amp;ItemKey=%s&amp;Options=N||<span class="button"><img src="/screens/ico_info.gif" border="0" alt=""><span class="buttonText">[[ wwwoptions 00 webaddress_2alt ]]</span></span>|-1
