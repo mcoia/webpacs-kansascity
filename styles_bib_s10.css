@@ -7,8 +7,11 @@ div .bibResourceSidebar {
 }
 
 .libraryh3lp {
-    width:230px;
     margin-bottom:1em;
+    margin-right: 10px;
+}
+.libraryh3lp iframe {
+  width: 100%;
 }
 
 .mainColumn {
@@ -17,7 +20,7 @@ div .bibResourceSidebar {
 
 .rightBib {
     float:right;
-    width:240px;
+    width:20%;
 }
 
 
