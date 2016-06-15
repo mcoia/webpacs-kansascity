@@ -88,6 +88,7 @@ TOPLOGO10=@screens/toplogo_s10.html
 TOPLOGO12=@screens/toplogo_s12.html
 TOPLOGO13=@screens/toplogo_s13.html
 TOPLOGO14=@screens/toplogo_s14.html
+TOPLOGO15=@screens/toplogo_s15.html
 
 TOPLOGO_spi=@screens/toplogo_spi.html
 TOPLOGO1_spi=@screens/toplogo_spi_s1.html
@@ -103,6 +104,7 @@ TOPLOGO10_spi=@screens/toplogo_spi_s10.html
 TOPLOGO12_spi=@screens/toplogo_spi_s12.html
 TOPLOGO13_spi=@screens/toplogo_spi_s13.html
 TOPLOGO14_spi=@screens/toplogo_spi_s14.html
+TOPLOGO15_spi=@screens/toplogo_spi_s15.html
 
 SUPPRESS_OPTION=STARTOVER,ANOTHER,NEWSRCH
 TIMEOUT=3600;URL=/search/
