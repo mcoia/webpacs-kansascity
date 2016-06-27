@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 29 Apr 2010 -->
+<head>
+<title>Kansas City Catalog - Advanced Keyword Search</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(3600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="3600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+<!--{advancedsearchbody}-->
+<!--{toplogo}-->
+<div class="pageContentInner">
+<h1 class="pageHeader">Advanced Keyword Search</h1>
+<!--{msg}-->
+<!--{spellcheck}-->
+<div class="miscButtons">
+<!--{innreach}-->
+</div>
+
+<div class="form3Part" id="accessibleForm">
+
+<!--{advancedsearchformbegin}-->
+<div class="form3PartAbove">
+<fieldset>
+<legend>Enter Search Terms</legend>
+<div class="formEntryArea">
+<label for="fl1" class="advSearchFieldLabel">Field 1</label>
+<select id="fl1" name="fieldLimit1" title="field limit 1">
+<option value="" selected="selected">Any Field:</option>
+<option value="a:">AUTHOR:</option>
+<option value="t:">TITLE:</option>
+<option value="j:">MeSH:</option>
+<option value="N:">Note:</option>
+</select>
+
+<label for="st1" class="advSearchTextLabel">Search Text 1</label>
+<input maxlength="75" size="35" name="searchText1" id="st1" title="search text 1" style="background-image: none; background-position: 0% 0%; background-repeat: repeat;">
+<label for="bl1" class="advSearchBooleanLabel">Boolean 1</label>
+<select name="boolean1" id="bl1" title="Boolean 1">
+<option value="%20and%20" selected="selected">And</option>
+<option value="%20and%20not%20">And not</option>
+<option value="%20or%20">Or</option>
+</select>
+
+<br>
+
+<label for="fl2" class="advSearchFieldLabel">Field 2</label>
+<select id="fl2" name="fieldLimit2" title="field limit 2">
+<option value="" selected="selected">Any Field:</option>
+<option value="a:">AUTHOR:</option>
+<option value="t:">TITLE:</option>
+<option value="j:">MeSH:</option>
+<option value="N:">Note:</option>
+</select>
+
+<label for="st2" class="advSearchTextLabel">Search Text 2</label>
+<input maxlength="75" size="35" name="searchText2" id="st2" title="search text 2">
+<label for="bl2" class="advSearchBooleanLabel">Boolean 2</label>
+<select name="boolean2" id="bl2" title="Boolean 2">
+<option value="%20and%20" selected="selected">And</option>
+<option value="%20and%20not%20">And not</option>
+<option value="%20or%20">Or</option>
+</select>
+
+<br>
+
+<label for="fl3" class="advSearchFieldLabel">Field 3</label>
+<select id="fl3" name="fieldLimit3" title="field limit 3">
+<option value="" selected="selected">Any Field:</option>
+<option value="a:">AUTHOR:</option>
+<option value="t:">TITLE:</option>
+<option value="j:">MeSH:</option>
+<option value="N:">Note:</option>
+</select>
+
+<label for="st3" class="advSearchTextLabel">Search Text 3</label>
+<input maxlength="75" size="35" name="searchText3" id="st3" title="search text 3">
+<label for="bl3" class="advSearchBooleanLabel">Boolean 3</label>
+<select name="boolean3" id="bl3" title="Boolean 3">
+<option value="%20and%20" selected="selected">And</option>
+<option value="%20and%20not%20">And not</option>
+<option value="%20or%20">Or</option>
+</select>
+
+<br>
+
+<label for="fl4" class="advSearchFieldLabel">Field 4</label>
+<select id="fl4" name="fieldLimit4" title="field limit 4">
+<option value="" selected="selected">Any Field:</option>
+<option value="a:">AUTHOR:</option>
+<option value="t:">TITLE:</option>
+<option value="j:">MeSH:</option>
+<option value="N:">Note:</option>
+</select>
+
+<label for="st4" class="advSearchTextLabel">Search Text 4</label>
+<input maxlength="75" size="35" name="searchText4" id="st4" title="search text 4" style="background-image: none; background-position: 0% 0%; background-repeat: repeat;">
+</div>
+<input type="hidden" name="startLimit" >
+<div class="formEntryArea">
+<!--{availlim}-->
+</div>
+<div class="formButtonArea">
+<span>
+<!--{advancedsubmit}-->
+</span>
+<span>
+<!--{clearform}-->
+</span>
+</div>
+</fieldset>
+</div> <!-- form3PartAbove -->
+
+<div class="form3PartBelow">
+
+<div class="formLeft advancedSearch">
+<fieldset>
+<legend>Add Limits (Optional)</legend>
+
+<div class="formEntryArea">
+<table border="0">
+<tr>
+<td>
+<label for="searchscope">
+Library
+</label>
+</td>
+<td>
+<!--{scope}-->
+</td>
+</tr>
+</table>
+</div>
+    
+<div class="formEntryArea">
+<!--{branch}-->
+</div>
+<div class="formEntryArea">
+<!--{mattype}-->
+</div>
+<div class="formEntryArea">
+<!--{lang}-->
+</div>
+<div class="formEntryArea">
+<!--{DOCDATE}-->
+</div>
+<div class="formEntryArea">
+<!--{publish}-->
+</div>
+<div class="formEntryArea" id="form3PartAdvLimitSort">
+<!--{sort}-->
+</div>
+</fieldset>
+<input type="hidden" name="endLimit" >
+</div> <!-- formLeft -->
+
+<div class="formRight">
+<table class="tipsTable">
+<caption>Search Tips</caption>
+<!-- <tr valign="top"><th align="left">Adjacency</th>
+<td>Multiple words are searched together as one phrase.<br>
+<span style="text-decoration:underline">Example</span> : world health organization</td>
+</tr> -->
+<tr><th>Wildcards</th>
+<td>
+Words may be right-hand truncated using an asterisk ('*') in place of other characters. <!-- Use '**' for open-ended truncation of over five characters.--> The '*' wildcard may also be embedded in a search string. You may use '?' to replace a single character anywhere within a word.<br>
+<span style="text-decoration:underline">Examples</span> : environment* polic*, wom?n</td>
+</tr>
+<tr><th>Boolean Operators</th>
+<td>
+Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br>
+<span style="text-decoration:underline">Example</span> : stocks and bonds<br>
+<span style="text-decoration:underline">Example</span> : (alaska or canada) and (adventure and not vacation)</td>
+</tr>
+<tr><th>Field limits</th>
+<td>
+A field limit causes the system to search only the specified field for the specified word(s).</td>
+</tr>
+<tr>
+<th>Grouping</th>
+<td>
+Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
+</td>
+</tr>
+<!-- <tr valign="top"><th align="left">Proximity Operators</th>
+<td>
+Use "near" to specify words close to each other, in any order.<br>
+<span style="text-decoration:underline">Example</span> : california near university</td>
+</tr> -->
+</table>
+</div> <!-- formRight -->
+<div class="clear"></div>
+</div> <!-- form3PartBelow -->
+
+<!--{advancedsearchformend}-->
+</div> <!-- form3Part -->
+
+</div><!-- pageContentInner -->
+<!--{botlogo}-->
+</body>
+</html>
