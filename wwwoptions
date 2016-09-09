@@ -434,7 +434,7 @@ ILL_CONF_EMAIL_SUBJECT=Library notification of Inter-library Loan request
 ILL_HOME=/screens/ill.html
 
 # INN-Reach
-IR_PLACEMENT=2
+IR_PLACEMENT=1
 ICON_INNREACH_ENCORE=<span class="navButton resourceButton">Search MOBIUS</span>
 ICON_INNREACH_ENCORE13=<span title="Search for items held by libraries throughout the entire MOBIUS system." id="parkInnReach"class="resourceButton"><img src="/screens/mobiusLibrarysearch.gif" alt=""></span>
 INNREACH_ENCORE=http://searchmobius.org/iii/encore/search/C__S%s__Orightresult__U?lang=eng&suite=cobalt
